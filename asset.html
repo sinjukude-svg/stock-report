@@ -178,6 +178,20 @@
 </div>
 
 <div class="card">
+  <h2><span class="h-ico">☁️</span>클라우드 동기화 (GitHub)</h2>
+  <p class="small" style="margin-bottom:8px">데이터를 GitHub(Asset_Management 저장소)에 저장해 컴퓨터·폰 어디서든 같은 데이터를 쓸 수 있습니다. 기기마다 한 번만 토큰을 넣으면 됩니다.</p>
+  <div class="grid" style="grid-template-columns:2fr 1fr">
+    <input id="fTok" type="password" placeholder="GitHub 토큰 붙여넣기" autocomplete="off">
+    <button class="btn" style="padding:10px" onclick="saveTok()">토큰 저장</button>
+  </div>
+  <div class="btn-row">
+    <button class="btn" onclick="cloudSave()">☁️ 클라우드에 저장</button>
+    <button class="btn btn-gray" onclick="cloudLoad()">⬇️ 클라우드에서 불러오기</button>
+  </div>
+  <p class="small" id="cloudStatus" style="margin-top:8px"></p>
+</div>
+
+<div class="card">
   <h2><span class="h-ico">💾</span>백업</h2>
   <div class="btn-row">
     <button class="btn btn-gray" onclick="exportData()">내보내기</button>
@@ -388,6 +402,56 @@ function snapshot(){
   S.history=S.history.filter(x=>x.d!==d);S.history.push({d,total:t,by});
   S.history.sort((x,y)=>x.d<y.d?-1:1);save();render();
 }
+// ===== 클라우드 동기화 (GitHub) =====
+const GH_API='https://api.github.com/repos/sinjukude-svg/Asset_Management/contents/data.json';
+const ghHeaders=()=>({Authorization:'Bearer '+(localStorage.getItem('ghToken')||''),Accept:'application/vnd.github+json'});
+const b64enc=s=>btoa(unescape(encodeURIComponent(s)));
+const b64dec=s=>decodeURIComponent(escape(atob(s.replace(/\n/g,''))));
+function saveTok(){
+  const t=fTok.value.trim();
+  if(!t){alert('토큰을 붙여넣어 주세요');return}
+  localStorage.setItem('ghToken',t);
+  cloudStatus.textContent='✅ 토큰이 이 기기에 저장되었습니다.';
+}
+function needTok(){
+  if(!localStorage.getItem('ghToken')){cloudStatus.textContent='⚠️ 먼저 토큰을 저장해주세요.';return true}
+  return false;
+}
+async function cloudSave(){
+  if(needTok())return;
+  cloudStatus.textContent='⏳ 클라우드에 저장 중...';
+  try{
+    let sha;
+    const g=await fetch(GH_API,{headers:ghHeaders()});
+    if(g.ok)sha=(await g.json()).sha;
+    else if(g.status===401||g.status===403)throw new Error('토큰 권한 오류');
+    S.savedAt=new Date().toISOString();
+    const body={message:'자산 데이터 저장 '+S.savedAt,content:b64enc(JSON.stringify(S,null,2))};
+    if(sha)body.sha=sha;
+    const r=await fetch(GH_API,{method:'PUT',headers:{...ghHeaders(),'Content-Type':'application/json'},body:JSON.stringify(body)});
+    if(!r.ok)throw new Error('저장 실패 ('+r.status+')');
+    save();
+    cloudStatus.textContent='✅ 클라우드 저장 완료 ('+new Date().toLocaleString('ko-KR')+')';
+  }catch(e){cloudStatus.textContent='❌ '+(e.message||'저장 실패')+' — 토큰이 Asset_Management 저장소에 쓰기 권한이 있는지 확인하세요.'}
+}
+async function cloudLoad(){
+  if(needTok())return;
+  if(S.holdings.length&&!confirm('클라우드 데이터로 덮어씁니다.\n이 기기의 현재 데이터는 사라집니다. 계속할까요?'))return;
+  cloudStatus.textContent='⏳ 클라우드에서 불러오는 중...';
+  try{
+    const r=await fetch(GH_API,{headers:ghHeaders()});
+    if(r.status===404){cloudStatus.textContent='클라우드에 저장된 데이터가 아직 없습니다. 먼저 [클라우드에 저장]을 눌러주세요.';return}
+    if(!r.ok)throw new Error('불러오기 실패 ('+r.status+')');
+    const j=await r.json();
+    S=JSON.parse(b64dec(j.content));
+    if(!S.accounts)S.accounts=['일반계좌1'];
+    if(!S.view)S.view='ALL';
+    S.holdings.forEach(h=>{if(!h.acct)h.acct=S.accounts[0];if(h.sym===undefined)h.sym=''});
+    save();render();refreshPrices();
+    cloudStatus.textContent='✅ 불러오기 완료'+(S.savedAt?' (저장 시점: '+new Date(S.savedAt).toLocaleString('ko-KR')+')':'');
+  }catch(e){cloudStatus.textContent='❌ '+(e.message||'불러오기 실패')+' — 토큰 권한을 확인하세요.'}
+}
+
 function exportData(){
   const b=new Blob([JSON.stringify(S,null,2)],{type:'application/json'});
   const a=document.createElement('a');a.href=URL.createObjectURL(b);
@@ -490,6 +554,7 @@ function render(){
 }
 save();
 render();
+fTok.value=localStorage.getItem('ghToken')||'';
 refreshPrices();
 </script>
 </body>
