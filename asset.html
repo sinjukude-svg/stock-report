@@ -4,79 +4,119 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>내 자산관리</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:linear-gradient(180deg,#eef2f9 0%,#f6f8fc 100%);min-height:100vh;color:#1f2433;line-height:1.5;padding:14px}
+  body{font-family:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#eef1f8;min-height:100vh;color:#1a1f2e;line-height:1.5;padding:14px;font-variant-numeric:tabular-nums}
   .wrap{max-width:520px;margin:0 auto}
-  .card{background:#fff;border-radius:18px;padding:18px;margin-bottom:14px;box-shadow:0 4px 16px rgba(31,42,80,.07)}
-  .hero{background:linear-gradient(135deg,#3b5bdb 0%,#6741d9 100%);color:#fff;border-radius:20px;padding:22px 20px;margin-bottom:14px;box-shadow:0 8px 24px rgba(59,91,219,.30)}
-  .hero h1{font-size:20px;font-weight:800;letter-spacing:-.3px}
-  .hero .date{font-size:12px;color:rgba(255,255,255,.75);margin-top:2px}
-  .hero .small{color:rgba(255,255,255,.8)}
-  .total-box{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:6px;margin-top:16px}
-  .total-num{font-size:26px;font-weight:800;letter-spacing:-.5px}
-  .hero-note{font-size:11px;color:rgba(255,255,255,.65);margin-top:10px}
-  .hero .up{color:#ffd6d3}.hero .down{color:#cfe0ff}
-  .btn-hero{width:100%;margin-top:14px;background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:10px;padding:10px;font-weight:700;cursor:pointer;font-size:13px}
+  .card{background:#fff;border-radius:20px;padding:20px;margin-bottom:14px;box-shadow:0 2px 12px rgba(23,32,70,.06),0 1px 2px rgba(23,32,70,.04)}
+  /* ===== 헤더 ===== */
+  .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#4338ca 0%,#6d28d9 60%,#7c3aed 100%);color:#fff;border-radius:24px;padding:24px 22px;margin-bottom:14px;box-shadow:0 12px 32px rgba(67,56,202,.35)}
+  .hero::before{content:'';position:absolute;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.14),transparent 70%);top:-120px;right:-80px}
+  .hero::after{content:'';position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 70%);bottom:-100px;left:-60px}
+  .hero>*{position:relative;z-index:1}
+  .hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+  .hero h1{font-size:20px;font-weight:800;letter-spacing:-.4px}
+  .hero .date{font-size:12px;color:rgba(255,255,255,.7);margin-top:1px}
+  .acct-sel{appearance:none;-webkit-appearance:none;background:rgba(255,255,255,.16) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>') right 12px center no-repeat;border:1px solid rgba(255,255,255,.35);color:#fff;font-weight:700;font-size:13px;padding:8px 30px 8px 14px;border-radius:99px;cursor:pointer;backdrop-filter:blur(4px)}
+  .acct-sel option{color:#1a1f2e}
+  .hero .small{color:rgba(255,255,255,.75);font-size:12px}
+  .total-box{margin-top:20px}
+  .total-num{font-size:32px;font-weight:800;letter-spacing:-1px;line-height:1.15}
+  .pnl-pill{display:inline-flex;align-items:center;gap:6px;margin-top:8px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.22);border-radius:99px;padding:5px 14px;font-size:13px;font-weight:700;backdrop-filter:blur(4px)}
+  .hero .up{color:#ffd9d6}.hero .down{color:#cfe0ff}
+  .btn-hero{width:100%;margin-top:18px;background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:12px;padding:11px;font-weight:700;cursor:pointer;font-size:13px;backdrop-filter:blur(4px)}
   .btn-hero:active{background:rgba(255,255,255,.3)}
-  h2{font-size:15px;font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:7px;letter-spacing:-.2px}
-  h2::before{content:'';width:5px;height:16px;border-radius:3px;background:linear-gradient(180deg,#3b5bdb,#6741d9)}
+  .hero-note{font-size:11px;color:rgba(255,255,255,.6);margin-top:9px}
+  /* ===== 공통 ===== */
+  h2{font-size:15px;font-weight:800;margin-bottom:13px;display:flex;align-items:center;gap:8px;letter-spacing:-.2px}
+  .h-ico{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,#eef1ff,#f3eeff);display:inline-flex;align-items:center;justify-content:center;font-size:13px}
   .small{font-size:12px;color:#6b7280}
   table{width:100%;border-collapse:collapse;font-size:12px}
-  th,td{padding:8px 4px;text-align:right;border-bottom:1px solid #f1f3f7;white-space:nowrap}
-  th{color:#8a93a6;font-weight:700;font-size:11px}
+  th,td{padding:9px 4px;text-align:right;border-bottom:1px solid #f1f3f8;white-space:nowrap}
+  th{color:#98a0b3;font-weight:700;font-size:11px}
+  tr:last-child td{border-bottom:none}
   td:first-child,th:first-child{text-align:left}
   tr.hit td{background:#fff8e1}
   mark{background:#ffe27a;border-radius:3px;padding:0 2px}
   .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
-  input,select,button{font-size:13px;padding:9px 10px;border:1px solid #e2e6ef;border-radius:10px;background:#fff;color:#1f2433}
-  input:focus,select:focus{outline:none;border-color:#3b5bdb;box-shadow:0 0 0 3px rgba(59,91,219,.12)}
+  .pct-pill{display:inline-block;min-width:54px;text-align:center;border-radius:7px;padding:2px 6px;font-weight:700;font-size:11px}
+  .pp-up{background:#fdecec;color:#d92a25}.pp-down{background:#e9f1ff;color:#1763e6}
+  input,select,button{font-size:13px;padding:10px 11px;border:1.5px solid #e5e8f0;border-radius:11px;background:#fff;color:#1a1f2e;font-family:inherit}
+  input:focus,select:focus{outline:none;border-color:#6d28d9;box-shadow:0 0 0 3px rgba(109,40,217,.1)}
   input{width:100%}
-  .search{width:100%;margin-bottom:10px;background:#f6f8fc url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%238a93a6" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>') 12px center no-repeat;padding-left:34px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
-  .btn{background:linear-gradient(135deg,#3b5bdb,#6741d9);color:#fff;border:none;cursor:pointer;font-weight:700;width:100%;padding:11px;border-radius:10px;transition:opacity .15s}
+  .search{width:100%;margin-bottom:10px;background:#f5f7fb url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%2398a0b3" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>') 12px center no-repeat;padding-left:34px;border-color:transparent}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:9px}
+  .btn{background:linear-gradient(135deg,#4338ca,#7c3aed);color:#fff;border:none;cursor:pointer;font-weight:700;width:100%;padding:12px;border-radius:12px;box-shadow:0 4px 12px rgba(67,56,202,.25);transition:opacity .15s}
   .btn:active{opacity:.8}
-  .btn-sm{background:#f1f3f7;color:#555;border:none;cursor:pointer;font-size:11px;padding:5px 8px;border-radius:7px}
-  .btn-row{display:flex;gap:8px;margin-top:8px}
+  .btn-sm{background:#f1f3f8;color:#555;border:none;cursor:pointer;font-size:11px;padding:5px 9px;border-radius:8px}
+  .btn-row{display:flex;gap:9px;margin-top:9px}
   .btn-row .btn{flex:1}
-  .btn-gray{background:#8a94a6}
+  .btn-gray{background:#8a94a6;box-shadow:0 4px 12px rgba(138,148,166,.25)}
+  /* ===== 콤보박스 ===== */
   .combo{position:relative}
-  .combo-list{position:absolute;top:100%;left:0;right:0;background:#fff;border:1px solid #e2e6ef;border-radius:10px;margin-top:3px;box-shadow:0 8px 20px rgba(31,42,80,.15);z-index:50;max-height:240px;overflow-y:auto;display:none}
-  .combo-item{padding:9px 12px;font-size:13px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:8px}
-  .combo-item:hover,.combo-item.act{background:#f0f4ff}
-  .combo-item .sym{color:#8a93a6;font-size:11px}
-  .badge{font-size:10px;font-weight:700;padding:2px 6px;border-radius:6px}
+  .combo-list{position:absolute;top:100%;left:0;right:0;background:#fff;border:1px solid #e5e8f0;border-radius:13px;margin-top:4px;box-shadow:0 12px 28px rgba(23,32,70,.16);z-index:50;max-height:248px;overflow-y:auto;display:none}
+  .combo-item{padding:10px 13px;font-size:13px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .combo-item:hover{background:#f4f1ff}
+  .combo-item .sym{color:#98a0b3;font-size:11px}
+  .badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:7px}
   .b-KR{background:#e7f0ff;color:#2456c4}.b-US{background:#fdeaea;color:#c0392b}.b-COIN{background:#fff3d6;color:#a06b00}
-  .pie{width:160px;height:160px;border-radius:50%;margin:8px auto;position:relative}
-  .pie::after{content:'';position:absolute;inset:27%;background:#fff;border-radius:50%;box-shadow:inset 0 1px 4px rgba(0,0,0,.06)}
+  /* ===== 계좌별 자산 ===== */
+  .acct-row{display:flex;align-items:center;gap:10px;padding:11px 4px;border-bottom:1px solid #f1f3f8;cursor:pointer}
+  .acct-row:last-child{border-bottom:none}
+  .acct-ico{width:34px;height:34px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;background:linear-gradient(135deg,#eef1ff,#f3eeff)}
+  .acct-name{font-size:13px;font-weight:700}
+  .acct-sub{font-size:11px;color:#98a0b3}
+  .acct-amt{margin-left:auto;text-align:right}
+  .acct-amt b{font-size:13px}
+  .acct-chip{display:inline-flex;align-items:center;gap:6px;background:#f5f7fb;border-radius:99px;padding:6px 7px 6px 13px;font-size:12px;font-weight:600;margin:3px 4px 3px 0}
+  .chip-x{background:#e3e7ef;border:none;border-radius:99px;width:18px;height:18px;line-height:1;font-size:11px;color:#666;cursor:pointer;padding:0}
+  /* ===== 파이/막대 ===== */
+  .pie{width:165px;height:165px;border-radius:50%;margin:8px auto;position:relative}
+  .pie::after{content:'';position:absolute;inset:26%;background:#fff;border-radius:50%;box-shadow:inset 0 1px 5px rgba(0,0,0,.07)}
   .legend{font-size:12px;display:flex;flex-wrap:wrap;gap:5px 14px;justify-content:center;margin-top:10px}
   .dot{display:inline-block;width:10px;height:10px;border-radius:5px;margin-right:4px}
-  .cur-input{width:80px;text-align:right;padding:5px;font-size:12px;border-radius:7px}
-  .abar-row{display:flex;align-items:center;font-size:12px;margin:7px 0;padding:3px 4px;border-radius:8px}
-  .abar-row.hit{background:#fff8e1}
-  .abar-label{width:92px;color:#39404f;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .abar-track{flex:1;height:14px;background:#f1f3f7;border-radius:7px;overflow:hidden;margin:0 8px}
-  .abar-fill{height:100%;border-radius:7px}
-  .abar-val{width:120px;font-size:11px;text-align:right;color:#555}
+  .cur-input{width:82px;text-align:right;padding:5px 7px;font-size:12px;border-radius:8px}
+  /* ===== 상위 보유 종목 ===== */
+  .top-item{padding:11px 0;border-bottom:1px solid #f1f3f8}
+  .top-item:last-child{border-bottom:none}
+  .top-item.hit{background:#fff8e1;border-radius:12px;padding:11px 8px}
+  .top-line1{display:flex;align-items:center;gap:8px}
+  .top-name{font-weight:700;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;letter-spacing:-.2px}
+  .top-val{font-weight:800;font-size:14px;letter-spacing:-.3px}
+  .top-ret{font-size:12px;font-weight:700;white-space:nowrap}
+  .ret-up{color:#0caa67}.ret-down{color:#e0342f}
+  .top-bar{height:9px;background:#eef1f6;border-radius:99px;margin:9px 0 5px;overflow:hidden}
+  .top-fill{height:100%;border-radius:99px;transition:width .4s ease}
+  .top-line2{display:flex;justify-content:space-between;font-size:11px;color:#98a0b3}
   svg{width:100%;height:auto}
-  .disclaimer{font-size:11px;color:#a0a6b3;text-align:center;padding:6px 8px 18px}
+  .disclaimer{font-size:11px;color:#a7adba;text-align:center;padding:8px 8px 20px}
 </style>
 </head>
 <body><div class="wrap">
 
 <div class="hero">
-  <h1>💼 내 자산관리</h1>
-  <div class="date" id="today"></div>
+  <div class="hero-top">
+    <div><h1>💼 내 자산관리</h1><div class="date" id="today"></div></div>
+    <select class="acct-sel" id="acctSel" onchange="setView(this.value)"></select>
+  </div>
   <div class="total-box">
-    <div><div class="small">총 평가금액(원화)</div><div class="total-num" id="totalVal">-</div></div>
-    <div style="text-align:right"><div class="small">총 손익 / 수익률</div><div id="totalPnl" style="font-size:16px;font-weight:800">-</div></div>
+    <div class="small" id="totalLabel">총 평가금액</div>
+    <div class="total-num" id="totalVal">-</div>
+    <div class="pnl-pill" id="totalPnl">-</div>
   </div>
   <button class="btn-hero" onclick="refreshPrices()">🔄 시세 새로고침</button>
   <div class="hero-note" id="updStatus">앱을 열면 시세를 자동으로 불러옵니다.</div>
 </div>
 
+<div class="card" id="acctCard" style="display:none">
+  <h2><span class="h-ico">🏦</span>계좌별 자산</h2>
+  <div id="acctList"></div>
+  <p class="small" style="margin-top:8px">계좌를 누르면 해당 계좌만 볼 수 있습니다.</p>
+</div>
+
 <div class="card">
-  <h2>➕ 자산 추가</h2>
+  <h2><span class="h-ico">➕</span>자산 추가</h2>
   <div class="grid">
     <div class="combo">
       <input id="fName" placeholder="종목명/티커 (예: n, 삼성, 비트)" autocomplete="off" oninput="suggest()" onfocus="suggest()">
@@ -92,6 +132,10 @@
     <input id="fQty" type="number" step="any" placeholder="수량">
     <input id="fAvg" type="number" step="any" placeholder="평단가 (미국주식은 $)">
   </div>
+  <div class="grid">
+    <select id="fAcct"></select>
+    <div><span class="small">담을 계좌를 선택하세요</span></div>
+  </div>
   <button class="btn" onclick="addHolding()">추가 (현재가는 자동 조회)</button>
   <div class="grid" style="margin-top:10px;align-items:center">
     <div><span class="small">환율(원/달러) — 자동 갱신: </span></div>
@@ -100,28 +144,41 @@
 </div>
 
 <div class="card">
-  <h2>📋 보유종목 수익률</h2>
+  <h2><span class="h-ico">📋</span>보유종목 수익률</h2>
   <input class="search" id="fSearch" placeholder="종목 검색 (예: NNOX)" oninput="render()">
   <p class="small" id="searchInfo" style="margin-bottom:6px">현재가는 자동 조회되며, 칸을 직접 수정할 수도 있습니다.</p>
   <table id="tbl"><thead><tr><th>종목</th><th>수량</th><th>평단</th><th>현재가</th><th>평가액(원)</th><th>수익률</th><th></th></tr></thead><tbody></tbody></table>
 </div>
 
 <div class="card">
-  <h2>🥧 자산 배분</h2>
-  <div class="pie" id="pie"></div>
-  <div class="legend" id="legend"></div>
-  <div id="allocBars" style="margin-top:14px"></div>
+  <h2 style="justify-content:space-between"><span style="display:flex;align-items:center;gap:8px"><span class="h-ico">🏆</span>상위 보유 종목</span><span class="small" id="topCnt"></span></h2>
+  <div id="allocBars"></div>
 </div>
 
 <div class="card">
-  <h2>📈 자산 추이</h2>
-  <p class="small">아래 버튼을 누르면 오늘 날짜로 총자산이 기록됩니다. 꾸준히 누르면 추세가 그려집니다.</p>
-  <div class="btn-row"><button class="btn" onclick="snapshot()">오늘 총자산 기록하기</button></div>
+  <h2><span class="h-ico">🥧</span>자산 배분</h2>
+  <div class="pie" id="pie"></div>
+  <div class="legend" id="legend"></div>
+</div>
+
+<div class="card">
+  <h2><span class="h-ico">📈</span>자산 추이</h2>
+  <p class="small" id="chartHint">아래 버튼을 누르면 오늘 날짜로 기록됩니다. 꾸준히 누르면 추세가 그려집니다.</p>
+  <div class="btn-row"><button class="btn" onclick="snapshot()">오늘 자산 기록하기</button></div>
   <div id="chart" style="margin-top:10px"></div>
 </div>
 
 <div class="card">
-  <h2>💾 백업</h2>
+  <h2><span class="h-ico">⚙️</span>계좌 관리</h2>
+  <div id="acctChips"></div>
+  <div class="grid" style="margin-top:10px;grid-template-columns:2fr 1fr">
+    <input id="fNewAcct" placeholder="새 계좌 이름 (예: 해외계좌)">
+    <button class="btn" style="padding:10px" onclick="addAcct()">계좌 추가</button>
+  </div>
+</div>
+
+<div class="card">
+  <h2><span class="h-ico">💾</span>백업</h2>
   <div class="btn-row">
     <button class="btn btn-gray" onclick="exportData()">내보내기</button>
     <button class="btn btn-gray" onclick="document.getElementById('impFile').click()">가져오기</button>
@@ -133,7 +190,8 @@
 
 </div>
 <script>
-const COLORS=['#3b5bdb','#e0342f','#f5a23b','#2bb673','#8a5cf6','#17a2b8','#e83e8c','#6c757d','#b8860b','#20c997'];
+const COLORS=['#4f46e5','#e0342f','#f59e0b','#10b981','#8b5cf6','#0ea5e9','#ec4899','#64748b','#b45309','#14b8a6'];
+const ACCT_ICONS=['💰','🏦','🪙','🌱','🌿','📘','📗','🧾','🏢','💼'];
 
 // ===== 종목 사전 (자동완성 + 시세코드) =====
 const TICKERS=[
@@ -188,18 +246,50 @@ const TICKERS=[
 const MKT_LABEL={KR:'한국',US:'미국',COIN:'코인'};
 
 let S=JSON.parse(localStorage.getItem('myAssets')||'{"holdings":[],"fx":1450,"history":[]}');
-// 구버전 데이터 마이그레이션: sym 필드 채우기
+// ===== 마이그레이션 =====
+if(!S.accounts)S.accounts=['일반계좌1','일반계좌2','개인연금1','개인연금2','IRP 1','IRP 2','ISA','퇴직연금DC'];
+if(!S.view)S.view='ALL';
 S.holdings.forEach(h=>{
   if(h.sym===undefined){
     const t=TICKERS.find(t=>t.n===h.name||t.s.split('.')[0]===h.name.toUpperCase());
     if(t){h.sym=t.s;h.mkt=t.m}else h.sym='';
   }
+  if(!h.acct)h.acct=S.accounts[0];
 });
+if(S.view!=='ALL'&&!S.accounts.includes(S.view))S.view='ALL';
+
 const W=v=>Math.round(v).toLocaleString('ko-KR');
 const P=v=>v>=100?v.toLocaleString('ko-KR',{maximumFractionDigits:0}):v.toLocaleString('ko-KR',{maximumFractionDigits:4});
+const KM=v=>{ // 원화 축약 (예: 5.9천만원, 829만원, 1.2억원)
+  v=Math.round(v);
+  if(v>=1e8){const x=v/1e8;return (x>=10?Math.round(x).toLocaleString():x.toFixed(1))+'억원'}
+  if(v>=1e7)return (v/1e7).toFixed(1)+'천만원';
+  if(v>=1e4)return Math.round(v/1e4).toLocaleString()+'만원';
+  return v.toLocaleString()+'원';
+};
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const save=()=>localStorage.setItem('myAssets',JSON.stringify(S));
 const valKRW=h=>h.qty*h.cur*(h.mkt==='US'?S.fx:1);
 const costKRW=h=>h.qty*h.avg*(h.mkt==='US'?S.fx:1);
+const inView=h=>S.view==='ALL'||h.acct===S.view;
+
+// ===== 계좌 =====
+function setView(v){S.view=v;save();render()}
+function addAcct(){
+  const n=fNewAcct.value.trim();
+  if(!n)return;
+  if(S.accounts.includes(n)){alert('이미 있는 계좌입니다');return}
+  S.accounts.push(n);fNewAcct.value='';save();render();
+}
+function delAcct(i){
+  const a=S.accounts[i];
+  if(S.holdings.some(h=>h.acct===a)){alert('이 계좌에 종목이 있어 삭제할 수 없습니다.\n종목을 먼저 삭제하거나 다른 계좌로 옮겨주세요.');return}
+  if(confirm(a+' 계좌를 삭제할까요?')){
+    S.accounts.splice(i,1);
+    if(S.view===a)S.view='ALL';
+    save();render();
+  }
+}
 
 // ===== 자동완성 콤보박스 =====
 let pendingSym='';
@@ -246,12 +336,10 @@ async function yahooPrice(sym){
 async function refreshPrices(){
   updStatus.textContent='⏳ 시세 불러오는 중...';
   let ok=0,fail=[];
-  // 환율
   try{
     const j=await fetchJSON('https://api.frankfurter.app/latest?from=USD&to=KRW');
     if(j.rates&&j.rates.KRW)S.fx=Math.round(j.rates.KRW*100)/100;
   }catch(e){}
-  // 코인 (업비트, 한 번에)
   const coins=S.holdings.filter(h=>h.mkt==='COIN'&&h.sym);
   if(coins.length){
     try{
@@ -261,7 +349,6 @@ async function refreshPrices(){
       coins.forEach(h=>{if(map[h.sym]){h.cur=map[h.sym];ok++}else fail.push(h.name)});
     }catch(e){coins.forEach(h=>fail.push(h.name))}
   }
-  // 주식 (야후, 병렬)
   const stocks=S.holdings.filter(h=>(h.mkt==='KR'||h.mkt==='US')&&h.sym);
   await Promise.all(stocks.map(async h=>{
     const p=await yahooPrice(h.sym);
@@ -272,7 +359,7 @@ async function refreshPrices(){
   const t=new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit'});
   updStatus.textContent=fail.length
     ?`✅ ${ok}개 갱신 (${t}) · 실패: ${fail.join(', ')} — 현재가 칸에 직접 입력하세요`
-    :(ok?`✅ 시세 ${ok}개 + 환율 갱신 완료 (${t})`:`기록된 종목이 없습니다.`);
+    :(ok?`✅ 시세 ${ok}개 + 환율 갱신 완료 (${t})`:`종목을 추가하면 시세를 자동으로 불러옵니다.`);
 }
 
 // ===== 자산 추가/수정 =====
@@ -283,11 +370,9 @@ async function addHolding(){
   if(!sym){
     const t=TICKERS.find(t=>t.n===n||t.s.split('.')[0]===n.toUpperCase());
     if(t&&t.m===mkt)sym=t.s;
-    else if(mkt==='US')sym=n.toUpperCase();      // 티커 직접 입력 (예: NNOX)
-    else if(mkt==='COIN')sym=n.toUpperCase();    // 코인 심볼 직접 입력 (예: BTC)
+    else if(mkt==='US'||mkt==='COIN')sym=n.toUpperCase();
   }
-  const h={name:n,sym:sym||'',mkt,qty:q,avg:a,cur:a};
-  S.holdings.push(h);
+  S.holdings.push({name:n,sym:sym||'',mkt,qty:q,avg:a,cur:a,acct:fAcct.value});
   fName.value=fQty.value=fAvg.value='';pendingSym='';
   save();render();
   refreshPrices();
@@ -298,7 +383,9 @@ function setFx(v){S.fx=+v||S.fx;save();render()}
 function snapshot(){
   const d=new Date().toISOString().slice(0,10);
   const t=S.holdings.reduce((s,h)=>s+valKRW(h),0);
-  S.history=S.history.filter(x=>x.d!==d);S.history.push({d,total:t});
+  const by={};
+  S.accounts.forEach(a=>{by[a]=S.holdings.filter(h=>h.acct===a).reduce((s,h)=>s+valKRW(h),0)});
+  S.history=S.history.filter(x=>x.d!==d);S.history.push({d,total:t,by});
   S.history.sort((x,y)=>x.d<y.d?-1:1);save();render();
 }
 function exportData(){
@@ -308,7 +395,7 @@ function exportData(){
 }
 function importData(inp){
   const f=inp.files[0];if(!f)return;const r=new FileReader();
-  r.onload=e=>{try{S=JSON.parse(e.target.result);save();render();alert('가져오기 완료')}catch(_){alert('파일 형식 오류')}};
+  r.onload=e=>{try{S=JSON.parse(e.target.result);if(!S.accounts)S.accounts=['일반계좌1'];if(!S.view)S.view='ALL';S.holdings.forEach(h=>{if(!h.acct)h.acct=S.accounts[0]});save();render();alert('가져오기 완료')}catch(_){alert('파일 형식 오류')}};
   r.readAsText(f);
 }
 function hilite(name,q){
@@ -320,49 +407,86 @@ function hilite(name,q){
 function render(){
   today.textContent=new Date().toLocaleDateString('ko-KR',{year:'numeric',month:'long',day:'numeric',weekday:'short'});
   fFx.value=S.fx;
+  // 계좌 셀렉트 (헤더 + 추가폼)
+  acctSel.innerHTML=`<option value="ALL">총계좌</option>`+S.accounts.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join('');
+  acctSel.value=S.view;
+  const prevAcct=fAcct.value;
+  fAcct.innerHTML=S.accounts.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join('');
+  if(S.accounts.includes(prevAcct))fAcct.value=prevAcct;
+  else if(S.view!=='ALL')fAcct.value=S.view;
+  totalLabel.textContent=(S.view==='ALL'?'총':S.view+' ')+' 평가금액';
+  // 계좌 관리 칩
+  acctChips.innerHTML=S.accounts.map((a,i)=>`<span class="acct-chip">${esc(a)}<button class="chip-x" onclick="delAcct(${i})">✕</button></span>`).join('');
+  // 보유종목 표
   const q=fSearch.value.trim().toLowerCase();
   let tot=0,cost=0,shown=0;
   const tb=document.querySelector('#tbl tbody');tb.innerHTML='';
   S.holdings.forEach((h,i)=>{
+    if(!inView(h))return;
     const v=valKRW(h),c=costKRW(h),r=c?(v-c)/c*100:0;tot+=v;cost+=c;
     const match=!q||h.name.toLowerCase().includes(q)||(h.sym&&h.sym.toLowerCase().includes(q));
     if(!match)return;
     shown++;
-    const sym=h.mkt==='US'?'$':'';
-    tb.insertAdjacentHTML('beforeend',`<tr class="${q?'hit':''}"><td>${hilite(h.name,q)}<span class="small"> ${h.sym?h.sym.split('.')[0]:h.mkt}</span></td><td>${h.qty}</td><td>${sym}${P(h.avg)}</td><td><input class="cur-input" type="number" step="any" value="${h.cur}" onchange="updCur(${i},this.value)"></td><td>${W(v)}</td><td class="${r>=0?'up':'down'}">${r>=0?'+':''}${r.toFixed(1)}%</td><td><button class="btn-sm" onclick="delHolding(${i})">삭제</button></td></tr>`);
+    const cur$=h.mkt==='US'?'$':'';
+    const acctTag=S.view==='ALL'?`<div class="small" style="font-size:10px">${esc(h.acct)}</div>`:'';
+    tb.insertAdjacentHTML('beforeend',`<tr class="${q?'hit':''}"><td>${hilite(h.name,q)}<span class="small"> ${h.sym?h.sym.split('.')[0]:h.mkt}</span>${acctTag}</td><td>${h.qty}</td><td>${cur$}${P(h.avg)}</td><td><input class="cur-input" type="number" step="any" value="${h.cur}" onchange="updCur(${i},this.value)"></td><td>${W(v)}</td><td><span class="pct-pill ${r>=0?'pp-up':'pp-down'}">${r>=0?'+':''}${r.toFixed(1)}%</span></td><td><button class="btn-sm" onclick="delHolding(${i})">삭제</button></td></tr>`);
   });
-  if(q&&!shown)tb.innerHTML='<tr><td colspan="7" style="text-align:center;color:#999;padding:14px">검색 결과가 없습니다</td></tr>';
+  if(!shown)tb.innerHTML=`<tr><td colspan="7" style="text-align:center;color:#999;padding:14px">${q?'검색 결과가 없습니다':'이 계좌에 종목이 없습니다'}</td></tr>`;
   searchInfo.textContent=q?`'${fSearch.value.trim()}' 검색 결과: ${shown}개`:'현재가는 자동 조회되며, 칸을 직접 수정할 수도 있습니다.';
   totalVal.textContent=W(tot)+'원';
   const pnl=tot-cost,pr=cost?pnl/cost*100:0;
-  totalPnl.innerHTML=`<span class="${pnl>=0?'up':'down'}">${pnl>=0?'+':''}${W(pnl)}원 (${pr>=0?'+':''}${pr.toFixed(1)}%)</span>`;
-  // pie
+  totalPnl.innerHTML=`<span class="${pnl>=0?'up':'down'}">${pnl>=0?'▲':'▼'} ${W(Math.abs(pnl))}원 (${pr>=0?'+':''}${pr.toFixed(1)}%)</span>`;
+  // 계좌별 자산 (총계좌일 때만)
+  const acctTotals=S.accounts.map((a,i)=>{
+    const hs=S.holdings.filter(h=>h.acct===a);
+    const v=hs.reduce((s,h)=>s+valKRW(h),0),c=hs.reduce((s,h)=>s+costKRW(h),0);
+    return {a,i,v,c,n:hs.length};
+  }).filter(x=>x.n>0);
+  const allTot=acctTotals.reduce((s,x)=>s+x.v,0);
+  if(S.view==='ALL'&&acctTotals.length){
+    acctCard.style.display='';
+    acctList.innerHTML=acctTotals.sort((x,y)=>y.v-x.v).map(x=>{
+      const r=x.c?(x.v-x.c)/x.c*100:0;
+      return `<div class="acct-row" onclick="setView('${esc(x.a).replace(/'/g,"\\'")}')"><div class="acct-ico">${ACCT_ICONS[x.i%ACCT_ICONS.length]}</div><div><div class="acct-name">${esc(x.a)}</div><div class="acct-sub">${x.n}종목 · ${allTot?(x.v/allTot*100).toFixed(0):0}%</div></div><div class="acct-amt"><b>${W(x.v)}원</b><div class="${r>=0?'up':'down'}" style="font-size:11px">${r>=0?'+':''}${r.toFixed(1)}%</div></div></div>`;
+    }).join('');
+  }else acctCard.style.display='none';
+  // 파이
+  const viewH=S.holdings.filter(inView);
   let deg=0,grad=[],lg='';
-  S.holdings.forEach((h,i)=>{
+  viewH.forEach((h,i)=>{
     const p=tot?valKRW(h)/tot*360:0,col=COLORS[i%COLORS.length];
     grad.push(`${col} ${deg}deg ${deg+p}deg`);deg+=p;
     lg+=`<span><span class="dot" style="background:${col}"></span>${h.name} ${tot?(valKRW(h)/tot*100).toFixed(0):0}%</span>`;
   });
   pie.style.background=grad.length?`conic-gradient(${grad.join(',')})`:'#eee';
   legend.innerHTML=lg||'<span class="small">종목을 추가하면 표시됩니다</span>';
-  // allocation bars
-  const sorted=S.holdings.map((h,i)=>({h,i,v:valKRW(h)})).sort((a,b)=>b.v-a.v);
+  // 상위 보유 종목
+  const sorted=viewH.map((h,i)=>({h,i,v:valKRW(h),c:costKRW(h)})).sort((a,b)=>b.v-a.v);
   const maxV=sorted.length?sorted[0].v:0;
-  allocBars.innerHTML=sorted.map(o=>{
+  topCnt.textContent=sorted.length?sorted.length+'개 종목':'';
+  allocBars.innerHTML=sorted.length?sorted.map(o=>{
     const pct=tot?o.v/tot*100:0,wd=maxV?o.v/maxV*100:0,col=COLORS[o.i%COLORS.length];
+    const r=o.c?(o.v-o.c)/o.c*100:0;
     const hit=q&&(o.h.name.toLowerCase().includes(q)||(o.h.sym&&o.h.sym.toLowerCase().includes(q)));
-    return `<div class="abar-row${hit?' hit':''}"><span class="abar-label">${hilite(o.h.name,q)}</span><div class="abar-track"><div class="abar-fill" style="width:${wd}%;background:${col}"></div></div><span class="abar-val">${W(o.v)}원 · ${pct.toFixed(1)}%</span></div>`;
-  }).join('');
-  // history chart
-  const H=S.history;
-  if(H.length<2){chart.innerHTML='<p class="small" style="text-align:center">기록이 2개 이상 쌓이면 그래프가 그려집니다 ('+H.length+'개)</p>';return}
+    return `<div class="top-item${hit?' hit':''}">
+      <div class="top-line1"><span class="dot" style="background:${col}"></span><span class="top-name">${hilite(o.h.name,q)}</span><span class="top-val">${KM(o.v)}</span><span class="top-ret ${r>=0?'ret-up':'ret-down'}">${r>=0?'↗':'↘'} ${r>=0?'+':''}${r.toFixed(1)}%</span></div>
+      <div class="top-bar"><div class="top-fill" style="width:${wd}%;background:linear-gradient(90deg,${col},${col}b3)"></div></div>
+      <div class="top-line2"><span>${o.h.sym?o.h.sym.split('.')[0]:MKT_LABEL[o.h.mkt]}</span><span>${pct.toFixed(1)}%</span></div>
+    </div>`;
+  }).join(''):'<p class="small" style="text-align:center;padding:8px">종목을 추가하면 표시됩니다</p>';
+  // 자산 추이 (계좌별)
+  chartHint.textContent=S.view==='ALL'
+    ?'아래 버튼을 누르면 오늘 날짜로 전체·계좌별 자산이 기록됩니다.'
+    :`'${S.view}' 계좌의 추이입니다. 기록 버튼은 모든 계좌를 함께 기록합니다.`;
+  const series=S.history.map(x=>({d:x.d,v:S.view==='ALL'?x.total:(x.by?x.by[S.view]:undefined)})).filter(x=>x.v!=null);
+  if(series.length<2){chart.innerHTML='<p class="small" style="text-align:center">기록이 2개 이상 쌓이면 그래프가 그려집니다 ('+series.length+'개)</p>';return}
   const w=480,ht=180,pad=36;
-  const min=Math.min(...H.map(x=>x.total)),max=Math.max(...H.map(x=>x.total));
-  const X=i=>pad+i*(w-pad-10)/(H.length-1);
+  const min=Math.min(...series.map(x=>x.v)),max=Math.max(...series.map(x=>x.v));
+  const X=i=>pad+i*(w-pad-10)/(series.length-1);
   const Y=v=>max===min?ht/2:ht-20-((v-min)/(max-min))*(ht-50);
-  let pts=H.map((x,i)=>`${X(i)},${Y(x.total)}`).join(' ');
-  let lbl=H.map((x,i)=>(i===0||i===H.length-1)?`<text x="${X(i)}" y="${ht-4}" font-size="10" fill="#888" text-anchor="middle">${x.d.slice(5)}</text>`:'').join('');
-  chart.innerHTML=`<svg viewBox="0 0 ${w} ${ht}"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b5bdb" stop-opacity=".25"/><stop offset="1" stop-color="#3b5bdb" stop-opacity="0"/></linearGradient></defs><text x="4" y="${Y(max)+4}" font-size="10" fill="#888">${W(max/10000)}만</text><text x="4" y="${Y(min)+4}" font-size="10" fill="#888">${W(min/10000)}만</text><polygon points="${X(0)},${ht-20} ${pts} ${X(H.length-1)},${ht-20}" fill="url(#ag)"/><polyline points="${pts}" fill="none" stroke="#3b5bdb" stroke-width="2.5"/>${H.map((x,i)=>`<circle cx="${X(i)}" cy="${Y(x.total)}" r="3" fill="#3b5bdb"/>`).join('')}${lbl}</svg>`;
+  let pts=series.map((x,i)=>`${X(i)},${Y(x.v)}`).join(' ');
+  let lbl=series.map((x,i)=>(i===0||i===series.length-1)?`<text x="${X(i)}" y="${ht-4}" font-size="10" fill="#888" text-anchor="middle">${x.d.slice(5)}</text>`:'').join('');
+  chart.innerHTML=`<svg viewBox="0 0 ${w} ${ht}"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f46e5" stop-opacity=".25"/><stop offset="1" stop-color="#4f46e5" stop-opacity="0"/></linearGradient></defs><text x="4" y="${Y(max)+4}" font-size="10" fill="#888">${W(max/10000)}만</text><text x="4" y="${Y(min)+4}" font-size="10" fill="#888">${W(min/10000)}만</text><polygon points="${X(0)},${ht-20} ${pts} ${X(series.length-1)},${ht-20}" fill="url(#ag)"/><polyline points="${pts}" fill="none" stroke="#4f46e5" stroke-width="2.5"/>${series.map((x,i)=>`<circle cx="${X(i)}" cy="${Y(x.v)}" r="3" fill="#4f46e5"/>`).join('')}${lbl}</svg>`;
 }
 save();
 render();
