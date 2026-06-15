@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-06-15</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:104px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert{border:2px solid #c97a13;background:#fffaf2;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c}
+  .rebound{background:#eafaef;border:1px solid #bfe6c9;border-radius:10px;padding:10px;font-size:12px;color:#1f7a39;margin-top:8px}
+  .intraday{background:#fdeef0;border:1px solid #f4c4cb;border-radius:10px;padding:10px;font-size:12px;color:#b03048;margin-top:8px}
+</style>
+</head>
+<body><div class="wrap">
+
+<div class="card alert">
+  <div class="alert-head"><span class="alert-light">🟡</span><span class="alert-title">리스크 경고등: 주의</span></div>
+  <p class="small"><b>판정 근거:</b> 단 하나, 🟡'주의' 조건인 <b>환율</b>만 남았습니다. ①원/달러 <b>1,511.4원</b>(개장 -8.4원 하락했지만 여전히 1,500원 상회 → 🟡). 반면 ②<b>VIX 약 17.7</b>(20선 아래 안정, 🟢) ③외국인이 <b>이틀째 순매수</b>(연속 순매도 종료, 🟢) ④코스피 <b>+5%대 급등</b>(급락 아님, 🟢)으로 나머지 위험 신호는 꺼져 있습니다. 어제와 같은 🟡이지만, 미·이란 종전 호재로 분위기는 더 가벼워졌습니다.</p>
+</div>
+
+<div class="card">
+  <h1>🇰🇷 한국 주식시장 리포트</h1>
+  <div class="date">2026년 6월 15일(월) · ⚠️ 장중(오후 1시대) 잠정치 기준</div>
+  <div class="intraday">⚠️ <b>안내:</b> 본 리포트는 정규장 마감(15:30) 이전 시점에 자동 생성되어, 지수·수급 수치는 <b>당일 장중(오후 1시대) 잠정치</b>입니다. 최종 종가·확정 순매수 금액은 다소 달라질 수 있습니다.</div>
+  <p class="small" style="margin-top:8px">한 줄 요약: <b>'미·이란 종전 합의 → 8,500선 회복' — 코스피가 장 초반 +5%대 급등(장중 고점 8,603.48)하며 2거래일 연속 매수 사이드카가 발동됐습니다.</b> 미국·이란이 호르무즈 해협 재개방을 담은 <b>종전 양해각서(MOU)를 현지시간 19일 서명</b>하기로 했다는 소식에 106일 전쟁이 사실상 종료, 위험선호가 살아나며 외국인이 이틀째 '사자'에 나섰습니다.</p>
+  <div class="rebound">🟢 <b>외국인 이틀 연속 매수 + 종전 모멘텀</b> — 24거래일 연속 순매도를 끊고 지난 12일(+2.1조) 매수로 전환한 외국인이 오늘도 순매수를 유지. 기관도 쌍끌이로 가세하며 삼성전자·SK하이닉스 등 대형주가 일제히 급등했습니다.</div>
+</div>
+
+<div class="card">
+  <h2>📊 주요 지수 (6/15 월 · 장중 잠정)</h2>
+  <table>
+    <tr><th>지수</th><th>지수값(장중)</th><th>등락(장중)</th></tr>
+    <tr><td>코스피</td><td>약 8,530~8,580</td><td class="up">+5%대 (장중 고점 8,603.48)</td></tr>
+    <tr><td>코스닥</td><td>약 1,029~1,048</td><td class="up">보합~+1%대 (혼조)</td></tr>
+    <tr><td>원/달러 환율</td><td>1,511.4원</td><td class="down">-8.4원 (원화 강세)</td></tr>
+  </table>
+  <p class="small" style="margin-top:8px"><b>📊 시장 폭(상승/하락 종목 수):</b> 정확한 등락 종목 수는 데이터 미확보. 다만 업종별로 <b>은행(보합)·건설(-3.2%)·섬유의류·오락문화를 제외한 대다수 업종이 상승</b>해 폭넓은 매수세였습니다. 종전 소비확대 기대에 <b>유통(+7.87%)</b>이 가장 강했고 전기가스(+7.63%)·보험(+6.18%)·전기전자(+6.07%)·운송창고가 뒤를 이었습니다. 코스피(+5%대)가 코스닥(보합~+1%)보다 강해 '외국인이 담는 대형주'로 매수가 집중됐습니다.</p>
+</div>
+
+<div class="card">
+  <h2>🇺🇸 미국 주요 변동사항</h2>
+  <ul>
+    <li><b>미·이란 종전 MOU 합의(핵심):</b> 양국이 <b>호르무즈 해협 재개방</b> 등을 담은 종전 양해각서를 현지시간 <b>6월 19일 서명</b>하기로 합의. 106일간 이어진 미국·이스라엘 vs 이란 전쟁이 사실상 종료되며, 이것이 오늘 한국 증시 급등의 직접 트리거였습니다.</li>
+    <li><b>유가 급락 → 인플레 우려 완화:</b> 7월물 WTI가 <b>-3.23% $84.88</b>로 4월 17일 이후 최저. 유가발 물가·금리 부담이 줄며 위험자산 선호가 회복됐습니다.</li>
+    <li><b>지난주 말 뉴욕증시 상승:</b> 6/12(금) 다우 <b>+0.70%</b>·S&amp;P500 <b>+0.50%</b>(7,431)·나스닥 <b>+0.31%</b>. 스페이스X의 나스닥 데뷔(공모가 상회)도 투심을 부양. VIX는 약 <b>17.7</b>로 안정.</li>
+    <li><b>경계 요인 — FOMC:</b> 6/16~17 FOMC가 임박. 채권금리·달러가 고점에서 소폭 내리는 데 그쳐, 금리 변수발 노이즈 가능성은 남아 있습니다(대신증권).</li>
+  </ul>
+  <div class="note" style="margin-top:8px">➡️ 한 줄 정리: <b>'종전 합의 → 유가↓·긴장↓ → 위험선호 회복 → 외국인 이틀째 한국 매수'</b>의 연쇄. 다만 환율이 아직 1,500원대이고 FOMC가 코앞이라, 랠리의 '지속성'은 이번 주 통과 여부에 달렸습니다.</div>
+</div>
+
+<div class="card">
+  <h2>💰 투자주체별 수급 (6/15 장중 · 코스피 기준 100 바)</h2>
+  <p class="small" style="margin-bottom:6px">코스피 오전(11시대) 잠정치 · 가장 큰 금액(개인 매도)을 100으로 환산</p>
+  <div class="bar-row"><span class="bar-label">개인</span><div class="bar-track"><div class="bar-sell" style="width:100%"></div></div><span class="bar-val">매도 약 1조1,971억</span></div>
+  <div class="bar-row"><span class="bar-label">기관</span><div class="bar-track"><div class="bar-buy" style="width:78%"></div></div><span class="bar-val">매수 약 9,326억</span></div>
+  <div class="bar-row"><span class="bar-label">외국인</span><div class="bar-track"><div class="bar-buy" style="width:24%"></div></div><span class="bar-val">매수 약 2,848억</span></div>
+  <p class="small" style="margin-top:8px">🔴 빨강=매수, 🔵 파랑=매도. 쉽게 말해: 코스피에서 <b>기관(+9,326억)·외국인(+2,848억)이 쌍끌이로 사들였고</b>, 그동안 저가매수하던 개인이 차익실현(-1조2천억)에 나서며 수급이 뒤집혔습니다. 외국인 순매수는 아직 소규모지만 <b>'이틀 연속 매수'라는 방향성</b>이 핵심입니다.</p>
+  <p class="small" style="margin-top:6px;color:#1f7a39"><b>↔ 코스닥은 외국인 매도:</b> 코스닥에서는 외국인이 홀로 <b>-5,259억</b> 순매도, 개인(+5,224억)·기관(+153억)이 받았습니다. 외국인 자금이 코스닥보다 <b>코스피 대형주에 집중</b>됐습니다.</p>
+</div>
+
+<div class="card">
+  <h2>🚀 주도 섹터: 반도체 대형주 + 종전 수혜(항공·유통) — 강세 지속</h2>
+  <p style="font-size:13px;margin-bottom:8px">
+    <span class="tag tag-green">강세 (외국인·기관 쌍끌이)</span>
+    <span class="tag tag-gray">2025년 말 시작 · 약 6개월(29주차) 진행 중</span>
+  </p>
+  <div class="gauge"><div style="width:78%"></div></div>
+  <p class="small">강도: 강세 (78/100) — 어제 75에서 소폭 격상. <b>SK하이닉스 +7.86%('230만닉스' 회복)·삼성전자 +4.96%</b>가 지수를 견인했고, 종전에 따른 유가 급락으로 <b>항공주(제주항공 +24.65%·트리니티항공 +21.80%)</b>와 소비 기대의 <b>유통(+7.87%)</b>이 동반 급등했습니다. 삼성전기·삼성물산은 +12%대.</p>
+  <ul style="margin-top:10px">
+    <li><b>왜 주도주인가?</b> ①AI·HBM 펀더멘털(반도체) + ②종전→유가하락→비용절감(항공) + ③소비회복 기대(유통)가 동시에 작동. 외국인·기관이 대형주를 함께 담았습니다.</li>
+    <li><b>지금 상황:</b> 반도체 대형주가 중심을 잡고, '종전 수혜주(항공·유통·운송)'가 단기 테마로 가세하는 폭넓은 강세 구간입니다.</li>
+    <li><b>체크포인트:</b> FOMC(6/16~17)와 MOU 최종 서명(6/19)을 무난히 넘기고 외국인 순매수가 이어져야 '강세'가 추세로 굳어집니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>📅 이번 주 주요 일정</h2>
+  <div class="sched">
+    <div class="kv"><span>6/16(화)</span><span>미국 5월 소매판매 — 소비 둔화/견조 점검</span></div>
+    <div class="kv"><span>6/16~17</span><span>FOMC·점도표 (결과 한국시간 18일 새벽) — <b>이번 주 최대 이벤트</b>, 금리 경로 가늠자</span></div>
+    <div class="kv"><span>6/18(목)</span><span>FOMC 결과 소화 + 미 신규실업수당청구 — 외국인 수급 방향 분수령</span></div>
+    <div class="kv"><span>6/19(금)</span><span>미·이란 종전 MOU <b>공식 서명 예정</b> — 종전 모멘텀 확인/되돌림 분기점</span></div>
+  </div>
+  <p class="small" style="margin-top:8px">한국은행 기준금리는 2.50% 유지 중(다음 금통위 7월 예정). 6월 선물·옵션 동시만기(6/11)는 이미 지났습니다. 환율이 1,511원으로 내렸지만 여전히 높아 외환당국의 안정 의지가 지속됩니다.</p>
+</div>
+
+<div class="card">
+  <h2>🛡️ 리스크 지표 점검</h2>
+  <div class="kv"><span>원/달러 환율</span><span class="down">1,511.4원 (🟡 1,500 상회, 단 -8.4원 하락)</span></div>
+  <div class="kv"><span>VIX(미국 공포지수)</span><span class="down">약 17.7 (🟢 20선 아래 안정)</span></div>
+  <div class="kv"><span>외국인 순매수(코스피)</span><span class="up">+2,848억 장중 (🟢 이틀째 순매수)</span></div>
+  <div class="kv"><span>코스피 일간 등락</span><span class="up">+5%대 (🟢 급락 아님)</span></div>
+  <div class="kv"><span>국제유가(WTI)</span><span class="down">$84.88 (-3.23%, 4/17 이후 최저)</span></div>
+  <p class="small" style="margin-top:8px"><b>환율 하나만 빼고 위험 신호가 꺼졌습니다.</b> VIX 안정·외국인 복귀·유가 급락이 겹쳐 분위기는 크게 개선. 다만 반등의 '지속성'은 FOMC(6/16~17)와 외국인 매수 연속성에 달렸습니다.</p>
+</div>
+
+<div class="card">
+  <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+  <ul>
+    <li><b>항공·여행·유통(종전 수혜):</b> 유가하락+소비회복이 맞물리는 종전 직후 단기 모멘텀. 제주항공 등 항공주에 거래량 급증 — 단 변동성 큰 테마로 분할 접근.</li>
+    <li><b>증권·은행 (밸류업·배당):</b> 외국인 복귀·거래대금 급증 국면의 대표 수혜. 상법 개정·주주환원과 맞물려 실적·수급 동반 개선.</li>
+    <li><b>바이오·헬스케어:</b> 알테오젠 등 기술수출 모멘텀. 금리·관세 변수에서 상대적으로 자유로운 성장주로 거래량 점증.</li>
+    <li><b>로봇·피지컬 AI:</b> 위험선호 회복 시 탄력이 큰 정부 국산화 테마. 레인보우로보틱스 등 거래량 관찰.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+  <ul>
+    <li><b>외환 안정 의지:</b> 환율이 1,511원으로 내렸지만 여전히 1,500원대. 당국의 미세조정·안정 의지가 외국인 복귀와 맞물려 추가 하향 안정에 우호적.</li>
+    <li><b>AI·반도체 국가 전략:</b> 이재명 정부의 확장재정 + AI 인프라 투자 기조 유지. 외국인 복귀로 반도체 대형주 중심 정책 수혜가 즉각 가격에 반영.</li>
+    <li><b>상법 개정·주주환원:</b> 자사주 소각·배당 확대 → 증권·은행·지주 밸류업 모멘텀 지속. 거래대금 급증은 증권주에 직접 호재.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>💭 Claude의 생각 (참고용)</h2>
+  <div class="opinion">
+    오늘 +5%대 급등의 본질은 어제(6/12)와 마찬가지로 <b>'펀더멘털 변화'가 아니라 '리스크 해소'</b>입니다. 미·이란이 호르무즈 재개방을 포함한 <b>종전 MOU를 19일 서명</b>하기로 하면서 ①유가가 80달러대로 빠지고 ②전쟁 리스크가 걷히고 ③달러·금리 압력이 완화되자, 24거래일 내내 팔던 <b>외국인이 이틀 연속 한국 대형주로 복귀</b>한 것이 핵심입니다. 다만 세 가지는 냉정하게 봐야 합니다. 첫째, 본 리포트는 <b>장중 잠정치</b>로 마감까지 변동성이 큽니다 — 5월에도 8,000선 첫 돌파 직후 차익실현으로 매도 사이드카가 터진 전례가 있습니다. 둘째, <b>외국인 순매수 규모가 아직 소규모(+2,848억)</b>여서 '추세 전환'이라 단정하기 이릅니다. 최근 한 달 누적 -75조를 판 자금이 본격 돌아오는지 며칠 더 확인이 필요합니다. 셋째, <b>FOMC(6/16~17)</b>가 코앞입니다 — 연준이 매파적이면 오늘의 안도가 되돌려질 수 있습니다. 즉 오늘은 <b>'낙폭과대 + 종전 호재'가 겹친 강한 되돌림</b>이고, 추세 상승으로 이어지려면 외국인 매수 연속성 + FOMC 무난 통과 + 19일 서명 확인이 필요합니다. 추격매수는 분할로, 종전 테마(항공·유통)는 변동성이 크니 신중하게 대응하는 구간입니다.
+  </div>
+</div>
+
+<div class="disclaimer">본 자료는 경향성 참고용으로 작성된 것이며 투자 권유가 아닙니다.<br>지수·수급은 장중 잠정치이며 최종 종가와 다를 수 있습니다. 모든 투자 판단과 책임은 투자자 본인에게 있습니다.</div>
+
+</div></body>
+</html>
