@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-06-22</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:104px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert{border:2px solid #c97a13;background:#fffaf2;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c}
+  .rebound{background:#eafaef;border:1px solid #bfe6c9;border-radius:10px;padding:10px;font-size:12px;color:#1f7a39;margin-top:8px}
+  .intraday{background:#fdeef0;border:1px solid #f4c4cb;border-radius:10px;padding:10px;font-size:12px;color:#b03048;margin-top:8px}
+</style>
+</head>
+<body><div class="wrap">
+
+<div class="card alert">
+  <div class="alert-head"><span class="alert-light">🟡</span><span class="alert-title">리스크 경고등: 주의</span></div>
+  <p class="small"><b>판정 근거:</b> '주의' 조건 중 <b>환율</b>이 켜져 있습니다. ①원/달러 <b>약 1,530원</b>(1,500선 위 <b>24거래일 연속</b> → 🟡, 2009년 금융위기 11일 기록 경신. 단 1,550 위험선엔 미달) ②<b>VIX 약 18</b>(6/18 목 마지막 종가, 美 6/19 휴장 + 주말 미·이란 합의로 위험선호 개선 → 🟢) ③외국인이 코스피를 <b>3.4조 대량 순매도</b>했으나 6/18엔 순매수해 <b>10거래일 연속과는 거리가 멂</b>(🟢) ④코스피 <b>+0.69% 사상 최고 종가</b>(급락 아님 → 🟢). 위험 신호(환율 1,550·VIX 28·코스피 -3%)는 없으나, <b>장 초반 -1.08%→종가 +0.69%로 오간 변동성</b>과 <b>반도체 단일 쏠림</b>이 주의 요소입니다.</p>
+</div>
+
+<div class="card">
+  <h1>🇰🇷 한국 주식시장 리포트</h1>
+  <div class="date">2026년 6월 22일(월) · 정규장 <b>마감 확정치</b> 기준</div>
+  <p class="small" style="margin-top:8px">한 줄 요약: <b>'아침엔 지옥, 마감엔 사상 최고' — 코스피는 -1.08%(8,954)로 출발해 8,900선까지 밀렸다가 미·이란 협상 타결 소식에 급반등, 9,114.55(+0.69%)로 사상 최고 종가를 새로 썼습니다.</b> <b>SK하이닉스(+5.16%)가 삼성전자를 제치고 26년 만에 시총 1위</b>에 올랐습니다. 다만 외국인이 3.4조를 던지고 대부분 업종이 하락한 <b>극심한 양극화 장세</b>였습니다.</p>
+  <div class="rebound">✅ <b>오늘의 핵심 = '미·이란 합의가 살린 신고가'</b> — 주말 스위스 회담에서 양국이 적대행위 종식 MOU 이행과 <b>호르무즈 해협 안전통항</b>에 합의하면서, 금요일 증시를 무너뜨렸던 중동 리스크가 완화됐습니다. 여기에 메모리 업황 기대가 더해져 반도체가 지수를 끌어올렸습니다.</div>
+  <div class="intraday" style="margin-top:8px">⚠️ <b>단, 지수만 좋았습니다.</b> 상승은 SK하이닉스·SK스퀘어 등 소수 반도체주에 집중됐고, 현대차(-5.22%)·LG엔솔(-4.70%)·삼성생명(-9.36%) 등 시총 상위와 음식료·화학·제약 등 대부분 업종은 하락했습니다.</div>
+</div>
+
+<div class="card">
+  <h2>📊 주요 지수 (6/22 월 · 마감 확정)</h2>
+  <table>
+    <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+    <tr><td>코스피</td><td>9,114.55</td><td class="up">+62.13 (+0.69%)</td></tr>
+    <tr><td>코스닥</td><td>968.40</td><td class="up">+1.81 (+0.19%)</td></tr>
+    <tr><td>원/달러 환율</td><td>약 1,530원</td><td class="down">1,500선 위 24거래일 연속</td></tr>
+  </table>
+  <p class="small" style="margin-top:8px"><b>📊 시장 폭(상승/하락 종목 수):</b> 정확한 등락 종목 수는 <b>데이터 미확보</b>. 그러나 시장 폭은 지수와 정반대로 <b>매우 좁았습니다.</b> 오른 업종은 <b>전기전자(+2.02%)·의료정밀(+3.01%)·유통(+2.30%)·제조(+1.01%)</b> 정도뿐이고, <b>섬유의복(-4.15%)·제약(-3.67%)·음식료담배(-2.85%)·금속(-2.56%)·화학(-2.24%)</b> 등 대부분이 내렸습니다. 시총 상위도 SK스퀘어(+10.67%)·삼성물산(+5.80%)만 강했을 뿐 <b>현대차(-5.22%)·LG엔솔(-4.70%)·삼성생명(-9.36%)·HD현대중공업(-4.65%)·두산에너빌(-3.78%)</b>은 급락. 코스피 사상 최고치는 '소수 반도체 대형주가 끌어올린 신고가'입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🇺🇸 미국 주요 변동사항 (있음 — 미·이란 합의 / 美 증시 6/19 휴장)</h2>
+  <ul>
+    <li><b>미·이란 고위급 회담 타결(핵심·긍정):</b> 주말 스위스에서 양국이 적대행위 종식 MOU 이행과 <b>호르무즈 해협 안전통항 직통채널(60일)</b>, 레바논 휴전 '디컨플릭션 셀'에 합의. 회담은 진통(이란 80분 만에 퇴장, 트럼프 위협)이었으나 결렬은 면했습니다. → <b>금요일 급락을 부른 중동 리스크가 풀리며 오늘 장중 반등의 방아쇠</b>가 됐습니다.</li>
+    <li><b>국제유가 진정:</b> 종전 기대에 브렌트유가 $81.69→$79.11로 출렁이며 하향 압력. 유가 안정은 한국 같은 수입국엔 호재입니다.</li>
+    <li><b>美 증시 휴장·선물 약보합:</b> 미국은 6/19(금) 준틴스로 휴장(마지막 거래일 6/18). 오늘 밤 개장 앞두고 선물은 다우 -0.12%·S&amp;P -0.24%·나스닥 -0.26% 약보합. 비트코인 $65,617.</li>
+    <li><b>매파 연준·강달러(배경 부담):</b> 6월 FOMC(워시 의장)는 3.50~3.75% 동결했으나 점도표가 연말 경로를 <b>'인하 1회→인상 1회'로 선회</b>. 달러인덱스 13개월 최고로 원화 약세 지속. 다음 달 <b>美 무역법 301조 관세</b> 예고도 부담입니다.</li>
+  </ul>
+  <div class="note" style="margin-top:8px">➡️ 한 줄 정리: 주말 <b>미·이란 합의(긍정)</b>가 중동 악재를 걷어내 오늘 반등을 도왔습니다. 다만 <b>매파 연준·강달러·관세</b>라는 거시 부담은 그대로여서, 환율과 수급의 불안은 이어집니다.</div>
+</div>
+
+<div class="card">
+  <h2>💰 투자주체별 수급 (6/22 마감 · 코스피 기준 100 바)</h2>
+  <p class="small" style="margin-bottom:6px">코스피 확정치 · 가장 큰 금액(외국인 매도)을 100으로 환산</p>
+  <div class="bar-row"><span class="bar-label">외국인</span><div class="bar-track"><div class="bar-sell" style="width:100%"></div></div><span class="bar-val">매도 34,361억</span></div>
+  <div class="bar-row"><span class="bar-label">개인</span><div class="bar-track"><div class="bar-buy" style="width:90%"></div></div><span class="bar-val">매수 30,758억</span></div>
+  <div class="bar-row"><span class="bar-label">기관</span><div class="bar-track"><div class="bar-buy" style="width:8%"></div></div><span class="bar-val">매수 2,854억</span></div>
+  <p class="small" style="margin-top:8px">🔴 빨강=매수, 🔵 파랑=매도. 쉽게 말해: <b>외국인이 코스피에서 3.4조를 대량 순매도</b>했고(차익실현·패시브 리밸런싱 성격), <b>개인 3.08조·기관 0.29조</b>가 받아내며 지수를 신고가로 끌어올렸습니다. 개인이 떠받친 신고가라는 점은 추세의 견고함보다 <b>레버리지 경계</b>를 키웁니다.</p>
+  <p class="small" style="margin-top:6px;color:#1763e6"><b>↔ 코스닥 — 정반대 구도:</b> 코스닥에서는 <b>외국인(+3,658억)·기관(+2,760억)이 매수</b>, <b>개인(-5,176억)이 매도</b>했습니다. 반도체 장비주(윈아이아이피에스 +10.58% 등) 중심으로 외국인 자금이 들어왔습니다.</p>
+</div>
+
+<div class="card">
+  <h2>🚀 주도 섹터: 반도체 — SK하이닉스, 26년 만에 '대장株' 등극</h2>
+  <p style="font-size:13px;margin-bottom:8px">
+    <span class="tag tag-orange">중강세·과열 경계 (반도체 단일 쏠림)</span>
+    <span class="tag tag-gray">2025년 말 시작 · 약 6개월(33주차) 진행 중</span>
+  </p>
+  <div class="gauge"><div style="width:86%"></div></div>
+  <p class="small">강도: 강세·과열 경계 (86/100). <b>SK하이닉스가 +5.16%(291.9만원) 급등하며 시총 2,080조로 삼성전자(보통주 2,066조)를 제치고 코스피 시총 1위</b>에 올랐습니다. 2000년 이후 <b>26년 만의 대장주 교체</b>입니다. (삼성전자 우선주 179조까지 합치면 총액은 삼성이 여전히 우위.) 삼성전자는 -0.14% 보합. 코스닥에서도 <b>윈아이아이피에스 +10.58%·이오테크닉스 +3.91%·주성엔지니어링 +2.49%</b> 등 반도체 장비주가 강세였습니다.</p>
+  <ul style="margin-top:10px">
+    <li><b>왜 주도주인가?</b> 대신증권 이경민 연구원: "메모리 병목發 업사이클 속에 <b>메모리 집중도가 높은 SK하이닉스의 모멘텀이 더 두드러졌고</b>, 2분기 실적 기대와 견조한 한국 수출이 반도체 강세를 이끌었다."</li>
+    <li><b>지금 상황:</b> '강세'이나 <b>쏠림·과열</b> 경계 구간. 지수는 신고가지만 대부분 업종이 하락한 양극화가 보여주듯 시장 전반의 동반 강세는 아닙니다.</li>
+    <li><b>체크포인트:</b> <b>6/24 마이크론 실적</b>이 업황을 가릅니다. 호조 시 추세 연장, 부진(브로드컴 실망 전례) 시 쏠린 만큼 되돌림 위험도 큽니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>📅 이번 주 주요 일정</h2>
+  <div class="sched">
+    <div class="kv"><span>6/23(화)</span><span>한국은행 <b>6월 소비자동향조사</b>(기대인플레 2.8%→3% 반등 여부)·금융안정보고서 / 美 페덱스 실적</span></div>
+    <div class="kv"><span>6/24(수)</span><span><b>마이크론 실적</b>(회계 3Q) — 메모리 업황 핵심 가늠자, 삼성·SK하이닉스 직결 / MSCI 관찰대상국 리뷰</span></div>
+    <div class="kv"><span>6/25(목)</span><span><b>美 5월 PCE 물가</b>(근원 +3.4% 전망, 2023년말 후 최고) + 1Q GDP 확정 — 매파 FOMC 후 첫 핵심 물가</span></div>
+    <div class="kv"><span>7월</span><span><b>한국은행 금통위</b> — 시장은 '금리 <b>인상</b>'을 기정사실화(현 2.50%, 한·미 금리차 1%p+)</span></div>
+  </div>
+  <p class="small" style="margin-top:8px">6월 선물·옵션 동시만기(6/11)는 이미 지났고, 연준 다음 FOMC는 7월 하순입니다. 당분간 코스피 변수는 <b>미 금리·환율·반도체 실적(마이크론)·중동 합의 이행</b>입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🛡️ 리스크 지표 점검</h2>
+  <div class="kv"><span>원/달러 환율</span><span class="down">약 1,530원 (🟡 1,500선 위 24거래일 연속)</span></div>
+  <div class="kv"><span>VIX(미국 공포지수)</span><span>약 18 (🟢 6/18 종가, 낮은 수준)</span></div>
+  <div class="kv"><span>외국인 순매수(코스피)</span><span class="down">-3조4,361억 (대량 매도, 단 6/18 매수로 연속성 약함)</span></div>
+  <div class="kv"><span>코스피 일간 등락</span><span class="up">+0.69% (🟢 사상 최고 종가)</span></div>
+  <div class="kv"><span>한·미 기준금리차</span><span class="down">2.50% vs 3.50~3.75% (1%p+ · 원화 약세 압력)</span></div>
+  <div class="kv"><span>이벤트 리스크</span><span class="up">6/24 마이크론·6/25 PCE·7월 한은 인상</span></div>
+  <p class="small" style="margin-top:8px"><b>환율 하나가 '주의' 신호로 켜져 있습니다.</b> 1,530원대로 1,500선 위에 머물지만 1,550 위험선엔 미달입니다. 위험 신호(환율 1,550·VIX 28·코스피 -3%)는 없으나, <b>한·미 금리차가 부른 구조적 원화 약세</b>와 <b>반도체 단일 쏠림</b>이 단기 변수입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+  <ul>
+    <li><b>반도체 소부장(장비):</b> 오늘 윈아이아이피에스(+10.58%)·이오테크닉스(+3.91%)·주성엔지니어링(+2.49%)이 대형주보다 강했습니다. 대형 반도체 쏠림이 <b>장비주로 온기가 확산</b>되는 조짐 + 마이크론·HBM 증설 사이클. 거래량 점증 1순위.</li>
+    <li><b>금융·보험:</b> 연준의 '인상' 피벗 + 한은 7월 인상 기정사실 → <b>순이자마진 수혜</b> + 밸류업(주주환원). 고금리 장기화의 직접 수혜 후보. (단 오늘 삼성생명 -9.36%는 배당락·개별 이슈로 보임.)</li>
+    <li><b>조선·방산:</b> 중동 종전·재건 수요 + 이재명 정부 방산 수출 드라이브 + 수주 사이클. 오늘은 차익매물에 눌렸으나 합의 이행 시 재부각 가능.</li>
+    <li><b>(주의) 바이오·성장주:</b> 금리 '인상' 환경은 역풍. 오늘도 제약 -3.67%. HLB(+5.61%) 등 개별 기술수출 모멘텀만 선별 접근.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+  <ul>
+    <li><b>AI·반도체 국가 전략:</b> 정부가 아산을 AI·반도체 허브로 육성, 현대차·전북 새만금 투자(반도체 plant 모델). SK하이닉스 시총 1위 등극이 정책과 정면으로 맞물립니다.</li>
+    <li><b>상법 개정·주주환원(밸류업):</b> 자사주 소각·배당 확대 → 증권·은행·보험·지주. 금리 상승기 금융 강세와 시너지.</li>
+    <li><b>보유세 개편(부동산):</b> 종부세 최고세율 인상·1주택 비거주자 양도세 혜택 축소 추진(이재명 대통령 "보유세 선진국 수준 필요"). 부동산 자금의 <b>증시 이동</b> 가능성에 주목.</li>
+    <li><b>외환 안정 의지:</b> 환율이 1,500선 위 24거래일째로 고착된 만큼, 당국의 미세조정·구두개입 가능성과 외국인 수급 추이가 관건입니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>💭 Claude의 생각 (참고용)</h2>
+  <div class="opinion">
+    오늘은 '신고가(9,114.55)'라는 숫자보다 그 <b>속살</b>을 봐야 합니다. 첫째, 지수는 사상 최고지만 <b>시장 폭은 극도로 좁았습니다.</b> SK하이닉스(+5.16%)·SK스퀘어(+10.67%) 등 소수만 끌어올렸고, 현대차·LG엔솔·삼성생명 등 시총 상위와 음식료·화학·제약·금속 등 대부분 업종은 내렸습니다. '지수 신고가 ≠ 내 종목 상승'이 극단적으로 벌어진 날입니다. 둘째, <b>SK하이닉스가 26년 만에 삼성전자를 제치고 시총 1위</b>에 오른 것은 상징적이지만, 동시에 반도체(특히 HBM·메모리) 한 곳으로의 <b>쏠림이 정점</b>에 다다랐다는 신호일 수 있습니다. 셋째, <b>수급이 불안합니다.</b> 외국인이 코스피에서 3.4조를 던졌고(개인 3.08조가 방어), 환율은 1,500선 위 24거래일째로 2009년 위기 기록을 넘었습니다. 넷째, <b>거시 환경이 바뀌었습니다.</b> 연준이 '인하'에서 '인상'으로 돌아섰고 한은도 7월 인상이 기정사실입니다. 고금리는 성장·바이오엔 역풍, 금융엔 순풍입니다. 호재(미·이란 합의로 중동 리스크 완화)는 분명하지만, 그 위에 올라탄 상승이 '소수 반도체 쏠림'이라는 점이 약점입니다. 결론적으로 오늘은 <b>'반도체가 홀로 띄운 신고가 — 폭은 좁고 환율·수급은 경고 중'</b>입니다. 6/24 마이크론 실적이 이 쏠림을 정당화(추세 연장)할지, 되돌릴(쏠린 만큼 변동성)지를 가릅니다. 신고가 흥분보다, 단일 테마 추격은 분할로, 6/24·6/25 지표 확인 후 대응하는 신중함이 합리적입니다. 금리·환율 국면에선 수혜(금융)와 역풍(성장주)을 구분하는 균형도 필요합니다.
+  </div>
+</div>
+
+<div class="disclaimer">본 자료는 경향성 참고용으로 작성된 것이며 투자 권유가 아닙니다.<br>지수·수급은 6/22 마감 확정치 기준이며, 환율·VIX 등 일부 지표는 보도·추정치를 포함합니다. 모든 투자 판단과 책임은 투자자 본인에게 있습니다.</div>
+
+</div></body>
+</html>
