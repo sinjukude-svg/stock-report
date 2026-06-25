@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-06-25</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:104px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert{border:2px solid #c97a13;background:#fffaf2;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c}
+  .rebound{background:#eafaef;border:1px solid #bfe6c9;border-radius:10px;padding:10px;font-size:12px;color:#1f7a39;margin-top:8px}
+  .intraday{background:#fdeef0;border:1px solid #f4c4cb;border-radius:10px;padding:10px;font-size:12px;color:#b03048;margin-top:8px}
+</style>
+</head>
+<body><div class="wrap">
+
+<div class="card alert">
+  <div class="alert-head"><span class="alert-light">🟡</span><span class="alert-title">리스크 경고등: 주의</span></div>
+  <p class="small"><b>판정 근거:</b> 증시는 폭등했지만 환율은 위험 코앞입니다. ①원/달러 <b>1,542.7원</b>(🟡 1,500선 위)으로 <b>2009년 금융위기 이후 17년 3개월 만의 최고 종가</b>, <b>장중 1,549.0원</b>까지 올라 위험선(1,550)에 <b>단 1원</b>까지 다가섰습니다. ②다만 코스피는 <b>+5.42% 폭등</b>(급락 아님 → 🟢), ③VIX도 약 <b>17~18</b>(🟢 낮음)으로, '위험'(환율 1,550·VIX 28·코스피 -3%) 기준엔 미달입니다. ④외국인은 순매도를 이어갔으나 규모가 <b>전일 4.7조→0.8조로 급감</b>(이탈 둔화 → 긍정). 한 줄로: <b>'주가는 환호, 환율은 비명' — 주가·환율 디커플링</b>이 유일한 경계 포인트입니다. 환율 <b>1,550 돌파 여부</b>가 다음 경고등의 분기점입니다.</p>
+</div>
+
+<div class="card">
+  <h1>🇰🇷 한국 주식시장 리포트</h1>
+  <div class="date">2026년 6월 25일(목) · 정규장 <b>마감 확정치</b> 기준</div>
+  <p class="small" style="margin-top:8px">한 줄 요약: <b>'마이크론 훈풍'에 반도체가 시장을 다시 끌어올렸습니다.</b> 마이크론이 <b>분기 사상 최대 매출·매출총이익률 85%대의 어닝 서프라이즈</b>와 <b>"메모리 공급 부족이 2026년 이후까지 지속"</b>을 선언하자, 사흘 전 폭락의 방아쇠였던 'AI 수요 둔화' 공포가 <b>정반대로 뒤집혔습니다.</b> 코스피는 <b>+5.42%(8,930.30)</b> 폭등해 장중 <b>9,000선</b>을 뚫었고(올해 15번째 매수 사이드카), <b>SK하이닉스 +13.06%·삼성전자 +5.29%</b>가 질주했습니다.</p>
+  <div class="rebound">✅ <b>오늘의 핵심 = '거품 논란의 반전' </b> — 6/23 폭락은 'AI 슈퍼사이클이 끝나는 것 아니냐'는 의심에서 출발했는데, 그 의심을 정면으로 깨는 <b>마이크론의 숫자(매출 4.5배·HBM 2026 완판·장기계약 16건)</b>가 나오자 반도체 투심이 V자로 돌아섰습니다. JP모건은 코스피 목표를 <b>12,500</b>으로 올렸습니다.</div>
+  <div class="intraday" style="margin-top:8px">⚠️ <b>단, '쏠림'과 '환율'은 그대로입니다.</b> 같은 날 <b>코스닥은 -2.36%(887.81)로 900선이 깨졌습니다.</b> 자금이 대형 반도체로만 몰리며 그 외 종목은 소외된 <b>'초쏠림 장세'</b>입니다. 환율도 1,542.7원으로 17년래 최고를 이어가 위험선(1,550)에 1원까지 붙었습니다.</div>
+</div>
+
+<div class="card">
+  <h2>📊 주요 지수 (6/25 목 · 마감 확정)</h2>
+  <table>
+    <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+    <tr><td>코스피</td><td>8,930.30</td><td class="up">+459.28 (+5.42%)</td></tr>
+    <tr><td>코스닥</td><td>887.81</td><td class="down">-21.50 (-2.36%)</td></tr>
+    <tr><td>원/달러 환율</td><td>1,542.7원</td><td class="down">+0.9원 (17년래 최고)</td></tr>
+  </table>
+  <p class="small" style="margin-top:8px"><b>📊 시장 폭(상승/하락 종목 수):</b> 정확한 등락 종목 수는 <b>데이터 미확보</b>. 다만 <b>코스피 +5.42% 폭등 vs 코스닥 -2.36% 하락의 디커플링</b>이 핵심 신호입니다 — 지수는 삼성전자·SK하이닉스 등 <b>소수 반도체 대형주가 끌어올린 것</b>이고, 자금이 그쪽으로 빨려가며 코스닥·중소형주는 오히려 소외됐습니다. 즉 '지수 폭등 ≠ 전 종목 강세'로, <b>체감장세는 차별화(반도체만의 잔치)</b>였습니다.</p>
+  <p class="small" style="margin-top:8px"><b>↩️ 참고 — 최근 사흘의 롤러코스터:</b> 6/23(화) <b>-9.99% 폭락(서킷브레이커)</b> → 6/24(수) <b>+3.26% 반등</b> → 6/25(목) <b>+5.42% 폭등</b>. 'AI 거품' 공포로 무너졌다가 <b>마이크론 실적</b>으로 되살아난, 사흘 만의 완전한 분위기 반전입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🇺🇸 미국 주요 변동사항 (있음 — 마이크론 어닝서프라이즈 · 韓 MSCI 편입 불발)</h2>
+  <ul>
+    <li><b>🔑 마이크론(MU) '쿼드러플 서프라이즈'(핵심):</b> 6/24(현지) 장 마감 후 발표한 회계 3분기(3~5월) 실적에서 <b>매출 414.6억달러(약 64조원)로 전년比 4.5배·분기 사상 최대</b>, <b>매출총이익률 85%대</b>로 매출·이익·마진·가이던스 모두 컨센서스를 넘었습니다. <b>"HBM 2026년 물량 완판"·"장기 공급계약 16건으로 확대"·"메모리 공급 부족 2026년 이후까지 지속"</b>을 명시해, <b>'메모리 수요 피크설'을 정면 반박</b>했습니다. 마이크론 주가는 정규장 -13.2% 급락했다가 <b>시간외 +13% 폭등</b>으로 뒤집혔습니다.</li>
+    <li><b>밤사이 미국장은 '혼조 속 반도체 발작 → 반전':</b> 6/24 정규장에서 <b>필라델피아반도체(SOX) -7.87%, 마이크론 -13.2%</b>로 반도체가 다시 급락(AI 과잉투자 의심 지속). 지수는 <b>다우 +0.35%(51,848.90)·S&amp;P -0.10%(7,358.22)·나스닥 -0.43%(25,476.64)</b> 혼조. 그러나 <b>장 마감 후 마이크론 실적</b>이 모든 걸 뒤집어, 한국 6/25 반도체 폭등의 불씨가 됐습니다.</li>
+    <li><b>🇰🇷 한국, MSCI 선진국지수 편입 또 불발(환율 악재):</b> MSCI가 6/23(현지) 연례 시장분류에서 한국을 <b>선진지수 관찰대상국 승격에서 또 제외</b>했습니다. 사유는 <b>'원화 역외 결제 불가'·'야간 외환시장 유동성 부족'</b>. '예견된 결과'로 증시 직접 충격은 제한적이나, <b>외국인 수급·원화 약세 압력</b>을 키우는 배경입니다(실제 편입은 2029년경 관측).</li>
+    <li><b>美 점도표·매파 연준 여진:</b> 직전 FOMC의 매파적 점도표가 달러 강세로 이어지며, MSCI 불발과 겹쳐 <b>원/달러를 17년래 최고(장중 1,549원)</b>로 밀어 올렸습니다.</li>
+  </ul>
+  <div class="note" style="margin-top:8px">➡️ 한 줄 정리: 사흘 전 폭락의 논리('AI 둔화')를 <b>마이크론의 실제 숫자가 깨뜨렸습니다.</b> 반도체 추세는 일단 복원됐지만, <b>환율(MSCI·달러강세)</b>이라는 짐은 그대로입니다.</div>
+</div>
+
+<div class="card">
+  <h2>💰 투자주체별 수급 (6/25 마감 · 코스피 기준 100 바)</h2>
+  <p class="small" style="margin-bottom:6px">코스피 확정치 · 가장 큰 금액(기관 매수)을 100으로 환산</p>
+  <div class="bar-row"><span class="bar-label">기관</span><div class="bar-track"><div class="bar-buy" style="width:100%"></div></div><span class="bar-val">매수 33,469억</span></div>
+  <div class="bar-row"><span class="bar-label">개인</span><div class="bar-track"><div class="bar-sell" style="width:75%"></div></div><span class="bar-val">매도 24,964억</span></div>
+  <div class="bar-row"><span class="bar-label">외국인</span><div class="bar-track"><div class="bar-sell" style="width:24%"></div></div><span class="bar-val">매도 8,186억</span></div>
+  <p class="small" style="margin-top:8px">🔴 빨강=매수, 🔵 파랑=매도. 쉽게 말해: <b>오늘 +5.42% 폭등은 '기관'이 만들었습니다</b>(3.35조 순매수). 반면 <b>개인은 2.50조를 팔며 차익 실현</b>(전일 반등 때 산 물량을 폭등에 되판 것), <b>외국인도 순매도를 이어갔지만 규모가 전일 4.66조 → 0.82조로 82% 급감</b>했습니다. <b>외국인 이탈 둔화</b>는 가장 반가운 신호 — 다만 '매수 전환'이 아닌 '매도 축소'라는 점에서 추세 복귀로 단정하긴 이릅니다.</p>
+  <p class="small" style="margin-top:6px;color:#1763e6"><b>↔ 코스닥:</b> 코스닥은 -2.36% 하락. 투자주체별 확정 수급은 <b>데이터 미확보</b>이나, 자금이 코스피 반도체 대형주로 쏠리며 중소형주가 소외된 흐름으로 추정됩니다.</p>
+</div>
+
+<div class="card">
+  <h2>🚀 주도 섹터: 반도체 — '거품 논란'을 실적으로 정면돌파 (강세 재확인)</h2>
+  <p style="font-size:13px;margin-bottom:8px">
+    <span class="tag tag-green">강세 재확인 (마이크론 실적이 'AI 둔화론' 반박)</span>
+    <span class="tag tag-gray">2025년 말 시작 · 약 6개월(34주차)차</span>
+  </p>
+  <div class="gauge"><div style="width:80%"></div></div>
+  <p class="small">강도: <b>강세 재확인</b>(80/100). 불과 사흘 전(6/23) 'HBM4 지연·범용D램 수익성' 보도로 -12% 폭락했던 반도체가, <b>마이크론의 어닝 서프라이즈(매출 4.5배·HBM 2026 완판·공급부족 지속)</b> 한 방에 추세를 되찾았습니다. <b>SK하이닉스 +13.06%·삼성전자 +5.29%</b>로 'AI 메모리 슈퍼사이클'이 숫자로 재확인됐습니다.</p>
+  <ul style="margin-top:10px">
+    <li><b>무엇이 달라졌나?</b> 폭락은 '심리(의심)'였고, 오늘 반등은 '<b>실적(증거)</b>'입니다. 마이크론은 메모리 업황의 객관적 지표라, 그 호실적이 삼성·SK하이닉스 하반기 이익 기대를 직접 끌어올렸습니다.</li>
+    <li><b>단, 약점도 그대로:</b> 코스피 신고가의 동력이 여전히 <b>반도체 단일 쏠림</b>이라는 구조는 변하지 않았습니다(오늘 코스닥 -2.36%가 그 증거). 호재엔 폭등, 악재엔 폭락하는 <b>고변동성</b>은 당분간 지속될 가능성이 큽니다.</li>
+    <li><b>체크포인트:</b> 다음 분수령은 <b>삼성·SK하이닉스의 2분기 잠정실적(7월 초)</b>. 마이크론이 깔아준 기대치를 국내 양사가 숫자로 확인시켜 주는지가 관건입니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>📅 이번 주~다음 주 주요 일정</h2>
+  <div class="sched">
+    <div class="kv"><span>6/26(금)</span><span><b>美 5월 PCE 물가</b>(25일 현지 발표분, 한국 새벽 반영) — 매파 연준 후 첫 핵심 인플레 / <b>美 미시간대 소비자심리</b> 확정치</span></div>
+    <div class="kv"><span>6/30(화)</span><span>반기말·월말 <b>윈도드레싱·리밸런싱</b> 수급 — 분기 마지막 거래일</span></div>
+    <div class="kv"><span>7/1(수)</span><span>美 <b>6월 ISM 제조업</b>·JOLTS 구인 — 경기·고용 둔화 점검</span></div>
+    <div class="kv"><span>7/3(금)</span><span><b>美 6월 고용보고서</b>(비농업·실업률) — 다음 FOMC 전 최대 분수령 / <b>韓 삼성·SK 2분기 잠정실적</b> 시즌 개막</span></div>
+    <div class="kv"><span>7/4(토)</span><span>美 독립기념일 <b>휴장</b></span></div>
+    <div class="kv"><span>7/16(목)</span><span><b>한국은행 금통위</b> — 현 2.50%, '환율 방어 인상론' vs '8회 연속 동결' 팽팽</span></div>
+    <div class="kv"><span>7/28~29</span><span><b>FOMC</b>(다음 미 금리 결정) — 매파 점도표 이후 첫 회의</span></div>
+  </div>
+  <p class="small" style="margin-top:8px">6월 선물·옵션 동시만기(6/11)는 지났습니다. 당장은 <b>오늘밤 PCE(목 새벽)→다음 주 美 고용(7/3)→삼성·SK 잠정실적(7월 초)</b>이 줄줄이 대기. 특히 <b>환율 1,550선 돌파 여부</b>가 매일의 최대 변수입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🛡️ 리스크 지표 점검</h2>
+  <div class="kv"><span>원/달러 환율</span><span class="down">1,542.7원 (🟡 17년래 최고, 장중 1,549 → 위험선 1원 앞)</span></div>
+  <div class="kv"><span>VIX(미국 공포지수)</span><span>약 17~18 (🟢 낮음 — 美 반도체 안정, 충격은 韓 환율 집중)</span></div>
+  <div class="kv"><span>외국인 순매수(코스피)</span><span class="down">-8,186억 (순매도 지속, 단 전일 4.66조→0.82조 급감)</span></div>
+  <div class="kv"><span>코스피 일간 등락</span><span class="up">+5.42% (🟢 폭등)</span></div>
+  <div class="kv"><span>코스닥 일간 등락</span><span class="down">-2.36% (🟡 디커플링 — 반도체 초쏠림)</span></div>
+  <div class="kv"><span>한·미 기준금리차</span><span class="down">2.50% vs 3.50~3.75% (1%p+ · 원화 약세 압력)</span></div>
+  <p class="small" style="margin-top:8px"><b>환율이 위험선(1,550)에 장중 1원까지 다가섰습니다.</b> MSCI 편입 불발·매파 연준·달러 강세가 겹친 결과로, 주가 폭등에도 외국인 자금 이탈 우려가 환율에 남아 있습니다. 아직 위험 신호(환율 1,550·VIX 28·코스피 -3%)엔 미달이나, <b>환율 임계 근접·코스닥 약세(쏠림)</b>가 겹쳐 '주의'가 정당합니다. <b>1,550 돌파 시 즉시 경고등 격상</b>이 합리적입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+  <ul>
+    <li><b>반도체 소부장(후방 키맞추기):</b> 마이크론이 슈퍼사이클을 재확인한 만큼, 대장주에 이어 <b>장비·소재 등 후방 산업으로 온기 확산</b>이 자연스러운 다음 순서입니다. 다만 변동성 큰 구간이라 분할 접근이 안전합니다.</li>
+    <li><b>금융·보험(방어+금리 수혜):</b> 환율 급등·매파 연준 국면에서 <b>순이자마진 수혜+밸류업(주주환원)</b>이 부각. 반도체 초쏠림의 <b>분산 대안</b> 1순위입니다.</li>
+    <li><b>방산·조선:</b> AI와 상관성이 낮고 <b>이재명 정부 방산 수출 드라이브</b>·수주 사이클이라는 독립 모멘텀. 변동성 회피 자금의 피난처가 될 수 있습니다.</li>
+    <li><b>(순환매) 코스닥·중소형 소외주:</b> 오늘 코스닥 -2.36%로 대형주 대비 과도하게 소외됐습니다. 반도체 쏠림이 진정되면 <b>키맞추기 순환매</b>가 나올 여지가 있습니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+  <ul>
+    <li><b>외환 안정 의지(당장의 변수):</b> 환율이 17년래 최고(장중 1,549원)로 위험선에 근접한 만큼, <b>당국의 미세조정·구두개입 가능성</b>과 외국인 수급 안정이 단기 최대 관건입니다. MSCI 편입(원화 개방)도 환율 안정과 맞물린 장기 과제입니다.</li>
+    <li><b>AI·반도체 국가 전략(탄력):</b> 마이크론 실적으로 'AI 둔화론'이 약해지며, 정부의 <b>AI·반도체 허브 육성 기조에 다시 힘</b>이 실립니다.</li>
+    <li><b>상법 개정·주주환원(밸류업):</b> 자사주 소각·배당 확대 → 증권·은행·보험·지주. 금리 상승기 금융 강세와 시너지로, 반도체 쏠림의 대안 테마입니다.</li>
+    <li><b>방산 수출·조선 재건:</b> 정부의 방산 수출 드라이브는 AI와 무관한 독립 성장축으로, 변동성 국면의 분산 후보입니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>💭 Claude의 생각 (참고용)</h2>
+  <div class="opinion">
+    사흘 만에 <b>-9.99% → +3.26% → +5.42%</b>의 롤러코스터가 보여준 교훈은 분명합니다. 첫째, 이번 사이클의 <b>모든 것이 반도체에 달려 있다</b>는 점입니다. 6/23 폭락도, 오늘 폭등도 원인은 하나(반도체)였고, 오늘 <b>코스피는 +5.42%인데 코스닥은 -2.36%</b>였다는 디커플링이 그 <b>'초쏠림'</b>을 적나라하게 보여줍니다. 지수 숫자만 보면 환호할 일이지만, 체감장은 '반도체만의 잔치'였습니다. 둘째, 오늘 반등은 폭락과 달리 <b>'실적(증거)에 기반한 반등'</b>이라는 점에서 질이 좋습니다. 마이크론의 매출 4.5배·HBM 완판·공급부족 지속 발언은 'AI 슈퍼사이클'을 심리가 아닌 숫자로 재확인시켰고, 외국인 순매도도 <b>4.66조→0.82조로 급감</b>했습니다. 셋째, 그럼에도 <b>환율은 여전히 비명</b>입니다. 1,542.7원·장중 1,549원으로 위험선(1,550)에 1원까지 붙었고, MSCI 편입 불발·매파 연준·달러 강세가 그 배경입니다. 주가는 환호하는데 환율은 위험을 가리키는 <b>디커플링</b>이 지금의 가장 큰 불편한 진실입니다. 결론적으로 오늘은 <b>'마이크론이 거품 논란을 실적으로 잠재운 V자 반등 — 그러나 쏠림과 환율은 그대로'</b>입니다. 반도체 추세는 일단 복원됐으나 호재·악재에 ±10%씩 출렁이는 <b>고변동성</b>은 이어질 것이므로, 추격매수보다 <b>분할 대응</b>이 합리적입니다. 단기적으로는 <b>환율 1,550선·오늘밤 PCE·7월 초 삼성·SK 잠정실적</b>을, 그리고 코스닥 소외가 풀리는 <b>순환매 신호</b>를 함께 점검하시길 권합니다.
+  </div>
+</div>
+
+<div class="disclaimer">본 자료는 경향성 참고용으로 작성된 것이며 투자 권유가 아닙니다.<br>지수·수급은 6/25 마감 확정치 기준이며, 환율·VIX·미국 지표·마이크론 실적 등 일부는 보도·추정치를 포함합니다(VIX는 추정). 모든 투자 판단과 책임은 투자자 본인에게 있습니다.</div>
+
+</div></body>
+</html>
