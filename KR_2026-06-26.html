@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-06-26</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:104px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert{border:2px solid #d02b26;background:#fff5f4;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c}
+  .rebound{background:#eafaef;border:1px solid #bfe6c9;border-radius:10px;padding:10px;font-size:12px;color:#1f7a39;margin-top:8px}
+  .intraday{background:#fdeef0;border:1px solid #f4c4cb;border-radius:10px;padding:10px;font-size:12px;color:#b03048;margin-top:8px}
+</style>
+</head>
+<body><div class="wrap">
+
+<div class="card alert">
+  <div class="alert-head"><span class="alert-light">🔴</span><span class="alert-title">리스크 경고등: 위험</span></div>
+  <p class="small"><b>판정 근거:</b> 코스피가 <b>-5.81% 폭락</b>(장중 -9.00%)해 '위험' 기준(코스피 <b>-3% 이상 급락</b>)을 그대로 충족했습니다. 올해 <b>5번째 서킷브레이커</b>·14번째 매도 사이드카가 발동됐습니다. <b>단, 성격은 '구조적 위기'가 아니라 '수급 이벤트'입니다.</b> 같은 날 ①환율은 오히려 <b>1,532.0원으로 하락</b>(🟡 1,500선 위지만 위험선 1,550 미달, 당국 개입), ②<b>VIX 18.89</b>(🟢 낮음), ③외국인 순매도는 6거래일째(10일 미만)로, '환율·변동성發 위험'은 아닙니다. 증권가(메리츠)는 <b>'반기말(6/30 결제) 포트폴리오 리밸런싱'</b>에 따른 일시적 급락으로, 펀더멘털 훼손이 아니라고 진단합니다. 한 줄로: <b>'규칙상 빨강이지만, 불은 환율·공포가 아니라 반기말 매물에서 났다.'</b> 6/30 결제일 통과 후 진정 여부가 분기점입니다.</p>
+</div>
+
+<div class="card">
+  <h1>🇰🇷 한국 주식시장 리포트</h1>
+  <div class="date">2026년 6월 26일(금) · 정규장 <b>마감 확정치</b> 기준</div>
+  <p class="small" style="margin-top:8px">한 줄 요약: <b>'반기말 매물 폭탄'에 사흘 만에 다시 서킷브레이커.</b> 외국인이 <b>장 시작 동시호가부터 바스켓 매도</b>를 쏟아내며 코스피가 <b>-5.81%(8,411.21)</b> 폭락, 장중 <b>-9.00%(8,126.84)</b>까지 밀려 올해 <b>5번째 서킷브레이커</b>가 터졌습니다. <b>삼성전자·SK하이닉스가 장중 9~10% 급락</b>하며 지수를 끌어내렸습니다. 개인이 <b>8.17조 풀매수</b>로 받아냈지만 역부족이었습니다.</p>
+  <div class="intraday">⚠️ <b>오늘의 핵심 = '펀더멘털이 아니라 달력(반기말) 때문'</b> — 황수욱 메리츠증권 연구원은 "6월 말 결제 기준 포트폴리오 리밸런싱"을 원인으로 짚었습니다. 한국 주식은 <b>T+2 결제</b>라 6/30 잔고에 매도를 반영하려면 <b>26일이 사실상 마지막 매매일</b>이었고, 최근 급등으로 한국·반도체 비중이 커진 외국인 계좌가 <b>사전 설정된 바스켓 매도</b>를 동시호가부터 던졌다는 설명입니다. 단일종목 레버리지 ETF 파생이 낙폭을 키웠습니다.</div>
+  <div class="rebound">✅ <b>위안거리:</b> ①증권가는 "AI 수요 둔화·애플 가격 인상은 부수적 변수, 추세 훼손은 아니다"라고 봤고 ②환율은 당국 개입으로 <b>5거래일 만에 하락(1,532원)</b>했으며 ③밤사이 미국 증시는 <b>다우 사상 최고·마이크론 +17%</b>로 비교적 견조했습니다. 메리츠는 단기 지지선을 <b>8,050~8,450(20일선)</b>으로 제시했습니다.</div>
+</div>
+
+<div class="card">
+  <h2>📊 주요 지수 (6/26 금 · 마감 확정)</h2>
+  <table>
+    <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+    <tr><td>코스피</td><td>8,411.21</td><td class="down">-519.09 (-5.81%)</td></tr>
+    <tr><td>코스닥</td><td>851.37</td><td class="down">-36.44 (-4.10%)</td></tr>
+    <tr><td>원/달러 환율</td><td>1,532.0원</td><td class="up">-10.7원 (-0.69%, 5일만 하락=원화 강세)</td></tr>
+  </table>
+  <p class="small" style="margin-top:8px"><b>📊 시장 폭(상승/하락 종목 수):</b> 코스피 정확한 등락 종목 수는 <b>데이터 미확보</b>이나, <b>-5.81% 서킷브레이커 발동일</b>로 하락 종목이 절대 우위였습니다. 코스닥은 장중 집계 기준 <b>상승 약 220 vs 하락 약 1,458</b>(상한가 4)로 <b>하락이 약 6.6배</b> — 전형적인 '전 종목 동반 급락'이었습니다(근사·장중치). 즉 오늘은 <b>특정 섹터가 아니라 시장 전체가 반기말 매물에 쓸려 내려간</b> 날입니다.</p>
+  <p class="small" style="margin-top:8px"><b>↩️ 참고 — 나흘간의 롤러코스터:</b> 6/23(화) <b>-9.99% 폭락</b> → 6/24(수) <b>+3.26%</b> → 6/25(목) <b>+5.42% 폭등</b> → 6/26(금) <b>-5.81% 폭락</b>. 'AI 거품 공포 → 마이크론 실적 안도 → 반기말 매물'로 이어진, 하루가 멀다 하고 ±5~10% 출렁이는 <b>초고변동성 장세</b>가 계속되고 있습니다.</p>
+</div>
+
+<div class="card">
+  <h2>🇺🇸 미국 주요 변동사항 (있음 — 빅테크 마진압박 · 호르무즈 유가급등 · 美금리 급락)</h2>
+  <ul>
+    <li><b>🍎 애플 '메모리發 가격인상' 쇼크(핵심 트리거):</b> 6/25(현지) 애플이 <b>메모리칩 대란</b>을 이유로 맥북·아이패드 가격을 줄줄이 올렸습니다(맥북에어 1,099→1,299달러 등). 메모리 가격 급등이 <b>빅테크 마진을 압박</b>한다는 신호로 읽히며 <b>애플 주가 -6%</b>, 나스닥을 끌어내렸습니다. 'AI 특수는 메모리(마이크론)로 가지만, 그 비용을 빅테크가 떠안는다'는 구도입니다.</li>
+    <li><b>🛢️ 호르무즈 해협 선박 피격 → 국제유가 급등:</b> 밤사이 <b>호르무즈 해협에서 선박이 피격</b>됐다는 소식에 국제유가가 급등했습니다. 장 초반 <b>원/달러를 1,549.8원(장중)까지</b> 밀어올린 배경으로, 중동 지정학 리스크가 재점화됐습니다.</li>
+    <li><b>📉 밤사이 미국장은 '혼조 — 다우↑·나스닥↓':</b> <b>다우 +0.14%(51,920.62, 장중 사상 최고)</b>, <b>S&amp;P -0.01%(7,357.49)</b>, <b>나스닥 -0.46%(25,358.60, 2월 이후 첫 4일 연속 하락)</b>. 비(非)AI주(헬스케어·금융·산업재, 캐터필러 +6%)가 다우를 밀어올린 반면, 애플發 빅테크 차익실현이 나스닥을 눌렀습니다. <b>마이크론은 +17%</b>(시총 1.398조달러로 메타 추월)로 '메모리만의 잔치'가 이어졌습니다.</li>
+    <li><b>💵 이번 주 美 국채금리 급락:</b> 메리츠는 "이번 주 미국 금리가 가파르게 하락한 점"도 외국인 리밸런싱 매도의 배경으로 꼽았습니다(포지션 재조정 유인). 다만 달러인덱스는 101 위에 머물러 원화엔 양방향 압력입니다.</li>
+  </ul>
+  <div class="note" style="margin-top:8px">➡️ 한 줄 정리: 미국발 악재가 '치명적'이진 않았습니다(다우 최고·마이크론 급등). 오늘 한국의 -5.81%는 <b>미국 뉴스보다 '반기말 외국인 바스켓 매도'라는 국내 수급 요인</b>이 8할입니다.</div>
+</div>
+
+<div class="card">
+  <h2>💰 투자주체별 수급 (6/26 마감 · 코스피 기준 100 바)</h2>
+  <p class="small" style="margin-bottom:6px">코스피 확정치 · 가장 큰 금액(개인 매수)을 100으로 환산</p>
+  <div class="bar-row"><span class="bar-label">개인</span><div class="bar-track"><div class="bar-buy" style="width:100%"></div></div><span class="bar-val">매수 81,710억</span></div>
+  <div class="bar-row"><span class="bar-label">외국인</span><div class="bar-track"><div class="bar-sell" style="width:57%"></div></div><span class="bar-val">매도 46,521억</span></div>
+  <div class="bar-row"><span class="bar-label">기관</span><div class="bar-track"><div class="bar-sell" style="width:46%"></div></div><span class="bar-val">매도 37,689억</span></div>
+  <p class="small" style="margin-top:8px">🔴 빨강=매수, 🔵 파랑=매도. 쉽게 말해: <b>외국인(4.65조)과 기관(3.77조)이 합쳐 8.4조를 던졌고</b>, 그 폭탄을 <b>개인이 8.17조 풀매수로 거의 그대로 받아냈습니다.</b> 그래도 지수가 -5.81% 빠진 건 <b>매도 속도가 워낙 빨랐기(동시호가 바스켓 매도)</b> 때문입니다. 외국인은 <b>6거래일 연속 순매도</b>로 이 기간 누적 <b>17.3조</b>를 팔았습니다 — '이탈'로 단정하긴 이르나, 반기말 비중축소가 집중됐습니다.</p>
+  <p class="small" style="margin-top:6px;color:#1763e6"><b>↔ 코스닥:</b> 코스닥(-4.10%)은 외국인·개인이 소폭 매도, 기관이 소폭 매수로 추정되나 <b>확정 수급은 데이터 미확보</b>입니다. 코스피 대형주 급락에 동반 약세를 보였습니다.</p>
+</div>
+
+<div class="card">
+  <h2>🚀 주도 섹터: 반도체 — 추세는 유지, 그러나 오늘은 '하락을 주도' (초고변동)</h2>
+  <p style="font-size:13px;margin-bottom:8px">
+    <span class="tag tag-orange">강세 추세 유지 · 단기 급락(반기말 수급)</span>
+    <span class="tag tag-gray">2025년 말 시작 · 약 6개월(34주차)차</span>
+  </p>
+  <div class="gauge"><div style="width:62%"></div></div>
+  <p class="small">강도: <b>중강세로 후퇴</b>(62/100). 코스피 시총의 약 절반인 <b>삼성전자·SK하이닉스가 장중 9~10% 급락</b>하며 오늘 지수 하락을 그대로 주도했습니다. 다만 이는 <b>전일(+5.42%) 폭등의 되돌림 + 반기말 비중축소</b> 성격이 강하고, 증권가는 "메모리 슈퍼사이클 훼손은 아니다"라고 봅니다(마이크론 +17%가 방증).</p>
+  <ul style="margin-top:10px">
+    <li><b>무엇이 달라졌나?</b> 펀더멘털(실적)은 그대로인데 <b>수급(반기말 리밸런싱·파생)</b>이 흔들었습니다. 최근 급등으로 외국인 계좌의 한국·반도체 비중이 과도하게 커진 것이 역설적으로 <b>비중축소 매도</b>를 부른 셈입니다.</li>
+    <li><b>약점=쏠림:</b> 시총 절반이 두 종목에 쏠려 있어, 호재엔 폭등(6/25)·악재엔 폭락(6/26)하는 <b>±5~10% 초고변동</b> 구조는 그대로입니다. 지수의 운명이 사실상 '삼전닉스'에 묶여 있습니다.</li>
+    <li><b>체크포인트:</b> 다음 분수령은 <b>7월 초 삼성·SK하이닉스 2분기 잠정실적</b>. 마이크론이 깔아준 기대치를 국내 양사가 숫자로 확인시켜 주면, 수급發 급락은 빠르게 회복될 명분이 생깁니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>📅 이번 주~다음 주 주요 일정</h2>
+  <div class="sched">
+    <div class="kv"><span>6/26(금)</span><span><b>美 5월 PCE 물가</b>(오늘밤 한국시간) — 매파 연준 후 첫 핵심 인플레 지표</span></div>
+    <div class="kv"><span>6/30(화)</span><span><b>반기말 결제일</b> — 외국인 바스켓 리밸런싱 '마무리'·윈도드레싱 / <b>국민연금 리밸런싱</b> 경계</span></div>
+    <div class="kv"><span>7/1(수)</span><span>美 <b>6월 ISM 제조업</b>·JOLTS 구인 — 경기·고용 둔화 점검</span></div>
+    <div class="kv"><span>7/2(목)</span><span><b>美 6월 고용보고서</b>(비농업·실업률) — 휴장으로 <b>하루 앞당겨 발표</b>, 다음 FOMC 전 최대 분수령 / <b>韓 삼성·SK 2분기 잠정실적</b> 시즌 임박</span></div>
+    <div class="kv"><span>7/3(금)</span><span>美 증시 <b>독립기념일 대체휴장</b>(7/4 토요일)</span></div>
+    <div class="kv"><span>7/16(목)</span><span><b>한국은행 금통위</b> — 현 2.50%, '환율 방어' vs '경기 부양' 사이 줄타기</span></div>
+    <div class="kv"><span>7/28~29</span><span><b>FOMC</b>(다음 미 금리 결정) — 매파 점도표 이후 첫 회의</span></div>
+  </div>
+  <p class="small" style="margin-top:8px">6월 선물·옵션 동시만기(6/11)는 지났습니다. 당장은 <b>오늘밤 PCE → 6/30 반기말 결제 통과 → 7/2 美 고용 → 7월 초 삼성·SK 잠정실적</b>이 줄줄이 대기. 특히 <b>6/30 결제일을 지나며 외국인 매도가 멈추는지</b>가 '하루짜리 충격 vs 추세'를 가르는 핵심입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🛡️ 리스크 지표 점검</h2>
+  <div class="kv"><span>코스피 일간 등락</span><span class="down">-5.81% (🔴 급락 — 올해 5번째 서킷브레이커)</span></div>
+  <div class="kv"><span>코스닥 일간 등락</span><span class="down">-4.10% (🔴 동반 급락)</span></div>
+  <div class="kv"><span>원/달러 환율</span><span class="up">1,532.0원 (🟡 5일만 하락, 당국 개입 · 위험선 1,550 미달)</span></div>
+  <div class="kv"><span>VIX(미국 공포지수)</span><span>18.89 (🟢 낮음 — 美 증시는 비교적 안정)</span></div>
+  <div class="kv"><span>외국인 순매수(코스피)</span><span class="down">-46,521억 (6거래일 연속 순매도, 누적 17.3조)</span></div>
+  <div class="kv"><span>국제유가</span><span class="down">급등 (🟡 호르무즈 선박 피격)</span></div>
+  <div class="kv"><span>한·미 기준금리차</span><span class="down">2.50% vs 3.50~3.75% (1%p+ · 원화 약세 압력)</span></div>
+  <p class="small" style="margin-top:8px"><b>'경고등은 빨강이지만 불은 한 곳에서만 났다.'</b> 위험 판정은 전적으로 <b>코스피 -5.81% 급락</b> 때문이고, 정작 <b>환율(하락)·VIX(18.89)·미국 증시(다우 최고)</b>는 위험 신호가 아닙니다. 외국인 순매도도 6일째로 '주의'(10일) 기준엔 미달입니다. 즉 오늘의 위험은 <b>'반기말 수급 이벤트'</b>의 성격이 강합니다. <b>관전 포인트는 ①6/30 결제일 후 외국인 매도 진정 여부 ②환율 1,550 방어선 ③유가(호르무즈)</b> 세 가지입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+  <ul>
+    <li><b>금융·보험(방어+밸류업):</b> 반도체 초쏠림·고변동 국면에서 <b>순이자마진+주주환원(밸류업)</b>이 부각되는 1순위 분산 대안. 오늘 미국장에서도 금융·헬스케어가 다우를 떠받쳤습니다.</li>
+    <li><b>방산:</b> AI·반도체와 상관성이 낮고 <b>이재명 정부 방산 수출 드라이브</b>·유럽 안보 공백이라는 독립 모멘텀. 호르무즈 등 지정학 리스크 부각 시 피난처가 될 수 있습니다.</li>
+    <li><b>반도체 소부장(후방):</b> 슈퍼사이클이 유지된다면 대장주 변동성이 진정된 뒤 <b>장비·소재로 온기 확산</b>이 다음 순서. 단 지금은 변동성이 커 분할 접근이 안전합니다.</li>
+    <li><b>(순환매) 코스닥·중소형 소외주:</b> 오늘 동반 급락으로 밸류 매력이 더 커졌습니다. 반기말 매물이 소화되면 <b>키맞추기 순환매</b> 여지가 있습니다.</li>
+    <li><b>⚠️ 조선:</b> 'K-조선 수주' 기대는 유효하나, 최근 <b>美 존스법(Jones Act) 관련 악재</b>로 변동성이 커진 점은 유의가 필요합니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+  <ul>
+    <li><b>외환 안정 의지(당장의 변수):</b> 오늘 장 막판 <b>당국 개입 추정 물량</b>이 환율을 1,532원으로 끌어내렸습니다. 위험선(1,550) 방어 의지가 확인된 만큼, 외국인 수급과 맞물린 환율 안정이 단기 최대 관건입니다.</li>
+    <li><b>밸류업(상법 개정·주주환원):</b> 자사주 소각·배당 확대 → 증권·은행·보험·지주. 변동성 장세에서 <b>반도체 쏠림의 대안 테마</b>로 부각됩니다.</li>
+    <li><b>AI·반도체 국가 전략:</b> 마이크론 실적이 'AI 둔화론'을 누른 만큼 정부의 AI·반도체 허브 육성 기조는 유효. 단, 정부의 반도체 투자 압박을 둘러싼 <b>정치 공방</b>(여야)은 변수입니다.</li>
+    <li><b>방산 수출·조선 재건:</b> AI와 무관한 독립 성장축. 다만 조선은 존스법 등 대외 변수를 함께 점검해야 합니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>💭 Claude의 생각 (참고용)</h2>
+  <div class="opinion">
+    오늘의 -5.81%는 <b>숫자만 보면 공포</b>지만, 한 꺼풀 벗기면 결이 다릅니다. 첫째, 이번 급락의 주범은 'AI 거품'도 '경기 침체'도 아닌 <b>달력(반기말 6/30 결제)</b>이라는 점입니다. 한국 주식은 T+2 결제라 6/30 잔고에 매도를 반영하려면 26일이 마지막 날이었고, 최근 폭등으로 한국·반도체 비중이 비대해진 외국인 계좌가 <b>사전 짜둔 바스켓 매도</b>를 동시호가부터 쏟아낸 것입니다. 그래서 펀더멘털 지표(마이크론 +17%, 다우 사상 최고)는 오히려 멀쩡한데 한국만 무너지는 <b>'디커플링 급락'</b>이 나왔습니다. 둘째, 그럼에도 <b>경고등은 규칙대로 🔴(빨강)</b>입니다. 코스피가 -3%를 훌쩍 넘겨 -5.81% 빠졌으니까요. 다만 환율은 당국 개입으로 5일 만에 내렸고(1,532원), VIX도 18.89로 낮아 <b>'환율·공포發 위험'은 아니라는 점</b>은 분명히 구분해야 합니다. 셋째, 그래서 핵심은 <b>'하루짜리 충격이냐, 추세 전환이냐'</b>이고, 그 답은 <b>6/30 결제일을 지나며 외국인 바스켓 매도가 멈추는지</b>에 달려 있습니다. 메리츠는 "리밸런싱이 맞다면 오늘 하루, 길어야 30일이면 끝"이라며 지지선 8,050~8,450, 그 아래 7,750(PER 7.1배)을 '절대 저평가'로 제시했습니다. 결론적으로 오늘은 <b>'펀더멘털이 아니라 반기말 매물이 만든 기술적 폭락 — 다만 변동성의 대가는 혹독했다'</b>입니다. ±5~10%로 출렁이는 장에서 추격매도·추격매수 모두 위험하므로, <b>6/30 통과·환율 1,550·7월 초 삼성·SK 잠정실적</b>을 확인하며 <b>분할 대응</b>하시길 권합니다. 개인이 8.17조를 받아낸 만큼, 이 매수가 옳았는지도 다음 주가 증명할 것입니다.
+  </div>
+</div>
+
+<div class="disclaimer">본 자료는 경향성 참고용으로 작성된 것이며 투자 권유가 아닙니다.<br>지수·수급·환율은 6/26 마감 확정치 기준이며, VIX·미국 지표·시장 폭(코스닥 등락 종목 수) 등 일부는 보도·장중·추정치를 포함합니다. 모든 투자 판단과 책임은 투자자 본인에게 있습니다.</div>
+
+</div></body>
+</html>
