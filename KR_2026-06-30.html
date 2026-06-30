@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-06-30</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:104px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert{border:2px solid #c97a13;background:#fffaf2;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c}
+  .rebound{background:#eafaef;border:1px solid #bfe6c9;border-radius:10px;padding:10px;font-size:12px;color:#1f7a39;margin-top:8px}
+  .intraday{background:#fdeef0;border:1px solid #f4c4cb;border-radius:10px;padding:10px;font-size:12px;color:#b03048;margin-top:8px}
+</style>
+</head>
+<body><div class="wrap">
+
+<div class="card alert">
+  <div class="alert-head"><span class="alert-light">🟡</span><span class="alert-title">리스크 경고등: 주의</span></div>
+  <p class="small"><b>판정 근거(6/30 화 마감 기준):</b> ①원/달러 환율 <b>1,548원 안팎</b>(🟡 1,500선 상회·장중 <b>1,550.2원</b> 위험선 '터치' 후 당국 개입 경계로 반락) ②<b>VIX 18.41</b>(🟢 낮음) ③코스피 <b>+1.73%</b>(🟢 급락 아님·오히려 상승) ④외국인 <b>8거래일 연속 순매도</b>(🟢 '주의' 기준 10일 미만). 네 지표 중 <b>환율 하나만 노란불</b>이라 종합 판정은 <b>🟡 주의</b>입니다. 어제 폭등했던 코스닥(2차전지)은 차익실현으로 되밀렸지만, <b>미국 빅테크 반등에 반도체·대형주가 지수를 끌어올려</b> 코스피는 8,500선을 회복했습니다. <b>유일한 실질 위험은 여전히 환율 1,550 종가 돌파</b> 여부 — 오늘은 장중 터치 후 막혔습니다.</p>
+</div>
+
+<div class="card">
+  <h1>🇰🇷 한국 주식시장 리포트</h1>
+  <div class="date">2026년 6월 30일(화) · <b>마감 브리핑</b> · 정규장 종료 기준 · 상반기 마지막 거래일</div>
+  <p class="small" style="margin-top:8px">한 줄 요약: <b>'어제는 코스닥, 오늘은 코스피.' 미국 빅테크 반등에 자금이 반도체로 되돌아온 하루.</b> 간밤 <b>나스닥 +2.07%·다우 사상 첫 52,000 돌파</b>에 힘입어 삼성전자(+1.88%)·삼성전기(+6.33%) 등 대형 반도체가 반등을 주도, 코스피는 <b>+1.73%(8,540.13)</b>로 8,500선을 회복했습니다. 반면 어제 +8% 폭등했던 코스닥은 <b>2차전지 차익실현</b>(LG엔솔 -7.99%)으로 <b>-1.00%(911.33)</b> 되밀렸습니다.</p>
+  <div class="rebound">✅ <b>오늘의 핵심 = '어제 던졌던 공포가 과했다'</b> — 주말 'AI 둔화·오픈AI IPO 연기설'로 눌렸던 미국 반도체·빅테크가 간밤 <b>나스닥 +2.07%·알파벳 +5%</b>로 되살아났고, 한국 반도체도 동반 반등했습니다. 코스피는 6거래일 만에 다시 <b>8,500선 위</b>로 올라섰습니다.</div>
+  <div class="intraday">⚠️ <b>단, 두 가지 '뿌리'는 그대로</b> — ①외국인은 코스피에서 <b>약 1.5조원</b>을 더 팔며 <b>8거래일 연속</b>(6/19부터) 이탈했고, ②환율은 장중 <b>1,550.2원</b>으로 위험선을 잠깐 '터치'했습니다(당국 개입 경계로 1,548원 안팎 반락). 지수는 올랐지만 '외국인 이탈 + 고환율'은 아직 안 풀렸습니다.</div>
+</div>
+
+<div class="card">
+  <h2>📊 주요 지수 (6/30 화 마감 확정)</h2>
+  <table>
+    <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+    <tr><td>코스피</td><td>8,540.13</td><td class="up">+145.48 (+1.73%)</td></tr>
+    <tr><td>코스닥</td><td>911.33</td><td class="down">-9.24 (-1.00%)</td></tr>
+    <tr><td>원/달러 환율</td><td>약 1,548원</td><td class="up">+2.8원 안팎 (🟡 장중 1,550.2 터치 후 반락)</td></tr>
+  </table>
+  <p class="small" style="margin-top:8px"><b>📊 시장 폭(상승/하락 종목 수):</b> 정확한 종목수는 <b>데이터 미확보</b>지만, 방향은 어제와 정반대입니다. <b>코스피</b>는 삼성전자·삼성전기 등 시총 상위 반도체·대형주가 끌며 상승 우위, <b>코스닥</b>은 어제 폭등했던 2차전지·낙폭과대 테마가 차익실현에 눌려 하락 종목이 더 많았던 것으로 보입니다. 즉 '<b>지수(코스피)는 반도체가 올리고, 체감 시장(코스닥)은 어제 급등분을 토해낸</b>' 하루였습니다.</p>
+  <p class="small" style="margin-top:8px"><b>↩️ 참고 — 변동성은 여전히 큼:</b> 6/23 -9.99% → 6/24 +3.26% → 6/25 +5.42% → 6/26 -5.81% → 6/29 코스피 -0.20%/코스닥 +8.13% → 6/30 코스피 +1.73%/코스닥 -1.00%. <b>±1~10%의 초고변동</b>이 8거래일째 이어지는 중입니다. 오늘은 코스피·코스닥이 <b>정반대로 갈리는</b> 전형적 순환매·되돌림 장이었습니다.</p>
+</div>
+
+<div class="card">
+  <h2>🇺🇸 미국 주요 변동사항 (있음 — 빅테크 반등 · 다우 사상 첫 52,000 돌파)</h2>
+  <ul>
+    <li><b>🚀 빅테크·AI '공포 되감기'(핵심 호재):</b> 주말 'AI 투자 둔화·오픈AI IPO 연기설'로 눌렸던 기술주가 6/29(현지) 일제히 반등. <b>나스닥 +2.07%(25,820.14)·S&amp;P500 +1.18%(7,440.43)</b>로 마감했고, 이 흐름이 오늘 한국 반도체 반등의 직접 배경이 됐습니다.</li>
+    <li><b>🏆 다우 사상 첫 52,000 돌파:</b> 다우지수가 <b>+0.59%(52,182.74)</b>로 <b>종가 기준 처음 52,000선</b>을 넘었습니다. 특히 <b>알파벳(구글)이 다우 편입 첫날 +5%</b> 급등하며 상승을 견인 — '대형 기술주로의 위험선호 회복' 신호로 해석됩니다.</li>
+    <li><b>🏦 연준·관세:</b> 새로운 관세 발표나 연준 발언 등 <b>당일 추가 변수는 없었습니다.</b> 연준은 6월 회의에서 금리를 동결(현 3.50~3.75%)했고, 시장의 시선은 <b>7/2 미국 6월 고용보고서</b>로 이동했습니다.</li>
+    <li><b>📊 한 줄 정리:</b> 어제 한국을 짓눌렀던 '미국발 반도체·AI 약세'가 <b>하룻밤 만에 반등으로 뒤집혔고</b>, 그 덕에 한국 반도체도 살아났습니다. VIX도 <b>18.41로 낮아</b> '공포 확산'은 없습니다.</li>
+  </ul>
+  <div class="note" style="margin-top:8px">➡️ 미국장은 오늘 밤(한국시간 7/1 새벽) 다시 열립니다. <b>빅테크 반등이 이틀째 이어지는지</b>가 내일 한국 반도체의 키이며, <b>7/2 고용보고서</b> 전까지 관망세가 짙어질 수 있습니다.</div>
+</div>
+
+<div class="card">
+  <h2>💰 투자주체별 수급 (6/30 마감 · 코스피 기준 100 바)</h2>
+  <p class="small" style="margin-bottom:6px">코스피 기준 · 가장 큰 금액(외국인 매도)을 100으로 환산</p>
+  <div class="bar-row"><span class="bar-label">외국인</span><div class="bar-track"><div class="bar-sell" style="width:100%"></div></div><span class="bar-val">매도 15,350억</span></div>
+  <div class="bar-row"><span class="bar-label">개인</span><div class="bar-track"><div class="bar-buy" style="width:50%"></div></div><span class="bar-val">매수 7,617억</span></div>
+  <div class="bar-row"><span class="bar-label">기관</span><div class="bar-track"><div class="bar-buy" style="width:48%"></div></div><span class="bar-val">매수 7,417억</span></div>
+  <p class="small" style="margin-top:8px">🔴 빨강=매수, 🔵 파랑=매도. 쉽게 말해: 외국인이 <b>약 1.5조원(8일째)</b>을 더 던졌지만, <b>개인(0.76조)과 기관(0.74조)이 거의 반반으로 나눠 받아</b> 충격을 흡수했습니다. 어제 7.7조에 달했던 외국인 매도가 <b>1.5조로 크게 줄어든 점</b>이 중요합니다 — <b>반기말 바스켓 리밸런싱(윈도드레싱)의 절정이 지나간</b> 신호로 볼 수 있습니다.</p>
+  <p class="small" style="margin-top:6px;color:#1763e6"><b>↔ 코스닥:</b> 어제 폭등(2차전지·바이오)을 이끈 매수세가 <b>차익실현으로 전환</b>되며 -1.00%. 코스피(반도체 매수·지수 상승)와 코스닥(2차전지 매도·지수 하락)의 방향이 어제와 <b>정확히 뒤바뀌었습니다.</b></p>
+</div>
+
+<div class="card">
+  <h2>🚀 주도 섹터: 반도체 '복귀' vs 2차전지 '하루 만에 숨고르기'</h2>
+  <p style="font-size:13px;margin-bottom:8px">
+    <span class="tag tag-orange">반도체: 강세 추세 재확인 · 단기 반등</span>
+    <span class="tag tag-gray">2차전지: 어제 폭등 → 오늘 차익실현</span>
+    <span class="tag tag-gray">반도체 2025년 말 시작·약 35주차</span>
+  </p>
+  <div class="gauge"><div style="width:60%"></div></div>
+  <p class="small">반도체 강도: <b>중강세로 회복</b>(60/100, 어제 52→오늘 60). 삼성전자 +1.88%·삼성전기 +6.33%로 반등했고, SK하이닉스는 -1.66%로 아직 엇갈립니다. 미국 빅테크 반등이라는 외부 호재가 컸던 만큼, <b>추세의 진짜 분수령은 7월 초 삼성·SK 2분기 잠정실적</b>입니다.</p>
+  <ul style="margin-top:10px">
+    <li><b>어제의 순환매는?</b> 하루 만에 <b>되밀렸습니다.</b> 어제 +20%대 폭등했던 <b>LG엔솔(-7.99%)·에코프로 등 2차전지</b>가 차익실현에 눌렸고, 삼성물산(-4.56%)도 반락. 자금은 다시 <b>반도체·대형주로 회귀</b>했습니다.</li>
+    <li><b>그래서 답은?</b> 어제 던졌던 질문('추세적 주도주 교체 vs 하루짜리 기술적 반등')에 대해, 오늘까지는 <b>(B) 하루짜리 반등' 쪽에 무게</b>가 실립니다. 단, 2차전지·바이오의 <b>업황 바닥 통과 기대</b>라는 큰 줄기는 살아 있어, '한 번에 교체'가 아니라 '<b>반도체 주도 + 순환매 간헐 반복</b>' 구도로 보는 게 합리적입니다.</li>
+    <li><b>핵심 질문:</b> 외국인이 8일 연속 매도를 <b>반기말(오늘) 통과 후 멈추는가</b>, 그리고 미국 빅테크 반등이 <b>이틀째 이어지는가</b> — 이 둘이 7월 첫 주 방향을 가릅니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>📅 이번 주 주요 일정</h2>
+  <div class="sched">
+    <div class="kv"><span>6/30(화)</span><span><b>상반기 마지막 거래일·반기말 결제</b> 통과 — 외국인 매도 7.7조→1.5조로 급감 / 리밸런싱 절정은 지난 듯</span></div>
+    <div class="kv"><span>7/1(수)</span><span>美 <b>6월 ISM 제조업·JOLTS</b> 구인 / <b>韓 6월 수출</b> 지표 — 경기·반도체 업황 점검</span></div>
+    <div class="kv"><span>7/2(목)</span><span><b>美 6월 고용보고서</b>(7/3 휴장으로 하루 앞당겨 발표·밤 9:30 한국시간) — 7월 FOMC 전 최대 분수령</span></div>
+    <div class="kv"><span>7/3(금)</span><span>美 증시 <b>독립기념일 대체휴장</b>(7/4 토) — 한국은 외국인 수급 공백 주의</span></div>
+    <div class="kv"><span>7월 초</span><span><b>韓 삼성전자·SK하이닉스 2분기 잠정실적</b> 시즌 임박 — 반도체 추세의 진짜 분수령</span></div>
+    <div class="kv"><span>7/16(목)</span><span><b>한국은행 금통위</b> — 현 2.50%, '환율 방어' vs '경기 부양' 줄타기</span></div>
+    <div class="kv"><span>7/28~29</span><span><b>FOMC</b> — 매파 점도표 이후 첫 회의</span></div>
+  </div>
+  <p class="small" style="margin-top:8px">당장은 <b>7/2 美 고용 → 7월 초 삼성·SK 잠정실적</b>이 줄줄이 대기. 반기말(오늘)을 넘기며 <b>외국인 매도가 7.7조→1.5조로 줄어든 게</b> 첫 긍정 신호이고, 이 흐름이 <b>7/1~2에 순매수로 돌아서는지</b>가 '추세 전환'의 관건입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🛡️ 리스크 지표 점검 (6/30 마감 기준)</h2>
+  <div class="kv"><span>코스피 등락</span><span class="up">+1.73% (🟢 급락 아님 · 8,500선 회복)</span></div>
+  <div class="kv"><span>코스닥 등락</span><span class="down">-1.00% (🟢 어제 +8% 급등분 일부 반납)</span></div>
+  <div class="kv"><span>원/달러 환율</span><span class="up">약 1,548원 (🟡 1,500 상회·장중 1,550.2 터치 후 반락)</span></div>
+  <div class="kv"><span>VIX(미국 공포지수)</span><span>18.41 (🟢 낮음 — 美 증시 안정·빅테크 반등)</span></div>
+  <div class="kv"><span>외국인 순매수(코스피)</span><span class="down">-1.5조 (8거래일 연속 순매도, 🟢 10일 미만)</span></div>
+  <div class="kv"><span>美 나스닥(간밤)</span><span class="up">+2.07% (🟢 빅테크 반등·다우 첫 52,000)</span></div>
+  <div class="kv"><span>국제유가·호르무즈</span><span>지정학 리스크 완화 (🟢 추가 상승 제한 요인)</span></div>
+  <div class="kv"><span>한·미 기준금리차</span><span class="down">2.50% vs 3.50~3.75% (1%p+ · 원화 약세 압력)</span></div>
+  <p class="small" style="margin-top:8px"><b>'경고등은 노랑 — 불씨는 여전히 환율 한 곳.'</b> 환율이 장중 위험선(1,550)을 잠깐 터치한 게 유일한 노란불입니다(당국 개입 경계로 종가는 미돌파). 반면 VIX(18.41)·코스피(+1.73%)·외국인 순매도일수(8일)는 모두 안정권이고, 미국 빅테크 반등은 강세 신호입니다. <b>관전 포인트 ①환율 1,550 종가 방어선 ②반기말 통과 후 외국인 매도 진정 여부 ③美 빅테크 반등 이틀째 지속.</b></p>
+</div>
+
+<div class="card">
+  <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+  <ul>
+    <li><b>🔋 2차전지(이차전지):</b> 어제 폭등 → 오늘 차익실현(LG엔솔 -7.99%)으로 <b>변동성이 매우 큼을 재확인</b>. '업황 바닥 통과 + 낙폭과대' 스토리는 유효하나, <b>+20% 다음 날 -8%</b>처럼 출렁여 추격매수는 특히 위험합니다. 분할 접근만 권합니다.</li>
+    <li><b>💊 바이오·제약:</b> AI·반도체와 <b>무관한 독립 모멘텀</b>으로 순환매 1순위 유지. 금리(고용지표) 변수에 민감하니 7/2 고용보고서를 함께 봐야 합니다.</li>
+    <li><b>🏗️ 건설·전력(AI 인프라):</b> <b>삼성·SK 2,000조 클러스터·데이터센터 낙수</b> 기대가 중기 재료. AI 데이터센터의 전력·송전·냉각 병목 테마와 맞물려 거래량이 꾸준합니다.</li>
+    <li><b>🚢 조선·🚗 자동차:</b> <b>고환율(수출 채산성) 직접 수혜</b>. 환율이 1,548원까지 오른 환경에서 방어적 대안으로 부각됩니다.</li>
+    <li><b>🏦 증권·금융:</b> 거래대금 폭증의 직접 수혜 + <b>밸류업(주주환원)</b> 테마. 변동성 장세에서 거래대금이 꾸준히 늘고 있습니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+  <ul>
+    <li><b>🇰🇷 삼성·SK '10년 2,000조' 반도체 메가투자(이재명 정부):</b> 어제 발표된 <b>3대 축 — 호남 반도체 클러스터·충청 AI 데이터센터·영남 피지컬 AI</b>가 중기 정책 모멘텀의 중심. <b>건설·전력·소부장·로봇</b>이 직접 수혜권으로, 오늘 반도체 반등과 함께 관련 소부장도 점검 대상입니다.</li>
+    <li><b>💱 외환 안정 의지(당장의 변수):</b> 환율이 장중 1,550을 터치하자 <b>당국 개입 경계감</b>이 즉시 작동해 반락. 단기적으로 <b>1,550선 방어</b>가 정부·한은의 최우선 과제이며, 외국인 수급과 한 묶음으로 움직입니다.</li>
+    <li><b>📈 밸류업(상법 개정·주주환원):</b> 자사주 소각·배당 확대 → 증권·은행·보험·지주. 거래대금 증가와 맞물려 증권주가 꾸준히 강합니다.</li>
+    <li><b>🛡️ 방산 수출·조선 재건:</b> AI와 무관한 독립 성장축이자 고환율 수혜. 조선은 대외 변수(美 존스법)를 함께 점검해야 합니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>💭 Claude의 생각 (참고용)</h2>
+  <div class="opinion">
+    오늘은 <b>'어제의 공포가 과했음을 시장이 스스로 정정한 날'</b>이었습니다. 주말 내내 시장을 짓눌렀던 'AI 둔화·오픈AI IPO 연기설'은 간밤 미국에서 <b>나스닥 +2.07%·알파벳 +5%·다우 사상 첫 52,000 돌파</b>로 하룻밤 만에 뒤집혔고, 한국 반도체(삼성전자 +1.88%·삼성전기 +6.33%)도 동반 반등하며 코스피를 <b>+1.73%(8,540)</b>로 끌어올렸습니다. 동시에 어제 +8% 폭등했던 코스닥(2차전지)은 <b>하루 만에 -1%</b>로 되밀렸습니다 — 즉 어제 제가 던졌던 질문('주도주 교체냐, 하루짜리 반등이냐')에 대해 시장은 일단 <b>'반도체가 여전히 주도주'</b>라고 답한 셈입니다. 다만 이건 '교체 실패'라기보다 <b>'반도체 주도 + 순환매가 며칠 간격으로 번갈아 점화'</b>되는 고변동 국면으로 읽는 게 정확합니다. 긍정적 변화도 분명합니다. <b>외국인 매도가 7.7조 → 1.5조로 급감</b>했습니다 — 오늘이 상반기 마지막 거래일이자 반기말 결제일이었던 만큼, '<b>반기말 바스켓 리밸런싱의 절정이 지나갔다</b>'는 신호일 수 있습니다. 만약 7/1~2에 외국인이 매도를 멈추거나 순매수로 돌아선다면, 그게 진짜 변곡점입니다. 반대로 냉정히 볼 점도 그대로입니다. <b>환율은 장중 1,550.2원으로 위험선을 잠깐 터치</b>했습니다(당국 개입 경계로 1,548원 안팎 반락). 종가로는 막혔지만 '<b>외국인 8일 연속 매도 + 17년 만 고환율</b>'이라는 뿌리는 아직 안 뽑혔습니다. 결론: <b>'노란불 — 반도체가 살아나며 8,500을 회복했고 외국인 매도도 줄었지만, 환율 1,550과 7/2 美 고용이 진짜 시험대.'</b> 변동성이 ±1~10%로 극심한 장이라 <b>추격매수는 여전히 위험</b>하며, 특히 어제 +20% 갔다 오늘 -8% 빠진 2차전지를 지금 따라붙는 건 권하지 않습니다. 분할·분산 대응을 권합니다.
+  </div>
+</div>
+
+<div class="disclaimer">본 자료는 경향성 참고용으로 작성된 것이며 투자 권유가 아닙니다.<br>지수·환율·수급은 6/30 마감 보도·집계 기준이며 자료원에 따라 차이가 있을 수 있습니다(원/달러 종가는 장중 1,543~1,550원 편차로 약 1,548원 추정, 수급 금액은 억 단위 반올림). 미국 지수·VIX는 직전 거래일(6/29) 기준입니다. 상승/하락 종목수는 데이터 미확보. 모든 투자 판단과 책임은 투자자 본인에게 있습니다.</div>
+
+</div></body>
+</html>
