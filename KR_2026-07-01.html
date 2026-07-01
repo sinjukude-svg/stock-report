@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-07-01</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:110px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert{border:2px solid #d02b26;background:#fff5f4;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800;color:#c0201b}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c}
+  .rebound{background:#eafaef;border:1px solid #bfe6c9;border-radius:10px;padding:10px;font-size:12px;color:#1f7a39;margin-top:8px}
+  .intraday{background:#fdeef0;border:1px solid #f4c4cb;border-radius:10px;padding:10px;font-size:12px;color:#b03048;margin-top:8px}
+</style>
+</head>
+<body><div class="wrap">
+
+<div class="card alert">
+  <div class="alert-head"><span class="alert-light">🔴</span><span class="alert-title">리스크 경고등: 위험</span></div>
+  <p class="small"><b>판정 근거(7/1 수 마감 기준):</b> ①원/달러 환율 <b>1,554.9원 종가</b>로 <b>위험선(1,550)을 종가로 돌파</b> — <b>2009년 3월 이후 17년 만 최고</b>(장중 1,559.2원). ②<b>VIX 약 17</b>(🟢 낮음). ③코스피 <b>-2.04%</b>(🟡 낙폭 크나 '급락선' -3% 미만). ④외국인 <b>9거래일 연속 순매도</b>(🟡 '주의' 기준 10일에 하루 남음). 네 지표 중 <b>환율이 🔴 트리거(1,550 이상)를 명확히 넘겨</b> 종합 판정은 <b>🔴 위험</b>입니다. 다만 이는 '패닉 급락'이 아니라 <b>외국인의 반도체 차익실현 + 엔화 약세 동조(162엔 돌파)</b>가 누적된 '고환율' 성격입니다. 어젯밤 미국 반도체는 강했지만(엔비디아 +2.6%), 한국 반도체는 <b>외국인 매도로 오히려 급락</b>(삼성전자 -5.84%)하며 지수를 끌어내렸습니다. <b>최대 관전 포인트는 환율 1,550의 '종가 안착 여부'와 외환당국 개입</b>입니다.</p>
+</div>
+
+<div class="card">
+  <h1>🇰🇷 한국 주식시장 리포트</h1>
+  <div class="date">2026년 7월 1일(수) · <b>마감 브리핑</b> · 정규장 종료 기준 · 하반기 첫 거래일</div>
+  <p class="small" style="margin-top:8px">한 줄 요약: <b>'미국 반도체는 웃었는데, 한국 반도체만 운 날 — 그리고 환율이 마지노선(1,550)을 종가로 뚫은 날.'</b> 간밤 미국 반도체 강세(엔비디아 +2.6%)에 코스피는 개장 직후 <b>+1.36%(8,591)로 8,600선 회복을 시도</b>했지만, <b>외국인이 반도체를 9거래일째 팔아치우며</b>(삼성전자 -5.84%·SK하이닉스 -3.40%) 하락 전환, 장중 <b>8,143.33까지</b> 밀렸다가 <b>개인 저가매수</b>로 낙폭을 줄여 <b>-2.04%(8,303.41)</b>로 마감했습니다. 원/달러는 <b>1,554.9원</b>으로 17년 만 최고를 새로 썼습니다.</p>
+  <div class="rebound">✅ <b>그래도 나쁘지만은 않은 두 가지</b> — ①<b>한국 6월 수출이 사상 처음 월 1,000억달러를 돌파</b>(반도체 호황)해 펀더멘털은 견조합니다. ②지수 낙폭은 <b>삼성전자·SK하이닉스(시총 약 60%) 두 종목에 집중</b>됐고, <b>건설(+5%대)·조선·방산·원전·기계</b> 등은 순환매로 올라 '체감 시장'은 지수만큼 나쁘지 않았습니다.</div>
+  <div class="intraday">⚠️ <b>냉정히 볼 뿌리 — '수급의 악순환' 경계</b> — 외국인 <b>9거래일 연속 순매도(오늘만 -1.7조)</b> + 환율 <b>1,550 종가 돌파</b>가 맞물렸습니다. '환율↑ → 외국인 이탈↑ → 다시 환율↑'의 고리가 돌 수 있어, <b>7/2 美 고용보고서·7/3 美 휴장(수급 공백)</b>을 앞두고 경계가 필요합니다.</div>
+</div>
+
+<div class="card">
+  <h2>📊 주요 지수 (7/1 수 마감 확정)</h2>
+  <table>
+    <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+    <tr><td>코스피</td><td>8,303.41</td><td class="down">-173.07 (-2.04%)</td></tr>
+    <tr><td>코스닥</td><td>약 910선</td><td class="down">소폭 하락 (2차전지 차익실현·데이터 미확보)</td></tr>
+    <tr><td>원/달러 환율</td><td>1,554.9원</td><td class="up">+5.5원 (🔴 1,550 종가 돌파·17년 최고)</td></tr>
+  </table>
+  <p class="small" style="margin-top:8px"><b>📊 시장 폭(상승/하락 종목 수):</b> 정확한 종목수는 <b>데이터 미확보</b>지만, 방향은 '<b>지수 ≠ 체감시장</b>'이었습니다. 코스피 -2.04%는 사실상 <b>삼성전자(-5.84%)·SK하이닉스(-3.40%) 두 종목(시총 약 60%)이 끌어내린</b> 착시에 가깝고, <b>건설·조선·방산·원전·기계·증권·금속</b> 등 상당수 업종은 <b>순매수 순환매로 상승</b>했습니다. 즉 '<b>지수(반도체)는 빠졌지만, 그 외 시장은 오히려 순환매로 버틴</b>' 하루였습니다.</p>
+  <p class="small" style="margin-top:8px"><b>↩️ 장중 흐름:</b> 개장 <b>+1.36%(8,591)</b>로 8,600 회복 시도 → 외국인 매도 확대로 하락 전환 → <b>오전 11:11 저점 8,143.33</b> → 개인 저가매수로 8,401선까지 만회 → <b>8,303.41 마감</b>. 6월 내내 이어진 <b>±1~10%의 초고변동</b>이 오늘도 '개장 강세 → 외국인 매도 → 개인 방어'의 롤러코스터로 재현됐습니다.</p>
+</div>
+
+<div class="card">
+  <h2>🇺🇸 미국 주요 변동사항 (있음 — 반도체 리더십 복귀 · 다우 52,000선 · 유가 급락)</h2>
+  <ul>
+    <li><b>🚀 반도체 리더십 복귀(핵심):</b> 6/30(현지) 미국장은 <b>나스닥 +1.52%(26,213.72)·S&amp;P500 +0.79%(7,499.36)·다우 +0.26%(52,319.20)</b>로 상승 마감. <b>엔비디아 +2.6%·반도체ETF(SMH) +3%</b>로 '칩'이 다시 앞장섰습니다. 원래대로면 오늘 한국 반도체에 호재였지만, <b>외국인 차익실현이 이를 눌러버린 점</b>이 오늘의 핵심 디커플링입니다.</li>
+    <li><b>🛢️ 유가 급락 — 인플레 부담 완화:</b> WTI 약 <b>$70.75</b>로 <b>팬데믹 이후 최대 분기 낙폭</b>. 호르무즈 통항 정상화로 에너지발 물가 걱정이 크게 줄었습니다(항공·물가엔 우호). 다만 이란의 '호르무즈 통제 고수' 발언은 잔불로 남았습니다.</li>
+    <li><b>🏦 매파 연준·강달러(비우호):</b> <b>워시(Warsh) 연준</b> 체제에서 시장은 <b>9월 인상 가능성</b>까지 반영 중이고, <b>엔화가 162엔(1986년 이후 최약)</b>까지 밀렸습니다. 이 <b>강달러·엔 약세가 원화까지 끌어내린</b> 오늘 환율 급등의 직접 배경입니다.</li>
+    <li><b>📊 한 줄 정리:</b> '미국 지표는 우호(반도체·유가), 통화 환경은 비우호(매파·강달러)'가 엇갈렸고, <b>한국엔 통화 쪽(환율)이 더 세게 작용</b>했습니다. VIX는 <b>약 17로 낮아</b> 공포 확산은 아닙니다.</li>
+  </ul>
+  <div class="note" style="margin-top:8px">➡️ 미국장은 오늘 밤 다시 열립니다. <b>7/2 6월 고용보고서(휴일로 하루 앞당겨·美 조기 마감)</b>가 매파 연준 경로를 가를 최대 변수이며, <b>7/3은 독립기념일 휴장</b>이라 내일·모레는 <b>외국인 수급 공백</b>에 유의해야 합니다.</div>
+</div>
+
+<div class="card">
+  <h2>💰 투자주체별 수급 (7/1 마감 · 코스피 기준 100 바)</h2>
+  <p class="small" style="margin-bottom:6px">코스피 기준 · 가장 큰 금액(외국인 매도)을 100으로 환산</p>
+  <div class="bar-row"><span class="bar-label">외국인</span><div class="bar-track"><div class="bar-sell" style="width:100%"></div></div><span class="bar-val">매도 17,029억</span></div>
+  <div class="bar-row"><span class="bar-label">개인</span><div class="bar-track"><div class="bar-buy" style="width:74%"></div></div><span class="bar-val">매수 약 1.26조(추정)</span></div>
+  <div class="bar-row"><span class="bar-label">기관</span><div class="bar-track"><div class="bar-buy" style="width:26%"></div></div><span class="bar-val">매수 약 0.44조(추정)</span></div>
+  <p class="small" style="margin-top:8px">🔴 빨강=매수, 🔵 파랑=매도. 쉽게 말해: 외국인이 <b>1조7,029억원(9거래일째)</b>을 또 던졌고, 이를 <b>개인 저가매수가 대부분 받아내며</b> 장중 저점(8,143)에서 지수를 끌어올렸습니다. <b>개인·기관의 정확한 순매수 금액은 데이터 미확보로 추정치</b>이며, 외국인 매도 금액(1.7조)과 9거래일 연속 매도는 확정 수치입니다.</p>
+  <p class="small" style="margin-top:6px;color:#1763e6"><b>↔ 코스닥:</b> 2차전지 등 성장주 차익실현에 소폭 하락(약 910선). 외국인 매도·개인 매수 구도는 코스피와 유사했습니다(코스닥 정확 종가·수급은 데이터 미확보).</p>
+  <p class="small" style="margin-top:6px"><b>🧭 반기 누적:</b> 상반기 외국인 코스피 순매도는 <b>약 149조원</b>으로, 2008년·2020년 위기의 <b>6~8배</b> 규모입니다. 다만 대부분 <b>반도체 단일 업종의 차익실현</b>에 집중된 것으로 분석됩니다(펀더멘털 이탈보다는 밸류·환율 요인).</p>
+</div>
+
+<div class="card">
+  <h2>🚀 주도 섹터: 반도체 '차익실현 급락' vs 조선·방산·건설 '순환매 약진'</h2>
+  <p style="font-size:13px;margin-bottom:8px">
+    <span class="tag tag-gray">반도체: 외국인 차익실현 · 오늘 급락</span>
+    <span class="tag tag-orange">조선·방산·원전·건설: 순환매 강세</span>
+    <span class="tag tag-gray">반도체 2025년 말 시작·약 36주차</span>
+  </p>
+  <div class="gauge"><div style="width:45%"></div></div>
+  <p class="small">반도체 강도: <b>약강세로 후퇴</b>(45/100, 어제 60→오늘 45). 미국 반도체가 올랐음에도 <b>외국인 차익실현</b>에 삼성전자 -5.84%·SK하이닉스 -3.40%로 급락. 추세 자체(HBM·수출 호황)는 살아 있지만, <b>외국인 수급이 이길 때까지</b>는 지수 주도력이 흔들립니다. 진짜 분수령은 <b>7/7 삼성·7/23 SK하이닉스 2분기 잠정실적</b>.</p>
+  <ul style="margin-top:10px">
+    <li><b>오늘의 순환매는?</b> 뚜렷했습니다. 자금이 반도체에서 빠져 <b>건설(+5%대)·운수창고·운송장비·기계·증권·금속·의료정밀</b>로 이동했고, 특히 <b>조선·방산·원전</b>이 약진했습니다 — 지금까지 리포트가 '다음 후보'로 지목해온 <b>고환율·정책 수혜 섹터가 실제로 점화</b>된 하루입니다.</li>
+    <li><b>왜?</b> ①환율 1,550 돌파는 <b>수출주(조선·자동차)의 채산성</b>에 직접 호재, ②지정학·정책은 <b>방산·원전</b>에 우호, ③반도체 메가투자·AI 데이터센터는 <b>건설·전력</b>에 낙수. '반도체가 쉬는 사이 대안이 뜨는' 전형적 순환매입니다.</li>
+    <li><b>핵심 질문:</b> ①외국인이 <b>9일 연속 매도를 언제 멈추는가</b>, ②환율이 <b>1,550 위에 안착하는가(당국 개입은?)</b>, ③7/2 美 고용 이후 반도체가 다시 살아나는가 — 이 셋이 7월 첫 주 방향을 가릅니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>📅 이번 주 주요 일정</h2>
+  <div class="sched">
+    <div class="kv"><span>7/1(수)</span><span><b>韓 6월 수출 사상 첫 1,000억달러 돌파</b>(반도체 호황) / 美 <b>ISM 제조업·ADP·JOLTS</b> / 워시 연준의장 신트라(ECB) 발언 / EU 철강관세 발효</span></div>
+    <div class="kv"><span>7/2(목)</span><span><b>美 6월 고용보고서</b>(7/3 휴장으로 하루 앞당김·美 조기 마감) — <b>이번 주 최대 변수</b>, 매파 연준 경로 직결</span></div>
+    <div class="kv"><span>7/3(금)</span><span>美 증시 <b>독립기념일 휴장</b> — 한국은 <b>외국인 수급 공백</b> 주의</span></div>
+    <div class="kv"><span>7/7(화)</span><span><b>삼성전자 2분기 잠정실적</b>(예정) — 코스피 반도체 방향타</span></div>
+    <div class="kv"><span>7/16(목)</span><span><b>한국은행 금통위</b> — 현 2.50%, '환율 방어' vs '경기 부양' 줄타기(환율 1,550 돌파로 인하 여지 축소)</span></div>
+    <div class="kv"><span>7/23(목)</span><span><b>SK하이닉스 2분기 실적</b> — HBM 사이클 확인</span></div>
+    <div class="kv"><span>7/28~29</span><span><b>FOMC</b> — 매파 점도표 이후 첫 회의</span></div>
+  </div>
+  <p class="small" style="margin-top:8px">당장은 <b>7/2 美 고용 → 7/3 美 휴장(수급 공백) → 7/7 삼성 잠정실적</b>이 줄줄이 대기. 환율이 1,550을 넘긴 만큼 <b>7/16 금통위의 셈법(환율 방어 부담↑)</b>도 복잡해졌습니다.</p>
+</div>
+
+<div class="card">
+  <h2>🛡️ 리스크 지표 점검 (7/1 마감 기준)</h2>
+  <div class="kv"><span>코스피 등락</span><span class="down">-2.04% (🟡 낙폭 크나 -3% 급락선 미만)</span></div>
+  <div class="kv"><span>코스닥 등락</span><span class="down">소폭 하락(약 910선·데이터 미확보)</span></div>
+  <div class="kv"><span>원/달러 환율</span><span class="up">1,554.9원 (🔴 1,550 종가 돌파·17년 최고)</span></div>
+  <div class="kv"><span>VIX(미국 공포지수)</span><span>약 17 (🟢 낮음 — 美 증시 안정)</span></div>
+  <div class="kv"><span>외국인 순매수(코스피)</span><span class="down">-1.7조 (9거래일 연속 순매도, 🟡 10일 근접)</span></div>
+  <div class="kv"><span>엔/달러</span><span class="down">162엔 돌파 (1986년 이후 최약 → 원화 동조 약세)</span></div>
+  <div class="kv"><span>美 나스닥(간밤)</span><span class="up">+1.52% (🟢 반도체 복귀 — 단 韓은 디커플링)</span></div>
+  <div class="kv"><span>한·미 기준금리차</span><span class="down">2.50% vs 3.50~3.75% (1%p+ · 원화 약세 압력)</span></div>
+  <p class="small" style="margin-top:8px"><b>'경고등은 빨강 — 불씨는 환율 한 곳이지만, 그 한 곳이 마지노선을 넘었다.'</b> VIX(17)·코스피 낙폭(-2.04%)·외국인 매도일수(9일)는 아직 위험 트리거가 아니지만, <b>환율이 1,554.9원 종가로 위험선(1,550)을 넘겨</b> 종합 판정을 🔴로 올렸습니다. <b>관전 포인트 ①환율 1,550 종가 안착·당국 개입 ②외국인 매도 10일째 여부(내일 주의 상향 가능) ③7/2 美 고용.</b></p>
+</div>
+
+<div class="card">
+  <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+  <ul>
+    <li><b>🚢 조선·🛡️ 방산·⚛️ 원전(오늘 실제 점화):</b> <b>고환율(수출 채산성)+지정학+정책</b>의 삼박자로 오늘 약진. '반도체 대안'으로 자금이 실제 유입되며 거래량이 늘고 있습니다. 다만 이미 단기 급등한 만큼 <b>추격보다 분할</b>.</li>
+    <li><b>🏗️ 건설·⚡ 전력(AI 인프라):</b> 오늘 <b>건설 +5%대</b>로 강세. <b>삼성·SK 2,000조 클러스터·데이터센터 낙수 + AI 전력·냉각 병목</b> 테마가 중기 재료.</li>
+    <li><b>🏦 증권·금융:</b> 거래대금 폭증 직접 수혜 + <b>밸류업(주주환원)</b>. 변동성 장세에서 거래대금이 꾸준합니다.</li>
+    <li><b>💊 바이오·제약:</b> AI·반도체와 <b>무관한 독립 모멘텀</b>으로 순환매 대안. 금리(7/2 고용) 민감도는 유의.</li>
+    <li><b>🔋 2차전지:</b> 여전히 <b>변동성이 매우 큼</b>(오늘도 차익실현). '업황 바닥' 스토리는 유효하나 추격매수는 특히 위험, 분할 접근만 권합니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+  <ul>
+    <li><b>💱 외환 안정 의지(오늘의 최대 변수):</b> 환율이 <b>1,554.9원 종가로 1,550을 돌파</b>하며 <b>당국 개입 경계감</b>이 최고조. 1,560원 부근에선 달러 매도(오퍼) 물량도 나왔습니다. 단기적으로 <b>1,550선 방어</b>가 정부·한은의 최우선 과제이며, 외국인 수급과 한 묶음으로 움직입니다.</li>
+    <li><b>🇰🇷 삼성·SK '10년 2,000조' 반도체 메가투자(이재명 정부):</b> <b>호남 반도체 클러스터·충청 AI 데이터센터·영남 피지컬 AI</b>의 3대 축이 중기 모멘텀. <b>건설·전력·소부장·로봇</b>이 직접 수혜권으로, 오늘 건설 강세와 맞닿아 있습니다.</li>
+    <li><b>🛡️ 방산·🚢 조선·⚛️ 원전:</b> 오늘 순환매의 주역. AI와 무관한 독립 성장축이자 <b>고환율 수혜</b>. 조선은 대외 변수(美 존스법), 원전은 정책·수출 수주를 함께 점검해야 합니다.</li>
+    <li><b>📈 밸류업(상법 개정·주주환원):</b> 자사주 소각·배당 확대 → 증권·은행·보험·지주. 거래대금 증가와 맞물려 꾸준히 강합니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>💭 Claude의 생각 (참고용)</h2>
+  <div class="opinion">
+    오늘은 <b>'미국 반도체는 웃었는데 한국 반도체만 운 날, 그리고 환율이 마지노선(1,550)을 종가로 뚫은 날'</b>이었습니다. 간밤 미국에서 <b>엔비디아 +2.6%·SMH +3%</b>로 칩 리더십이 복귀해 코스피는 개장 <b>+1.36%(8,591)</b>로 8,600 회복을 시도했지만, <b>외국인이 9거래일째 반도체를 팔며</b>(삼성전자 -5.84%·SK하이닉스 -3.40%) 지수를 <b>-2.04%(8,303.41)</b>로 끌어내렸습니다. 원/달러는 <b>1,554.9원</b>으로 2009년 3월 이후 <b>17년 만 최고</b>를 새로 썼습니다.<br><br>
+    경고등을 <b>🔴</b>로 올린 이유는 기계적입니다 — <b>환율이 위험선(1,550)을 종가로 넘겼기 때문</b>입니다(정량 트리거). 다만 이건 '패닉 급락'이 아니라 <b>①외국인의 반도체 차익실현 + ②엔화 162엔 동조 약세</b>가 누적된 '고환율' 성격이라는 점을 구분해야 합니다. VIX(17)도 낮고, 지수 낙폭도 <b>삼성·SK하이닉스 두 종목(시총 60%)에 집중</b>됐을 뿐입니다.<br><br>
+    실제로 균형 잡힌 신호도 많았습니다. ① <b>한국 6월 수출이 사상 첫 월 1,000억달러</b>를 넘어 펀더멘털은 견조하고, ② <b>건설·조선·방산·원전·기계</b> 등은 순환매로 올라 '체감 시장'은 지수보다 나았으며(제가 '다음 후보'로 지목해온 고환율·정책 섹터가 실제 점화됐습니다), ③ <b>개인 저가매수</b>가 장중 저점(8,143)에서 지수를 방어했습니다.<br><br>
+    그럼에도 냉정히 볼 점은 분명합니다. <b>'외국인 9일 연속 매도 + 환율 1,550 종가 돌파'</b>는 <b>'환율↑ → 외국인 이탈↑ → 다시 환율↑'</b>의 악순환으로 번질 수 있습니다. 특히 <b>7/2 美 고용 → 7/3 美 휴장(수급 공백)</b>을 앞둔 타이밍이 부담입니다. 결론: <b>'빨간불 — 환율이 실제로 마지노선을 넘었으니 방어적으로.'</b> 낙폭 큰 반도체의 저가 추격도, 이미 급등한 순환매(조선·방산·건설)의 추격도 지금은 신중해야 하며, <b>분할·분산</b>이 답입니다. 최대 관전 포인트는 단 하나 — <b>환율 1,550의 종가 안착 여부와 당국 개입</b>입니다.
+  </div>
+</div>
+
+<div class="disclaimer">본 자료는 경향성 참고용으로 작성된 것이며 투자 권유가 아닙니다.<br>지수·환율·수급은 7/1 마감 보도·집계 기준이며 자료원에 따라 차이가 있을 수 있습니다(코스피 종가·원/달러 종가·외국인 순매도 1.7조·9거래일 연속은 확정, 개인·기관 순매수 금액과 코스닥 정확 종가·상승/하락 종목수는 데이터 미확보로 추정). 미국 지수·VIX·유가는 직전 거래일(6/30) 기준입니다. 모든 투자 판단과 책임은 투자자 본인에게 있습니다.</div>
+
+</div></body>
+</html>
