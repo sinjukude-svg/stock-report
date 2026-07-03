@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-07-03</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:118px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert{border:2px solid #e8a415;background:#fffaf0;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800;color:#b07708}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c}
+  .rebound{background:#eafaef;border:1px solid #bfe6c9;border-radius:10px;padding:10px;font-size:12px;color:#1f7a39;margin-top:8px}
+  .intraday{background:#fdeef0;border:1px solid #f4c4cb;border-radius:10px;padding:10px;font-size:12px;color:#b03048;margin-top:8px}
+</style>
+</head>
+<body><div class="wrap">
+
+<div class="card alert">
+  <div class="alert-head"><span class="alert-light">🟡</span><span class="alert-title">리스크 경고등: 주의 (어제 🔴 → 오늘 🟡 하향)</span></div>
+  <p class="small"><b>판정 근거(7/3 금 마감 기준):</b> ①코스피가 <b>+5.76%(8,088.34) 급반등</b>해 어제의 '지수 급락(🔴)' 트리거는 해제. ②원/달러 환율은 미 고용 부진발 달러 약세로 <b>1,530원대 중반(장중 1,537.8원, 약 -18원)</b>까지 하락 — <b>위험선(1,550) 아래로 내려왔지만 여전히 1,500원 이상(🟡)</b>. ③외국인은 오늘도 코스피 <b>2.2조원 순매도, 11거래일 연속(🟡)</b>. 지수는 살아났지만 <b>환율·외국인 수급 두 개의 노란불</b>이 남아 종합 판정은 <b>🟡 주의</b>입니다. 급락 다음 날 +5.76% 급반등이라는 <b>'롤러코스터 변동성' 자체가 리스크</b>라는 점도 함께 봐야 합니다.</p>
+</div>
+
+<div class="card">
+  <h1>🇰🇷 한국 주식시장 리포트</h1>
+  <div class="date">2026년 7월 3일(금) · <b>마감 브리핑</b> · 정규장 종료 기준 · <b>'V자 급반등'</b></div>
+  <p class="small" style="margin-top:8px">한 줄 요약: <b>'어제 -7.9% 폭락을 하루 만에 +5.8%로 되받아친 날 — 이번엔 매도가 아니라 매수 사이드카가 걸렸다.'</b> 장 초반엔 미 반도체 이틀 연속 급락 여파로 <b>7,378.10</b>까지 밀리며(-3.5%) 어제의 공포가 이어지는 듯했지만, 오전 10시 이후 <b>낙폭 과대 반발매수</b>가 유입되며 방향이 뒤집혔습니다. <b>기관이 4조 4,570억원</b>이라는 대규모 순매수로 지수를 끌어올렸고, 오후 1시 47분엔 <b>매수 사이드카</b>(코스피200 선물 +5% 이상)까지 발동. 결국 <b>+5.76%(8,088.34)</b>로 8,000선을 하루 만에 되찾았습니다. <b>삼성전자 +8.22%(30만 9,500원)·SK하이닉스 +10.88%(242만 5,000원)</b>이 반등의 쌍두마차였습니다.</p>
+  <div class="rebound">✅ <b>반등의 두 연료</b> — ①간밤 <b>미 6월 고용이 +5만 7천 명(예상 11만 5천)으로 쇼크 수준 부진</b> → 연준 '금리 인상' 우려가 한풀 꺾였습니다(7월 인상 확률 30% 미만으로 하락). ②어제 하루 -7.89%라는 <b>낙폭 과대 인식</b>에 저가 매수가 몰렸고, 일본 키옥시아도 급락 출발 후 상승 전환하며 아시아 반도체 심리를 지지했습니다.</div>
+  <div class="intraday">⚠️ <b>그래도 남은 불씨</b> — 외국인은 오늘도 <b>2.2조원을 팔며 11거래일 연속 순매도</b>(상반기 누적 약 148~150조). 오늘 반등의 주역이 외국인이 아니라 <b>기관(연기금 등)</b>이었다는 점, 그리고 <b>미 반도체는 이틀간 -11%(SOX)</b> 조정이 진행 중이라는 점에서 '추세 반전'보다는 <b>'기술적 반등'</b>으로 보는 시각이 아직 많습니다. 오늘 밤 미국은 <b>독립기념일 휴장</b> — 주말 동안 재료 공백입니다.</div>
+</div>
+
+<div class="card">
+  <h2>📊 주요 지수 (7/3 금 마감 확정)</h2>
+  <table>
+    <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+    <tr><td>코스피</td><td>8,088.34</td><td class="up">+440.25 (+5.76%)</td></tr>
+    <tr><td>코스닥</td><td>868.41</td><td class="up">+1.69 (+0.19%)</td></tr>
+    <tr><td>원/달러 환율</td><td>1,530원대 중반</td><td class="down">약 -18원 (장중 1,537.8원)</td></tr>
+  </table>
+  <p class="small" style="margin-top:8px"><b>📊 시장 폭(상승/하락 종목 수):</b> 코스피 <b>상승 589개(상한가 2) vs 하락 297개</b>(보합 27) — 어제(상승 280/하락 616)와 정반대로 <b>상승 우위 2:1</b>. 다만 상승의 질은 '대형주 쏠림'이었습니다. <b>대형주 +6.20% vs 중형주 보합·소형주 +0.87%</b>로, 어제 버텼던 중소형·방어주에서 오늘 급반등한 반도체 대형주로 자금이 되돌아간 하루였습니다(오락·문화 -3.03%, 의료·정밀 -1.74%). 코스닥 종목수는 데이터 미확보.</p>
+  <p class="small" style="margin-top:8px"><b>↩️ 장중 흐름:</b> 개장 <b>+1.20%(7,739.75)</b> → 반락해 오전 <b>7,378.10 저점</b>(-3.5%) → 10시 이후 반등 전환 → 오후 상승폭 확대 → <b>13:47 매수 사이드카</b> → <b>8,088.34 마감</b>. 거래대금 <b>45.2조원</b>으로 폭증 — 이틀 연속 사이드카(어제 매도, 오늘 매수)라는 이례적 변동성 장세입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🇺🇸 미국 주요 변동사항 (있음 — '고용 쇼크'가 오늘 반등의 방아쇠)</h2>
+  <ul>
+    <li><b>📉 6월 고용 쇼크(핵심):</b> 비농업 고용 <b>+5만 7천 명</b>으로 예상(+11만 5천)의 절반 이하. 4~5월도 7만 4천 명 하향 수정. 실업률은 4.2%로 내렸지만 <b>구직 포기 급증(경제활동참가율 61.5%, 2021년 3월 이후 최저)</b> 때문이라 내용은 더 나쁩니다. 결과적으로 <b>연준 금리 인상 우려가 완화</b> — 7월 FOMC 인상 확률 30% 미만, 9월 인상 확률 66%→51%, 연내 동결 확률 17%→23%. 2년물 금리 4.137%로 하락, 달러인덱스 -0.53%(100.87).</li>
+    <li><b>📊 뉴욕증시 혼조(7/2):</b> 다우 <b>+1.14%(52,900.07 사상 최고)</b> vs 나스닥 <b>-0.80%</b>, S&P500 보합. <b>필라델피아 반도체지수 -5.4%, 이틀간 -11% 초과</b> — 마이크론 -5.5%(이틀 -16%), 샌디스크 -14.1%, 마벨 -9.8%, 인텔 -5.3%, AMD -4.3%, 엔비디아 -1.4%. 테슬라는 2분기 인도량 서프라이즈에도 -7.49%. 'AI 반도체 → 다우형 가치주'로의 순환매가 뚜렷했습니다.</li>
+    <li><b>🤝 앤트로픽-삼성 파운드리 협의(호재):</b> 클로드 개발사 앤트로픽이 <b>자체 AI칩 생산을 삼성전자 2나노 파운드리와 논의 중</b>(디인포메이션). 성사 시 테슬라·엔비디아·애플에 이은 대형 고객 확보 — 오늘 삼성전자 +8.22% 반등에 힘을 보탠 재료입니다.</li>
+    <li><b>⚠️ 백악관-쿠팡 갈등:</b> 백악관이 "한국 정부가 미국 기술기업(쿠팡)을 차별적으로 표적화한다"고 공개 논평 — 한미 통상 마찰로 번질 수 있는 불씨입니다.</li>
+    <li><b>🇺🇸 오늘 밤 미국 휴장:</b> 7/3(현지) 독립기념일 대체 휴장 → 주말까지 미국발 재료 공백. 다음 미국장은 <b>7/6(월)</b>입니다.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>💰 투자주체별 수급 (7/3 마감 · 코스피 기준 100 바)</h2>
+  <p class="small" style="margin-bottom:6px">코스피 기준 · 가장 큰 금액(기관 매수)을 100으로 환산</p>
+  <div class="bar-row"><span class="bar-label">기관</span><div class="bar-track"><div class="bar-buy" style="width:100%"></div></div><span class="bar-val">매수 약 4.46조</span></div>
+  <div class="bar-row"><span class="bar-label">개인</span><div class="bar-track"><div class="bar-sell" style="width:52%"></div></div><span class="bar-val">매도 약 2.31조</span></div>
+  <div class="bar-row"><span class="bar-label">외국인</span><div class="bar-track"><div class="bar-sell" style="width:50%"></div></div><span class="bar-val">매도 약 2.21조</span></div>
+  <p class="small" style="margin-top:8px">🔴 빨강=매수, 🔵 파랑=매도. 쉽게 말해: 오늘의 주인공은 <b>기관</b>이었습니다. <b>4조 4,570억원</b>이라는 대규모 순매수로 지수를 끌어올렸고, 어제 5.4조를 저가매수했던 <b>개인은 2.3조 차익실현</b>으로 응수했습니다. <b>외국인은 2.2조 매도로 '셀 코리아'를 이어갔습니다.</b> 프로그램 매매는 9,408억원 매도 우위.</p>
+  <p class="small" style="margin-top:6px;color:#1763e6"><b>↔ 코스닥:</b> 개인 <b>+1,121억</b> 순매수 vs 외국인 <b>-202억</b>·기관 <b>-1,039억</b> 순매도. 기관 매수가 코스피 대형주에만 집중된 게 코스닥 강보합(+0.19%)에 그친 이유입니다.</p>
+  <p class="small" style="margin-top:6px"><b>🧭 외국인 연속 매도:</b> 6월 19일부터 <b>11거래일 연속 순매도</b>. 상반기 코스피 누적 순매도는 <b>약 148~150조원(사상 최대)</b> — 증권가는 급등 차익실현+포트폴리오 리밸런싱으로 해석하며, 하반기 코스피 방향은 결국 '외국인 수급 복귀'에 달렸다고 봅니다.</p>
+</div>
+
+<div class="card">
+  <h2>🚀 주도 섹터: 반도체 'V자 복귀' — 어제의 방어주는 되돌림</h2>
+  <p style="font-size:13px;margin-bottom:8px">
+    <span class="tag tag-red">반도체: 낙폭과대 반발매수 · V자 반등</span>
+    <span class="tag tag-orange">증권: 거래대금 폭증 수혜 +7.61%</span>
+    <span class="tag tag-gray">반도체 2025년 말 시작·약 38주차</span>
+  </p>
+  <div class="gauge"><div style="width:55%"></div></div>
+  <p class="small">반도체 강도: <b>중강세로 회복</b>(55/100, 어제 20→오늘 55). <b>삼성전자 +8.22%·SK하이닉스 +10.88%</b>로 어제 낙폭의 상당분을 회복했고, 업종별로도 <b>전기·전자 +8.15%</b>가 1위. 다만 미 반도체(SOX)가 이틀간 -11%로 조정 중이고 '메타발 공급과잉' 내러티브 논쟁이 끝나지 않아, <b>추세 복귀 확인은 7/7(화) 삼성전자 잠정실적</b>이 분수령입니다. KB증권은 오늘 SK하이닉스 목표가를 420만원으로 상향하는 등 증권가 실적 신뢰는 유지되고 있습니다.</p>
+  <ul style="margin-top:10px">
+    <li><b>오늘의 강세:</b> 반도체(전기·전자 +8.15%)와 <b>증권(+7.61%)</b> — 이틀 연속 거래대금 40조원대 폭증의 직접 수혜. 삼성물산 +6.64%, 삼성생명 +3.37% 등 삼성그룹주도 동반 강세.</li>
+    <li><b>오늘의 약세(되돌림):</b> 어제 피난처였던 <b>오락·문화 -3.03%, 의료·정밀 -1.74%</b>. 자금이 이틀째 '방어주 ↔ 반도체'를 오가는 <b>초단기 순환매 장세</b>입니다.</li>
+    <li><b>핵심 질문:</b> ①7/6(월) 재개장하는 미국 반도체가 안정되는가, ②외국인이 12일째 매도를 멈추는가, ③7/7 삼성 잠정실적이 '수요 견고'를 확인하는가.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>📅 이번 주(~다음 주) 주요 일정</h2>
+  <div class="sched">
+    <div class="kv"><span>7/3(금·현지)</span><span><b>美 독립기념일 휴장</b> — 주말까지 미국발 재료 공백, 한국은 자체 수급 장세</span></div>
+    <div class="kv"><span>7/6(월)</span><span><b>美 증시 재개장</b> — 반도체 조정 지속 여부가 다음 주 한국장 방향 결정</span></div>
+    <div class="kv"><span>7/7(화)</span><span><b>삼성전자 2분기 잠정실적</b> — 'AI 수요 견고' 확인의 최대 분수령</span></div>
+    <div class="kv"><span>7/9(목)</span><span><b>국내 옵션 만기일</b> — 기관 4.4조 매수 이후 첫 만기, 수급 변동성 주의</span></div>
+    <div class="kv"><span>7/14(화·현지)</span><span><b>美 6월 CPI</b> — 고용 쇼크 이후 물가까지 둔화되면 '인상 사이클 종료' 기대 강화</span></div>
+    <div class="kv"><span>7/16(목)</span><span><b>한국은행 금통위</b> — 현 2.50%. 환율 1,530원대로 내려와 부담 소폭 완화</span></div>
+    <div class="kv"><span>7/23(목)</span><span><b>SK하이닉스 2분기 실적</b> — HBM 사이클 확인</span></div>
+    <div class="kv"><span>7/28~29</span><span><b>FOMC</b> — 고용 쇼크로 인상 확률 30% 미만으로 후퇴, 동결 시 안도 랠리 재료</span></div>
+  </div>
+  <p class="small" style="margin-top:8px">흐름은 <b>주말 재료 공백 → 7/6 미국 반도체 확인 → 7/7 삼성 실적</b> 순. 다음 주 화요일까지가 '기술적 반등이냐, 추세 복귀냐'를 가리는 구간입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🛡️ 리스크 지표 점검 (7/3 마감 기준)</h2>
+  <div class="kv"><span>코스피 등락</span><span class="up">+5.76% (🟢 급락 트리거 해제)</span></div>
+  <div class="kv"><span>코스닥 등락</span><span class="up">+0.19% (868.41)</span></div>
+  <div class="kv"><span>사이드카</span><span>🟡 매수 사이드카 발동(13:47) — 이틀 연속 사이드카(어제 매도↔오늘 매수)</span></div>
+  <div class="kv"><span>원/달러 환율</span><span class="down">1,530원대 중반 (🟡 1,500 이상·1,550 아래로 하락)</span></div>
+  <div class="kv"><span>VIX(미국 공포지수)</span><span>데이터 미확보 (VKOSPI는 7/2 86.41로 급락일에도 하락)</span></div>
+  <div class="kv"><span>외국인 순매도(코스피)</span><span class="down">약 2.2조 (🟡 11거래일 연속·상반기 148~150조)</span></div>
+  <div class="kv"><span>달러인덱스</span><span>100.87 (-0.53%, 고용 쇼크發 달러 약세)</span></div>
+  <div class="kv"><span>거래대금(코스피)</span><span>45.2조원 — 변동성 장세의 전형</span></div>
+  <p class="small" style="margin-top:8px"><b>'경고등은 빨강에서 노랑으로 — 지수는 살아났지만, 환율과 외국인은 아직 돌아오지 않았다.'</b> 지수 급락·환율 1,550 상회라는 어제의 🔴 트리거 두 개가 모두 해제됐고, 남은 것은 <b>환율 1,500 이상(🟡)과 외국인 11일 연속 매도(🟡)</b>입니다. 특기할 점은 폭락장에서도 VKOSPI(한국 공포지수)가 오히려 하락했다는 것 — 시장이 '시스템 위기'가 아니라 '반도체 단일 조정'으로 읽고 있다는 신호입니다. 다만 이틀 연속 사이드카(매도→매수)는 방향과 무관하게 <b>변동성 자체가 극단적</b>이라는 뜻이므로 포지션 크기 관리가 필요합니다.</p>
+</div>
+
+<div class="card">
+  <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+  <ul>
+    <li><b>🏦 증권·금융(오늘 실제 주도):</b> <b>증권업종 +7.61%</b> — 이틀 연속 거래대금 40조원대의 직접 수혜. 변동성 장세가 이어지는 한 거래대금 모멘텀은 유효하나, 지수 급락일엔 같이 밀리는 양날의 검.</li>
+    <li><b>💾 반도체(핵심·확인 대기):</b> 오늘 V반등으로 '수급 바닥' 기대가 생겼지만 <b>7/7 삼성 잠정실적 확인 전까지는 분할 접근</b>이 정석. 앤트로픽-삼성 2나노 협의는 파운드리 쪽 새 모멘텀.</li>
+    <li><b>⚡ 전력·AIDC 인프라(정책+투자):</b> SK '영남 140조 AI 경부고속도로', LG 9.4조, 현대차그룹 42조 등 <b>지역 AI 인프라 투자 발표가 연일 이어지는 중</b>(어제 충청 392조). 반도체 조정과 무관한 건설·전력·냉각 수혜 축.</li>
+    <li><b>💊 바이오·🚢 방산·조선:</b> 의약품 수출 호조·한화오션 KDDX 등 독립 모멘텀 유지. 다만 오늘은 의료·정밀 -1.74%로 순환매 되돌림 — 급등 추격보다 눌림 대기.</li>
+    <li><b>💄 K뷰티·엔터(주의):</b> 어제 +8~9% 급등 후 오늘 오락·문화 -3.03% 되돌림. 초단기 순환매 성격이 강해 추격 매수는 비추.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+  <ul>
+    <li><b>🇰🇷 이재명 정부 '지역 투자 로드쇼' 연속 발표:</b> 어제 충청(삼성·SK 등 392조)에 이어 오늘은 <b>영남권 — SK 140조('AI 경부고속도로'·아시아 최대 AI데이터센터 허브), 현대차그룹 42조(AI·우주·에너지), LG 9.4조(AI 인프라·첨단 제조)</b>가 발표됐습니다. <b>건설·전력기기·냉각·소부장·로봇</b>이 중기 수혜권.</li>
+    <li><b>🤝 앤트로픽-삼성 파운드리:</b> 정부의 AI·반도체 육성 기조와 맞물린 <b>2나노 파운드리 대형 수주 기대</b> — 성사 시 파운드리 생태계(소부장) 전반에 파급.</li>
+    <li><b>💱 외환 정책:</b> 미 고용 쇼크發 달러 약세에 환율이 1,530원대로 내려왔고, 미국 휴장·주말을 앞둔 <b>당국 개입 경계감</b>도 하락 재료로 작동. 씨티는 원/달러 1,500원 수준까지 하락을 전망. 정부는 <b>24시간 원화 거래(외환시장 구조 개선)</b>도 추진 중.</li>
+    <li><b>⚠️ 한미 통상 변수:</b> 백악관의 쿠팡 관련 공개 논평 등 <b>미국 기술기업 규제를 둘러싼 한미 갈등</b>은 플랫폼·통상 관련주에 잠재 리스크.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>💭 Claude의 생각 (참고용)</h2>
+  <div class="opinion">
+    오늘은 <b>'공포가 하루 만에 반발매수로 뒤집힌 날'</b>이었습니다. 아침만 해도 미 반도체 이틀 급락(-11%)을 이어받아 7,378까지 밀렸지만, <b>미 고용 쇼크(+5.7만 명)가 역설적으로 '금리 인상 우려 완화'라는 호재</b>로 읽히면서 분위기가 급변했습니다. 기관이 4.5조원을 쏟아부었고, 삼성전자 +8.2%·SK하이닉스 +10.9%와 함께 코스피는 <b>+5.76%(8,088)</b>로 8,000선을 하루 만에 되찾았습니다. 어제는 매도 사이드카, 오늘은 매수 사이드카 — 교과서에서나 보던 변동성입니다.<br><br>
+    경고등은 <b>🔴 → 🟡</b>로 내렸습니다. 지수 급락과 환율 1,550 상회라는 빨간 트리거 두 개가 모두 풀렸기 때문입니다. 하지만 🟢까지 내리지 못한 이유도 분명합니다. <b>외국인은 오늘도 2.2조를 팔며 11일 연속 '셀 코리아'</b> 중이고, 환율도 여전히 1,500원대입니다. 오늘 반등의 주체가 외국인이 아닌 <b>기관(연기금)</b>이었다는 건, 아직 '외국인이 돌아온 진짜 바닥'이 확인되지 않았다는 뜻입니다.<br><br>
+    성격을 정확히 보면, 이번 이틀은 <b>'반도체 내러티브 논쟁'</b>입니다. 메타발 공급과잉 공포(어제) vs 낙폭 과대·실적 신뢰(오늘)가 맞부딪혔고, 승부는 아직 나지 않았습니다. 다행인 것은 폭락일에도 VKOSPI가 하락하고 중소형주가 버텼다는 점 — 시장 내부는 이걸 시스템 위기가 아니라 <b>대형 반도체주의 포지션 조정</b>으로 읽고 있습니다.<br><br>
+    결론: <b>'노란불 — 반등은 반갑지만, 아직 기술적 반등과 추세 복귀 사이에 서 있다.'</b> 오늘 같은 +5.8% 급등일에 추격 매수하는 것도, 어제 같은 -7.9% 급락일에 투매하는 것도 모두 변동성에 당하는 길입니다. <b>주말 재료 공백 → 7/6(월) 미국 반도체 → 7/7(화) 삼성 잠정실적</b>까지 확인하고 움직여도 늦지 않습니다. 분할·분산을 유지하고, 포지션 크기를 평소보다 줄여 변동성 자체를 견딜 수 있게 만드는 것이 이번 주말의 숙제입니다.
+  </div>
+</div>
+
+<div class="disclaimer">본 자료는 경향성 참고용으로 작성된 것이며 투자 권유가 아닙니다.<br>지수·수급·업종은 7/3 마감 보도·집계 기준입니다(코스피 +5.76%·8,088.34, 코스닥 +0.19%·868.41, 기관 4조 4,570억 순매수·개인 2조 3,073억/외국인 2조 2,111억 순매도, 상승 589/하락 297 종목, 매수 사이드카 13:47, 삼성전자 +8.22%·SK하이닉스 +10.88%는 이데일리 마감 기준 확정. 원/달러 환율은 주간거래 마감가 확정치 미확보로 장중(10:26) 1,537.8원·약 -18원 기준이며, VIX·코스닥 상승/하락 종목수는 미확보 항목입니다). 미국 지수·고용지표는 직전 거래일(7/2 현지) 기준입니다. 모든 투자 판단과 책임은 투자자 본인에게 있습니다.</div>
+
+</div></body>
+</html>
