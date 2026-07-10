@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-07-10</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:118px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert-yellow{border:2px solid #c97a13;background:#fffbf0;border-radius:14px}
+  .alert-green{border:2px solid #1f8a36;background:#f0fbf2;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800}
+  .alert-title-yellow{color:#c97a13}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c}
+  .intraday{background:#eef6ee;border:1px solid #b8dabb;border-radius:10px;padding:10px;font-size:12px;color:#2a6b34;margin-top:8px}
+</style>
+</head>
+<body><div class="wrap">
+
+<div class="card alert-yellow">
+  <div class="alert-head"><span class="alert-light">🟡</span><span class="alert-title alert-title-yellow">리스크 경고등: 주의 (🟡 유지)</span></div>
+  <p class="small"><b>판정 근거(7/10 금 마감 기준):</b> ①코스피 <b>+2.52% 강한 반등</b> — 급락 트리거(-3% 이상) 해당 없음. ②환율 <b>~1,502원</b> — 전일 1,506원 대비 하락했으나 여전히 1,500원 이상(🟡 트리거 충족). ③VIX <b>~16.8</b> — 22 미만 안정권. ④외국인 <b>3거래일 연속 순매수(+1,144억)</b> — 연속 매도 트리거 해제 유지. 코스피 강한 반등(+2.52%)과 환율 하락 추세는 긍정적이나, 환율 1,500원대 지속으로 <b>🟡 주의 유지</b>. 🟢 전환 조건: 환율 1,500원 하회 + 코스피 7,400선 안착 확인.</p>
+</div>
+
+<div class="card">
+  <h1>🇰🇷 한국 주식시장 리포트</h1>
+  <div class="date">2026년 7월 10일(금) · <b>마감 브리핑</b> · 정규장 종료 기준 · <b>'반도체 대폭발, 매수 사이드카 양 시장 발동'</b></div>
+  <p class="small" style="margin-top:8px">한 줄 요약: <b>'미국 반도체 훈풍에 코스피 5%·코스닥 6% 장중 폭등, 매수 사이드카 동시 발동 — 차익실현에 상승폭 축소됐지만 코스피 +2.52%, 코스닥 +5.47% 강한 마감.'</b> 간밤 미국 시장에서 마이크론(+7.5%, 2,500억달러 미국 투자 계획)·메타(AI칩 자체 생산)가 반도체·AI 투심을 폭발적으로 되살렸고, 이 훈풍이 국내 시장으로 직행. 코스피는 장중 7,700선(+5%대)까지 치솟으며 <b>올해 34번째 매수 사이드카</b>가 발동됐고, 코스닥도 이어서 사이드카 발동(+6%대). 이후 차익실현 매물에 상승폭을 반납했으나 코스피 <b>7,475.94(+2.52%)</b>, 코스닥 <b>837.43(+5.47%)</b>으로 강한 마감.</p>
+  <div class="intraday">✅ <b>왜 폭등했나</b> — ①간밤 미국 마이크론 +7.5%(미국 내 2,500억달러 투자 계획 발표), 메타 AI칩 자체 생산 계획 → AI·반도체 투심 폭발. ②나스닥 +1.30%, S&P500 +0.81% 상승 — 반도체가 시장을 이끎. ③국내 기관 <b>1조7,841억 순매수(코스피)</b>, 코스닥에서도 4,610억 매수 — 기관이 이틀 연속 대규모 매수. ④장중 코스피200 선물 +5.13% → 12:54 매수 사이드카, 코스닥150 선물 +6.04% → 13:08 사이드카 연속 발동. ⑤오후 개인의 1조5,943억 차익실현 매도로 7,700→7,475까지 상승폭 축소.</div>
+  <div class="note">💡 <b>오늘의 핵심 변화</b> — <b>'반도체 1차 바닥 확인 → 강한 반등'</b> 시나리오가 현실화. 어제 +0.62% 턱걸이 반등에서 오늘 +2.52% 본격 반등으로 전환. 장중 5%대 급등과 매수 사이드카 발동은 '투매 구간 종료'를 시사. 코스닥은 800선 하회 3거래일 만에 837로 급반등, 소형·성장주 투심 회복. 상승종목 802개(90% 이상) — 시장 폭 역시 대폭 개선.</p>
+</div>
+
+<div class="card">
+  <h2>📊 주요 지수 (7/10 금 마감 확정)</h2>
+  <table>
+    <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+    <tr><td>코스피</td><td>7,475.94</td><td class="up">+184.03 (+2.52%) · 2거래일 연속 양전</td></tr>
+    <tr><td>코스닥</td><td>837.43</td><td class="up">+43.43 (+5.47%) · 800선 하회 3일 만에 830대 회복</td></tr>
+    <tr><td>원/달러 환율</td><td>~1,502원</td><td class="down">전일 1,506원 대비 하락 (원화 강세)</td></tr>
+  </table>
+  <p class="small" style="margin-top:8px"><b>📊 시장 폭(상승/하락 종목 수):</b> 코스피 상한가 <b>6개</b>, 상승 <b>802개</b>, 하락 <b>92개</b> — 상장종목 90% 이상 강세. 전일 극심한 변동성장에서 일시에 대형주·중소형주 동반 반등으로 전환. 업종별로 전기장비(+8.03%), 복합기업(+7.76%), 은행(+7.55%), 전자장비(+6.57%), 반도체장비(+5.74%) 등 전 업종 강세.</p>
+  <p class="small" style="margin-top:8px"><b>↩️ 장중 흐름:</b> 갭업 출발 → 장중 <b>7,700선(+5%대)</b> 돌파, 매수 사이드카 발동(12:54) → 코스닥도 사이드카 발동(13:08, +6%대) → 개인 차익실현에 <b>7,475.94(+2.52%)</b> 마감. 장중 고점 대비 약 250포인트 후퇴했으나 강한 양봉 마감.</p>
+</div>
+
+<div class="card">
+  <h2>🇺🇸 미국 주요 변동사항 (7/9 현지 — 반도체 폭발 랠리)</h2>
+  <ul>
+    <li><b>💾 마이크론 +7.5%, 반도체 섹터 전면 랠리:</b> 마이크론 테크놀로지가 2035년까지 미국 내 <b>2,500억달러 이상</b> 투자 계획을 발표. AI 수요 급증에 따른 메모리 반도체 설비 확장. SanDisk, AMD, 브로드컴 등 반도체주 동반 상승. IT 섹터 +1.65%로 시장 주도.</li>
+    <li><b>🤖 메타, AI칩 자체 생산 발표:</b> 메타 플랫폼스가 9월부터 AI 칩 자체 제조에 돌입한다고 발표 — AI 설비투자 사이클 지속 확인 신호.</li>
+    <li><b>📈 나스닥 +1.30%, S&P500 +0.81%:</b> 나스닥 <b>26,206.89(+1.30%)</b>, S&P500 <b>7,543.66(+0.81%)</b>. 반도체가 시장을 이끌며 중동 긴장을 상쇄.</li>
+    <li><b>⚔️ 중동 긴장 지속:</b> 트럼프의 이란 재공습 여파 속 유가 부담은 이어졌으나, 반도체·AI 랠리가 중동발 하방 압력을 완전히 상쇄.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>💰 투자주체별 수급 (7/10 마감)</h2>
+  <p class="small" style="margin-bottom:4px"><b>▸ 코스피</b> · 가장 큰 금액(기관 매수 1조7,841억)을 100으로 환산</p>
+  <div class="bar-row"><span class="bar-label">외국인</span><div class="bar-track"><div class="bar-buy" style="width:6%"></div></div><span class="bar-val">매수 약 1,144억</span></div>
+  <div class="bar-row"><span class="bar-label">기관</span><div class="bar-track"><div class="bar-buy" style="width:100%"></div></div><span class="bar-val">매수 약 1조7,841억</span></div>
+  <div class="bar-row"><span class="bar-label">개인</span><div class="bar-track"><div class="bar-sell" style="width:89%"></div></div><span class="bar-val">매도 약 1조5,943억</span></div>
+  <p class="small" style="margin-top:6px;margin-bottom:4px"><b>▸ 코스닥</b></p>
+  <div class="bar-row"><span class="bar-label">외국인</span><div class="bar-track"><div class="bar-sell" style="width:29%"></div></div><span class="bar-val">매도 약 1,316억</span></div>
+  <div class="bar-row"><span class="bar-label">기관</span><div class="bar-track"><div class="bar-buy" style="width:100%"></div></div><span class="bar-val">매수 약 4,610억</span></div>
+  <div class="bar-row"><span class="bar-label">개인</span><div class="bar-track"><div class="bar-sell" style="width:71%"></div></div><span class="bar-val">매도 약 3,295억</span></div>
+  <p class="small" style="margin-top:8px">🔴 빨강=매수, 🔵 파랑=매도. 쉽게 말해: <b>기관이 양 시장에서 총 2조2,451억을 쓸어담았습니다.</b> 코스피에서 기관(+1조7,841억)은 이틀 연속 대규모 순매수, 외국인(+1,144억)도 3거래일 연속 순매수를 이어가며 <b>바닥 매집 구도</b>가 더욱 뚜렷해졌습니다. 개인은 5% 급등장에서 1조5,943억을 차익실현 — 이는 '공포 매도'가 아닌 '본전 탈출 매도'로, 시장 심리 정상화의 신호입니다.</p>
+  <p class="small" style="margin-top:6px"><b>🧭 수급 구도:</b> 기관·외국인 매수 vs 개인 매도 — 이틀 연속 동일 패턴. 과거 급락장 이후 이 구도가 3~5일 지속되면 기술적 바닥이 확정되는 경우가 많았습니다. 오늘로 2일째.</p>
+</div>
+
+<div class="card">
+  <h2>🚀 주도 섹터: 반도체 강한 반등 확인 — 사이클 재개 신호</h2>
+  <p style="font-size:13px;margin-bottom:8px">
+    <span class="tag tag-red">반도체: 강한 반등(+5.74%, 사이드카 발동)</span>
+    <span class="tag tag-green">전기장비: +8.03% 최고 상승</span>
+    <span class="tag tag-green">은행: +7.55%</span>
+    <span class="tag tag-gray">반도체 2025년 말 시작·약 40주차</span>
+  </p>
+  <div class="gauge"><div style="width:60%"></div></div>
+  <p class="small">반도체 강도: <b>강한 반등 국면</b>(60/100, 어제 32→오늘 60). 미국 마이크론·메타의 AI 투자 확대 소식으로 반도체 투심이 폭발적으로 회복. 삼성전자·SK하이닉스 등 대형 반도체주 급등, 소부장 종목도 동반 강세. <b>'피크아웃 논쟁'은 일단 매수 측 우세로 전환.</b></p>
+  <ul style="margin-top:10px">
+    <li><b>오늘의 강세:</b> 전기장비(+8.03%), 복합기업(+7.76%), 은행(+7.55%), 전자장비(+6.57%), 반도체장비(+5.74%). 거의 전 업종 강세 — 업종 구분 없이 동반 반등.</li>
+    <li><b>오늘의 특이점:</b> 코스피·코스닥 양 시장 매수 사이드카 동시 발동(올해 34번째). 장중 5~6%대 급등 후 차익실현에 상승폭 축소, 강한 양봉 마감.</li>
+    <li><b>핵심 질문:</b> ①반도체 반등이 단기 기술적 반등인가 사이클 재개인가 — 다음 주 미국 빅테크 실적으로 판가름. ②코스피 7,400~7,500선 안착 여부 — 월요일 갭다운 없이 유지되는지 확인.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+  <ul>
+    <li><b>🏦 증권·금융(4일째 강세 — 후보 1순위 유지):</b> 은행 +7.55%로 4일 연속 상대 강세. 폭락→폭등 변동성장에서 거래대금 사상급 — 증권사 2분기 어닝 서프라이즈 기대. 독자적 섹터 모멘텀 확보 중.</li>
+    <li><b>⚡ 전력·AIDC 인프라(정책+실적 점증):</b> 전기장비 +8.03% 최고 상승률. AI 데이터센터 전력 수요 확대 + 이재명 정부 인프라 정책이 맞물려 거래량 점증 확인. 반도체 보조에서 독자 테마로 부상 가능.</li>
+    <li><b>🛢️ 정유·에너지(중동발 유가 부담 지속):</b> 이란 사태 장기화 시 유가 100달러 돌파 가능성. 정제마진 확대 수혜 기대. 다만 인플레 재점화 리스크와 양날의 검.</li>
+    <li><b>🛡️ 방산(NATO 조달 협정):</b> 한국-NATO 조달기본협정 협상 개시 — 연간 15조원 방산 시장 진출. 중동 긴장 지속 시 추가 모멘텀.</li>
+    <li><b>💾 반도체(주도 사이클 재개 여부):</b> 오늘의 강한 반등으로 '조정 후 재개' 시나리오가 우세. 7월 말 미국 빅테크 실적이 최종 확인 포인트. 재개 확인 시 강세 단계 복귀.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>📅 이번 주 ~ 다음 주 주요 일정</h2>
+  <div class="sched">
+    <div class="kv"><span>7/10(금·오늘)</span><span>SK하이닉스 나스닥 ADR 상장일 — 글로벌 반도체 투심 시험대</span></div>
+    <div class="kv"><span>7/14(월·현지)</span><span><b>美 6월 CPI</b> — 유가 급등 반영 전 마지막 물가 지표</span></div>
+    <div class="kv"><span>7/16(수)</span><span><b>한국은행 금통위</b> — 현 2.50%, 증시 급변동 후 인하 소수의견 주목</span></div>
+    <div class="kv"><span>7월 중순(현지)</span><span>연준 워시 의장 의회 반기 증언 — 금리 경로 힌트</span></div>
+    <div class="kv"><span>7/24(목·현지)</span><span>美 10% 보호관세(무역법 122조) 만료 시한 — 통상 변수</span></div>
+    <div class="kv"><span>7/28~29(현지)</span><span><b>FOMC 정례회의</b> — 금리 결정 및 워시 의장 기자회견</span></div>
+    <div class="kv"><span>7월 말(현지)</span><span>美 빅테크 2분기 실적 시즌 — AI 투자 지속성 확인 최대 변수</span></div>
+  </div>
+  <p class="small" style="margin-top:8px">다음 주 최대 관문은 <b>7/14(월) 미국 CPI</b>와 <b>7/16(수) 금통위</b>. CPI가 예상 범위 내라면 금리 인하 기대 유지 → 증시 우호적. 금통위에서 인하 소수의견이 늘면 하반기 금리 인하 경로 가시화. 그 뒤 <b>7/28 FOMC + 7월 말 빅테크 실적</b>이 시장 방향성을 결정할 빅이벤트.</p>
+</div>
+
+<div class="card">
+  <h2>🛡️ 리스크 지표 점검 (7/10 마감 기준)</h2>
+  <div class="kv"><span>코스피 등락</span><span class="up">+2.52% (🟢 강한 반등, 2거래일 연속 양전)</span></div>
+  <div class="kv"><span>코스닥 등락</span><span class="up">+5.47% (🟢 800선 하회 3일 만에 837 회복)</span></div>
+  <div class="kv"><span>원/달러 환율</span><span>~1,502원 (🟡 1,500 이상이나 하락 추세)</span></div>
+  <div class="kv"><span>VIX(미국 공포지수)</span><span>~16.8 (🟢 22 미만 안정권)</span></div>
+  <div class="kv"><span>외국인 수급(코스피)</span><span class="up">+1,144억 순매수 (3거래일 연속)</span></div>
+  <div class="kv"><span>기관 수급(코스피)</span><span class="up">+1조7,841억 순매수 (이틀 연속 대규모 매집)</span></div>
+  <div class="kv"><span>시장 폭(코스피)</span><span class="up">상승 802 / 하락 92 (90%↑ 강세)</span></div>
+  <p class="small" style="margin-top:8px"><b>'노란불 유지 — 반등은 강하지만 환율이 아직 1,500원대.'</b> 코스피 +2.52% 반등, 상승종목 90%, 기관·외국인 동반 매수 — 시장 체력은 빠르게 회복 중. 그러나 환율이 1,502원(1,500원 이상 지속)으로 🟡 트리거가 아직 해제되지 않았습니다. 🟢 전환 조건: 환율 1,500원 하회 + 코스피 7,400선 2거래일 이상 안착.</p>
+</div>
+
+<div class="card">
+  <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+  <ul>
+    <li><b>🤖 반도체·AI·데이터센터 3대 축:</b> 이재명 대통령이 직접 챙기는 핵심 프로젝트. 서남권 800조 반도체·AI센터 투자, 반도체 생산 세액공제 최대 10%. 오늘 반도체 폭등과 직접 연결되는 정책 모멘텀.</li>
+    <li><b>⚡ AI 데이터센터 전력 인프라:</b> SK·GS·네이버 등 550조원 규모 AIDC 투자 + 정부 전용 전기요금제 추진. 전기장비 +8.03% 최고 상승률의 배경. ESS·스마트그리드·냉각 솔루션 수혜.</li>
+    <li><b>🛡️ 한국-NATO 조달기본협정:</b> 연간 15조원 방산 조달시장 진출 본격화. 방산주 중장기 모멘텀.</li>
+    <li><b>🔋 에너지 전환:</b> 재생에너지 확대 + 원전 최대 활용 믹스 전략. 배터리 ESS, 그린수소 관련주 수혜.</li>
+    <li><b>🤖 휴머노이드·자율주행:</b> 15대 프로젝트 — 로봇 3대 강국, 완전 자율주행 상용화 추진.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>💭 Claude의 생각 (참고용)</h2>
+  <div class="opinion">
+    어제 '방향은 보이지만 확인은 내일'이라고 했습니다. 오늘 시장이 그 방향을 확인해줬습니다.<br><br>
+    <b>코스피 +2.52%, 코스닥 +5.47%.</b> 양 시장에 매수 사이드카가 동시 발동된 것은 시장 전체가 '투매 구간 종료'를 선언한 것이나 다름없습니다. 상승종목 802개(90% 이상), 전기장비·은행·반도체 등 전 업종 동반 강세 — 특정 종목이 아닌 <b>시장 전체의 반등</b>입니다.<br><br>
+    수급은 더 의미 있습니다. <b>기관이 이틀 연속 2조 가까이 샀습니다.</b> 코스피 1조7,841억 + 코스닥 4,610억 = 양 시장 합산 2조2,451억. 외국인도 3거래일 연속 순매수. 반면 개인의 매도(코스피 1조5,943억)는 어제 2조1,109억에서 줄었고, 성격도 '공포 매도'에서 '수익 실현'으로 바뀌었습니다. 이 차이가 중요합니다.<br><br>
+    미국 발 촉매가 결정적이었습니다. 마이크론의 2,500억달러 투자 계획과 메타의 AI칩 자체 생산 발표는 <b>'AI 설비투자 사이클이 끝나지 않았다'</b>는 강력한 신호입니다. 이것이 국내 반도체·IT 대형주의 반등을 이끌었고, '피크아웃 논쟁'에서 매수 측이 일단 우위를 점했습니다.<br><br>
+    그러나 몇 가지 점검 사항은 남아 있습니다. <b>①장중 5%→마감 2.5%</b> — 상승폭의 절반을 차익실현에 반납했습니다. 이는 아직 완전한 신뢰 회복이 아니라는 뜻. <b>②환율 1,502원</b> — 하락 추세이긴 하나 1,500원을 깨야 🟢 전환. <b>③다음 주 CPI(7/14)와 금통위(7/16)</b> — 매크로 확인이 필요합니다.<br><br>
+    실전 결론: <b>'반등의 1차 확인은 완료. 이제 핵심은 지속성.'</b> 월요일 갭다운 없이 7,400선이 유지되고, 외국인·기관의 매수가 3~5일 이어진다면 기술적 바닥이 확정됩니다. 이번 주의 폭락→폭등 사이클은 <b>'AI·반도체 슈퍼사이클의 중간 조정'</b>이었을 가능성이 높아졌습니다. 다만 월요일 시장을 한 번 더 확인한 뒤 행동해도 늦지 않습니다.
+  </div>
+</div>
+
+<div class="disclaimer">본 자료는 경향성 참고용으로 작성된 것이며 투자 권유가 아닙니다.<br>지수·수급은 7/10 마감 보도 기준입니다(코스피 +2.52%·7,475.94 — 머니투데이·헤럴드경제·파이낸셜뉴스 확인. 코스닥 +5.47%·837.43 — 전매일보·이데일리 확인. 코스피 투자주체: 외국인 +1,144억/기관 +1조7,841억/개인 -1조5,943억. 코스닥: 외국인 -1,316억/기관 +4,610억/개인 -3,295억. 환율 ~1,502원. VIX ~16.8. 미국 증시 7/9 현지 — 나스닥 +1.30%/S&P500 +0.81%/마이크론 +7.5%). 모든 투자 판단과 책임은 투자자 본인에게 있습니다.</div>
+
+</div></body>
+</html>
