@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-07-13</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:118px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert-red{border:2px solid #d02b26;background:#fff5f4;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800}
+  .alert-title-red{color:#d02b26}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c}
+  .intraday{background:#fdeeee;border:1px solid #f2c4c2;border-radius:10px;padding:10px;font-size:12px;color:#96322e;margin-top:8px}
+</style>
+</head>
+<body><div class="wrap">
+
+<div class="card alert-red">
+  <div class="alert-head"><span class="alert-light">🔴</span><span class="alert-title alert-title-red">리스크 경고등: 위험 (🟡 → 🔴 격상)</span></div>
+  <p class="small"><b>판정 근거(7/13 월 마감 기준) — 트리거 2개 동시 충족:</b> ①코스피 <b>-7.85% 폭락</b> → <b>🔴 트리거(-3% 이상 급락) 충족</b>. 장중 서킷브레이커(-8.08%)까지 발동. ②원/달러 환율 <b>1,555원대</b> → <b>🔴 트리거(1,550원 이상) 충족</b>. 2009년 금융위기 이후 <b>17년 3개월 만의 최고</b>. ③VIX는 직전(7/10) <b>~16</b>으로 22 미만이었으나, 미국장 개장 전이라 급등 가능성 — 내일 재확인 필요. ④외국인 순매도 전환 1일차(연속 매도 트리거는 미해당). <b>지수 급락 + 환율 고점 돌파</b>가 겹쳐 6월 이후 처음 🔴 위험 단계로 격상합니다.</p>
+</div>
+
+<div class="card">
+  <h1>🇰🇷 한국 주식시장 리포트</h1>
+  <div class="date">2026년 7월 13일(월) · <b>마감 브리핑</b> · 정규장 종료 기준 · <b>'블랙 먼데이 — 서킷브레이커 발동, 칠천피 붕괴'</b></div>
+  <p class="small" style="margin-top:8px">한 줄 요약: <b>'미군의 이란 재공습 + SK하이닉스 실적 추정치 하향이 겹치며 코스피 -7.85% 폭락, 서킷브레이커 발동. 7,000선 두 달 만에 붕괴 · 환율 1,555원 17년 최고.'</b> 주말 사이 미군이 호르무즈 해협에서 이란에 추가 공습을 개시하며 지정학 리스크가 재점화됐고, 여기에 SK하이닉스 실적 기대치 하향이 더해지면서 <b>주도주(반도체) 투매</b>가 터졌습니다. 코스피는 <b>6,888.77(-7.85%)</b>, 코스닥은 <b>807.15(-3.62%)</b>로 마감. 금요일 +2.52% 반등이 하루 만에 완전히 지워졌습니다.</p>
+  <div class="intraday">🚨 <b>왜 폭락했나</b> — ①<b>미군 이란 추가 공습</b>(트럼프 지시, 한국시간 13일 새벽): 이란의 호르무즈 상선 공격에 대한 보복. 유조선 3척 피격 → WTI $73.69(+3.19%), 브렌트 $78.41(+3.16%) 급등. ②<b>SK하이닉스 실적 쇼크</b>: 한국투자증권이 2분기 영업이익 컨센서스 <b>8% 하회</b> 전망, 2026·2027년 추정치를 각각 <b>-9%, -11% 하향</b>. ③<b>ADR 이벤트 소멸 + 레버리지 청산</b>: 지난 금요일 나스닥 ADR 상장이라는 단기 재료가 끝나며 레버리지 포지션이 한꺼번에 정리. ④<b>주도주 차익실현</b>: 삼성전자·SK하이닉스 등 'S7' 종목에 매물 집중. 10:34 매도 사이드카(올해 35번째) → 13:28 <b>서킷브레이커 발동(20분 매매정지)</b>.</div>
+  <div class="note">💡 <b>오늘의 핵심 변화</b> — 금요일 리포트에서 짚었던 <b>'월요일 갭다운 없이 7,400선 유지'</b>가 확인 포인트였는데, 결과는 <b>정반대</b>였습니다. 반등 지속이 아니라 <b>더 깊은 2차 하락</b>. 특히 이번 하락은 지난주와 성격이 다릅니다. 지난주는 '반도체 밸류에이션 조정'이었지만, 오늘은 <b>지정학(중동 전쟁 재개 우려) + 펀더멘털(실적 추정치 하향) + 환율(1,555원)</b>이 동시에 터진 <b>복합 충격</b>입니다. 다만 개인이 1조9,667억을 받아내며 지수 하방을 지탱했습니다.</div>
+</div>
+
+<div class="card">
+  <h2>📊 주요 지수 (7/13 월 마감 확정)</h2>
+  <table>
+    <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+    <tr><td>코스피</td><td>6,888.77</td><td class="down">-587.17 (-7.85%) · 7,000선 붕괴(5/4 이후 두 달 만)</td></tr>
+    <tr><td>코스닥</td><td>807.15</td><td class="down">-30.28 (-3.62%) · 장중 812선 연저점 터치</td></tr>
+    <tr><td>원/달러 환율</td><td>~1,555원</td><td class="down">주간거래 종가 1,555원 상회 · <b>17년 3개월 만의 최고</b></td></tr>
+  </table>
+  <p class="small" style="margin-top:8px"><b>📊 시장 폭(상승/하락 종목 수):</b> <b>데이터 미확보</b>(거래 중단으로 확정 집계 지연). 다만 시가총액 상위 종목 대부분이 급락 — 삼성전기 <b>-16.98%</b>, SK스퀘어 -14.90%, SK하이닉스 -12.61%, 삼성전자 -8.33%(26만1,250원), 삼성전자우 -7.36%, 삼성생명 -5.73%. 코스닥이 -3.62%로 코스피(-7.85%)보다 선방한 것은 <b>이번 하락이 대형 반도체주 집중형</b>임을 보여줍니다. 반면 <b>정유주는 급등</b> — SK이노베이션 +10.69%, S-Oil +8.86%. LG에너지솔루션·KB금융·삼성바이오로직스도 상승.</p>
+  <p class="small" style="margin-top:8px"><b>↩️ 장중 흐름:</b> 7,412(-0.85%) 갭다운 출발 → 10:34 <b>매도 사이드카</b>(코스피200 선물 -5.23%, 올해 35번째) → 12:06 7,000선 붕괴 → 13:28 <b>1단계 서킷브레이커 발동</b>(6,871.20, -8.08%, 20분 매매정지) → 재개 후에도 낙폭 유지, <b>6,888.77(-7.85%)</b> 마감. 서킷브레이커는 올해 7번째 발동입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🇺🇸 미국 주요 변동사항 (주말~오늘 새벽 — 있음)</h2>
+  <ul>
+    <li><b>⚔️ 미군, 이란 추가 공습 개시 (최대 악재):</b> 미 중부사령부가 한국시간 13일 오전 6시 <b>이란에 대한 추가 공습</b>을 개시했다고 발표. 트럼프 대통령 지시. "호르무즈 해협을 지나는 민간 상선을 공격하는 이란의 능력을 약화시키는 것이 목적"이며 <b>수십 개 군사 목표물을 타격</b>했다고 밝혔습니다. 직전 주말 호르무즈에서 <b>유조선 3척이 잇따라 피격</b>된 데 대한 보복입니다.</li>
+    <li><b>🛢️ 국제유가 3%대 급등:</b> WTI 8월물 <b>$73.69(+3.19%)</b>, 브렌트 9월물 <b>$78.41(+3.16%)</b>. 호르무즈 해협은 전 세계 원유의 약 20%가 통과하는 요충지로, 봉쇄 우려가 커질수록 유가 상단이 열립니다. <b>국내 정유주는 급등</b>했지만, 인플레 재점화 → 금리 인하 지연이라는 <b>역풍</b>이 더 큽니다.</li>
+    <li><b>📉 미국 지수선물 하락:</b> S&P500 선물 <b>-0.26%</b>(7,600.25), 나스닥100 선물 <b>-0.43%</b>(29,904.50), 다우 선물 -0.18%(52,811). 하락폭은 한국(-7.85%)에 비하면 <b>제한적</b> — 이번 충격이 한국 시장에 유독 크게 반영됐음을 보여줍니다.</li>
+    <li><b>😌 직전 미국장(7/10)은 안정적이었음:</b> VIX가 <b>1월 이후 6개월 만의 최저</b>(~16)까지 내려갔고, AI 트레이드가 회복되며 지수는 상승 마감(다우만 4주 연속 상승 중단). <b>즉, 오늘의 폭락은 미국장 급락이 옮겨온 것이 아니라 주말 지정학 뉴스 + 국내 반도체 이슈가 만든 것</b>입니다.</li>
+    <li><b>💾 TSMC 2나노 양산 돌입:</b> 애플이 아닌 <b>구글 픽셀 11</b>에 첫 탑재. 파운드리 경쟁 구도에 변화 신호.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>💰 투자주체별 수급 (7/13 마감 무렵 기준)</h2>
+  <p class="small" style="margin-bottom:4px"><b>▸ 코스피</b> · 가장 큰 금액(개인 매수 1조9,667억)을 100으로 환산</p>
+  <div class="bar-row"><span class="bar-label">외국인</span><div class="bar-track"><div class="bar-sell" style="width:77%"></div></div><span class="bar-val">매도 약 1조5,218억</span></div>
+  <div class="bar-row"><span class="bar-label">기관</span><div class="bar-track"><div class="bar-sell" style="width:25%"></div></div><span class="bar-val">매도 약 5,005억</span></div>
+  <div class="bar-row"><span class="bar-label">개인</span><div class="bar-track"><div class="bar-buy" style="width:100%"></div></div><span class="bar-val">매수 약 1조9,667억</span></div>
+  <p class="small" style="margin-top:6px;margin-bottom:4px"><b>▸ 코스닥</b> · 가장 큰 금액(외국인 매도 3,611억)을 100으로 환산</p>
+  <div class="bar-row"><span class="bar-label">외국인</span><div class="bar-track"><div class="bar-sell" style="width:100%"></div></div><span class="bar-val">매도 약 3,611억</span></div>
+  <div class="bar-row"><span class="bar-label">기관</span><div class="bar-track"><div class="bar-buy" style="width:50%"></div></div><span class="bar-val">매수 약 1,791억</span></div>
+  <div class="bar-row"><span class="bar-label">개인</span><div class="bar-track"><div class="bar-buy" style="width:51%"></div></div><span class="bar-val">매수 약 1,847억</span></div>
+  <p class="small" style="margin-top:8px">🔴 빨강=매수, 🔵 파랑=매도. 쉽게 말해: <b>외국인이 코스피에서만 1조5,218억을 던졌고, 개인이 1조9,667억을 받아냈습니다.</b> 금요일과 정반대 구도입니다. 금요일엔 '기관·외국인 매수 vs 개인 매도'였는데, 오늘은 <b>'외국인·기관 매도 vs 개인 매수'</b>로 완전히 뒤집혔습니다.</p>
+  <p class="small" style="margin-top:6px"><b>🧭 수급 구도 해석:</b> 개인의 1조9,667억 순매수는 <b>양날의 검</b>입니다. 지수 하방을 지탱한 건 사실이지만, 과거 급락장에서 '개인 홀로 매수' 구도는 <b>바닥이 아직 아니라는 신호</b>였던 경우가 많았습니다. 진짜 바닥은 <b>외국인이 다시 사기 시작할 때</b> 확인됩니다. 참고로 금요일까지 외국인은 3거래일 연속 순매수였는데, 오늘 <b>순매도로 전환(1일차)</b>했습니다.</p>
+</div>
+
+<div class="card">
+  <h2>🚀 주도 섹터: 반도체 — 강세 → <span style="color:#d02b26">약강세로 급격 후퇴</span></h2>
+  <p style="font-size:13px;margin-bottom:8px">
+    <span class="tag tag-red">반도체: 투매(-12.6% SK하이닉스, 사이드카·서킷 발동)</span>
+    <span class="tag tag-green">정유: +10.69% SK이노베이션(유일한 강세)</span>
+    <span class="tag tag-gray">반도체 2025년 말 시작·약 41주차</span>
+  </p>
+  <div class="gauge"><div style="width:25%"></div></div>
+  <p class="small">반도체 강도: <b>약강세(투매) 국면</b>(25/100, 금요일 60 → 오늘 25로 급락). 금요일 '사이클 재개' 기대가 <b>단 하루 만에 무너졌습니다.</b> 핵심은 SK하이닉스 실적 추정치 하향 — 이는 밸류에이션 조정이 아니라 <b>이익 전망 자체의 하향</b>이라 성격이 다릅니다. 다만 미래에셋 김석환 연구원은 "반도체 업황이나 중장기 이익 방향성이 훼손됐다기보다 <b>ADR 상장 이벤트 소멸 + 높아진 기대치 + 레버리지 청산</b>이 겹친 변동성 조정에 가깝다"고 평가했습니다.</p>
+  <ul style="margin-top:10px">
+    <li><b>오늘의 약세:</b> 삼성전기(-16.98%), SK스퀘어(-14.90%), SK하이닉스(-12.61%), 삼성전자(-8.33%), 삼성생명(-5.73%). 반도체 밸류체인 전반이 두 자릿수 급락.</li>
+    <li><b>오늘의 강세:</b> <b>정유·에너지가 유일한 피난처</b> — SK이노베이션(+10.69%), S-Oil(+8.86%). 그 외 LG에너지솔루션, KB금융, 삼성바이오로직스 소폭 상승.</li>
+    <li><b>핵심 질문:</b> ①SK하이닉스 실적 하향이 <b>업황 피크아웃의 시작</b>인가, 일시적 기대치 조정인가 — 7월 말 2분기 실적 발표가 분기점. ②중동 사태가 <b>호르무즈 봉쇄</b>까지 갈 것인가 — 그럴 경우 유가 100달러 + 환율 1,600원 시나리오. ③환율 1,555원에서 <b>외환당국 개입</b>이 나올 것인가.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+  <ul>
+    <li><b>🛢️ 정유·에너지(후보 1순위로 급부상):</b> 오늘 시장에서 <b>유일하게 두 자릿수 상승</b>. 미군-이란 충돌 격화 → 호르무즈 봉쇄 우려 → 유가 상단 개방. 정제마진 확대 직접 수혜. 중동 사태가 장기화될수록 자금이 계속 유입될 구조. <b>다만 한국 경제 전체엔 악재</b>(수입물가↑)라는 점은 유의.</li>
+    <li><b>🛡️ 방산(지정학 재점화 + NATO 조달):</b> 중동 전쟁 재개 우려로 방산 모멘텀 재부각. 한국-NATO 조달기본협정(연간 15조원 시장) 협상 진행 중. 지정학 리스크 헤지 수단으로 자금 유입 예상.</li>
+    <li><b>🏦 증권·금융(변동성 수혜):</b> 폭락·폭등이 반복되며 <b>거래대금이 사상급</b>. 증권사 2분기 브로커리지 수익 급증 기대. 오늘도 KB금융이 상승 마감하며 방어력 확인.</li>
+    <li><b>💊 바이오·헬스케어(경기방어):</b> 삼성바이오로직스가 폭락장에서 상승 마감. 반도체 쏠림이 풀릴 때 <b>대체 수급처</b> 1순위. 코스닥 낙폭(-3.62%)이 코스피(-7.85%)보다 작았던 것도 바이오 방어 덕.</li>
+    <li><b>⚡ 전력·AIDC 인프라(정책 지속):</b> 오늘 조정을 받았지만 AI 데이터센터 전력 수요 + 정부 인프라 정책은 유효. 반도체 조정과 무관한 <b>독립 테마</b>로 갈 가능성.</li>
+    <li><b>💾 반도체(주도권 유지 여부 시험대):</b> 41주차 주도 사이클이 <b>최대 위기</b>. 7월 말 SK하이닉스·삼성전자 실적과 미국 빅테크 실적이 최종 판정.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>📅 이번 주 주요 일정</h2>
+  <div class="sched">
+    <div class="kv"><span>7/13(월·오늘)</span><span>이재명 대통령 <b>국가재정전략회의</b> — '미래대응기금'(반도체 추가세수 활용) 논의</span></div>
+    <div class="kv"><span>7/14(화·현지)</span><span><b>🔥 美 6월 CPI</b> — 최대 관문. 유가 급등 반영 전 지표이나, 예상 상회 시 금리 인하 기대 후퇴 → 추가 하락 위험</span></div>
+    <div class="kv"><span>7/14~16(화~목)</span><span>정부 <b>부동산 정책 토론회</b> 3일 연속(공급→금융→세제) — 건설·금융주 변수</span></div>
+    <div class="kv"><span>7/15(수)</span><span>정부 부처 <b>업무보고 시작</b>(21일까지, 140개 기관 생중계) — 정책 수혜주 단서</span></div>
+    <div class="kv"><span>7/16(목)</span><span><b>🔥 한국은행 금통위</b> — 현 2.50%. 증시 폭락 + 환율 1,555원이 충돌: 경기 방어(인하) vs 환율 방어(동결)</span></div>
+    <div class="kv"><span>주중 상시</span><span><b>중동 정세</b> — 이란 반격 / 호르무즈 봉쇄 여부가 최대 변수. 유가·환율 동시 결정</span></div>
+    <div class="kv"><span>7/23(목)</span><span>이재명 대통령 주재 <b>부동산 대토론회</b> — 정책 구체화</span></div>
+    <div class="kv"><span>7/28~29(현지)</span><span><b>FOMC 정례회의</b> — 유가 급등이 인하 경로에 미칠 영향 주목</span></div>
+    <div class="kv"><span>7월 말</span><span>SK하이닉스·삼성전자 <b>2분기 실적</b> + 美 빅테크 실적 — 반도체 사이클 최종 판정</span></div>
+  </div>
+  <p class="small" style="margin-top:8px">이번 주 최대 관문은 <b>7/14(화) 미국 CPI</b>와 <b>7/16(목) 금통위</b>입니다. 특히 금통위는 <b>딜레마</b>에 빠졌습니다 — 증시 폭락과 경기 둔화를 보면 금리를 내려야 하지만, 환율이 1,555원(17년 최고)까지 치솟은 상황에서 인하하면 <b>원화 추가 약세</b>를 부릅니다. 동결 가능성이 높아졌다고 보는 것이 합리적입니다.</p>
+</div>
+
+<div class="card">
+  <h2>🛡️ 리스크 지표 점검 (7/13 마감 기준)</h2>
+  <div class="kv"><span>코스피 등락</span><span class="down">-7.85% (🔴 -3% 트리거 충족, 서킷브레이커 발동)</span></div>
+  <div class="kv"><span>코스닥 등락</span><span class="down">-3.62% (🔴 코스피 대비 선방했으나 연저점권)</span></div>
+  <div class="kv"><span>원/달러 환율</span><span class="down">~1,555원 (🔴 1,550 트리거 충족 · 17년 3개월 최고)</span></div>
+  <div class="kv"><span>VIX(미국 공포지수)</span><span>~16 (7/10 기준, 6개월 최저) · 🟡 오늘 급등 가능 — <b>내일 재확인</b></span></div>
+  <div class="kv"><span>국제유가(WTI)</span><span class="up">$73.69 (+3.19%) · 중동發 상승</span></div>
+  <div class="kv"><span>외국인 수급(코스피)</span><span class="down">-1조5,218억 순매도 (<b>매도 전환 1일차</b>)</span></div>
+  <div class="kv"><span>기관 수급(코스피)</span><span class="down">-5,005억 순매도 (매수 → 매도 전환)</span></div>
+  <div class="kv"><span>개인 수급(코스피)</span><span class="up">+1조9,667억 순매수 (홀로 지수 방어)</span></div>
+  <div class="kv"><span>시장 폭(코스피)</span><span>데이터 미확보 (거래 중단으로 집계 지연)</span></div>
+  <p class="small" style="margin-top:8px"><b>'빨간불 — 지수와 환율, 두 개의 방어선이 동시에 뚫렸습니다.'</b> 코스피 -7.85%(🔴)와 환율 1,555원(🔴)이 함께 트리거를 건드렸습니다. 특히 <b>환율이 더 위험합니다</b> — 지수는 하루 만에 회복될 수 있지만, 환율 1,550원 돌파는 <b>외국인 자금 이탈의 구조적 원인</b>이 되기 때문입니다. 🟡 완화 조건: 환율 1,500원대 복귀 + 코스피 7,000선 회복 + 외국인 순매수 전환. <b>내일 VIX 수치를 반드시 확인해야 합니다</b>(28 이상이면 🔴 유지 확정).</p>
+</div>
+
+<div class="card">
+  <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+  <ul>
+    <li><b>💰 미래대응기금 (오늘 논의 시작):</b> 이재명 대통령이 오늘 국가재정전략회의에서 <b>'미래대응기금'</b>을 논의. <b>반도체 호황으로 확보된 추가 세수</b>를 AI 국가전략·3대 메가프로젝트에 투입하는 구상. 다만 <b>오늘 반도체가 폭락하며 "호황 전제"에 물음표</b>가 붙었습니다 — 기금 규모 축소 가능성은 지켜볼 부분.</li>
+    <li><b>🏠 부동산 정책 슈퍼위크 (7/14~16, 23):</b> 공급(국토부)→금융(금융위)→세제(재정경제부) 3일 연속 토론회 후 23일 대토론회. <b>민간 공급 활성화</b>(용적률 인센티브, 재건축 규제 완화) 논의 시 건설주 수혜. 세제 개편안은 7월 말~8월 초 발표.</li>
+    <li><b>🤖 반도체·AI·데이터센터 3대 축:</b> 서남권 800조 반도체·AI센터 투자, 반도체 생산 세액공제 최대 10%. <b>오늘 급락으로 정책 지원 명분은 오히려 강해졌습니다</b> — 추가 지원책 기대.</li>
+    <li><b>⚡ AI 데이터센터 전력 인프라:</b> SK·GS·네이버 등 550조원 AIDC 투자 + 정부 전용 전기요금제. ESS·스마트그리드 수혜 지속.</li>
+    <li><b>🛡️ 한국-NATO 조달기본협정:</b> 연간 15조원 방산 시장. 중동 긴장 재점화로 모멘텀 강화.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>💭 Claude의 생각 (참고용)</h2>
+  <div class="opinion">
+    금요일에 저는 <b>"월요일 갭다운 없이 7,400선이 유지되면 기술적 바닥이 확정된다"</b>고 썼습니다. 오늘 시장은 그 조건을 <b>완전히 부정</b>했습니다. 7,400선은커녕 7,000선이 무너졌고, 서킷브레이커까지 발동됐습니다. 금요일의 '바닥 확인' 판단은 <b>틀렸습니다.</b><br><br>
+    다만 왜 틀렸는지는 분명히 짚어야 합니다. 금요일 반등은 <b>반도체 뉴스(마이크론·메타)</b>에 기반한 것이었고, 그 논리 자체는 유효했습니다. 오늘 무너뜨린 건 <b>주말에 새로 발생한 변수</b>였습니다 — ①미군의 이란 재공습(금요일엔 없던 뉴스), ②SK하이닉스 실적 추정치 하향(오늘 아침 나온 리포트). <b>예측 불가능했던 외생 충격</b>이라는 뜻이지만, 그렇다고 "7,400선 안착 시 매수"라는 조건부 조언의 위험을 충분히 경고하지 못한 책임이 사라지진 않습니다.<br><br>
+    이제 냉정하게 봅시다. <b>오늘의 하락은 성격이 다릅니다.</b> 지난주 하락은 '너무 오른 반도체의 밸류에이션 조정'이었습니다. 오늘은 <b>세 가지가 동시에</b> 터졌습니다 — <b>지정학</b>(중동 전쟁 재개), <b>펀더멘털</b>(SK하이닉스 이익 추정치 -9~11% 하향), <b>매크로</b>(환율 1,555원, 17년 최고). 이 중 어느 하나만 있었다면 -3% 수준에서 끝났을 것입니다.<br><br>
+    <b>가장 위험한 신호는 지수가 아니라 환율입니다.</b> 1,555원은 2009년 금융위기 이후 최고입니다. 환율이 이 수준에 고착되면 외국인은 <b>환차손 때문에</b> 한국 주식을 계속 팔 수밖에 없습니다. 지수는 하루면 반등할 수 있지만, 환율은 구조적입니다. 그리고 유가가 오르면(중동 사태) 환율은 더 오릅니다. <b>이 고리가 오늘 폭락의 진짜 엔진입니다.</b><br><br>
+    <b>수급도 경고합니다.</b> 개인이 1조9,667억을 홀로 받아냈습니다. 금요일과 정반대입니다. 과거 사례를 보면 <b>'개인 홀로 매수, 외국인·기관 동반 매도'</b> 구도는 바닥이 아니라 <b>하락 중간</b>인 경우가 훨씬 많았습니다. 진짜 바닥의 신호는 <b>외국인이 다시 사는 것</b>입니다.<br><br>
+    실전 결론: <b>'지금은 판단을 유보하고 확인해야 할 시점입니다.'</b> 확인할 것은 세 가지입니다 — ①<b>7/14 미국 CPI</b>(예상 상회 시 추가 하락), ②<b>7/16 금통위</b>(환율 때문에 동결 가능성이 큼), ③<b>중동 정세</b>(호르무즈 봉쇄 시 유가 100달러 → 환율 1,600원 시나리오). 금요일에 성급히 '바닥'을 말했던 실수를 반복하지 않겠습니다. <b>외국인 순매수 전환 + 환율 1,500원대 복귀</b>, 이 두 가지가 함께 나오기 전까지는 반등이 와도 <b>기술적 반등</b>으로 보는 것이 안전합니다. 정유·방산이 유일한 피난처였다는 오늘의 사실도 기억해 둘 만합니다.
+  </div>
+</div>
+
+<div class="disclaimer">본 자료는 경향성 참고용으로 작성된 것이며 투자 권유가 아닙니다.<br>지수·수급은 7/13 마감 보도 기준입니다(코스피 -7.85%·6,888.77, 코스닥 -3.62%·807.15 — 서울신문·이투데이·뉴스핌 확인. 서킷브레이커 13:28 발동·6,871.20(-8.08%) — 한국경제 확인. 매도 사이드카 10:34·올해 35번째. 코스피 투자주체: 개인 +1조9,667억/외국인 -1조5,218억/기관 -5,005억(마감 무렵 기준, 확정치와 차이 가능). 코스닥: 외국인 -3,611억/기관 +1,791억/개인 +1,847억. 환율 ~1,555원(MBC·주간거래 종가 기준). WTI $73.69(+3.19%). VIX ~16은 7/10 기준이며 7/13 미국장 반영 전 수치 — 내일 재확인 필요. 시장 폭은 데이터 미확보). 모든 투자 판단과 책임은 투자자 본인에게 있습니다.</div>
+
+</div></body>
+</html>
