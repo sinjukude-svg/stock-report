@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-07-15</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:118px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .opinion p{margin-bottom:9px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert-green{border:2px solid #1f8a36;background:#f3fbf4;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800}
+  .alert-title-green{color:#1f8a36}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c;margin-top:8px}
+  .intraday{background:#eafaef;border:1px solid #b8e6c6;border-radius:10px;padding:10px;font-size:12px;color:#1f7a3d;margin-top:8px}
+  .warnbox{background:#fff6e6;border:1px solid #f0d9a8;border-radius:10px;padding:10px;font-size:12px;color:#8a5a12;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 리스크 경고등 -->
+  <div class="card alert-green">
+    <div class="alert-head">
+      <span class="alert-light">🟢</span>
+      <span class="alert-title alert-title-green">리스크 경고등: 정상 (🟢 유지 — 이번엔 '진짜 초록불')</span>
+    </div>
+    <p class="small"><b>판정 근거(7/15 수 마감 기준)</b> — 정해진 4개 트리거가 <b>모두 해제</b> 상태입니다.
+    ①<b>코스피 +6.24%</b> 급등 마감 → 급락(-3%) 트리거 해제.
+    ②<b>원/달러 1,484.7원</b>(-8.3원) → 1,500원 아래, 2개월여 최저.
+    ③<b>VIX 16.40</b>(-4.43%, 7/14 미국 종가) → 22 미만.
+    ④<b>외국인 순매수 유지</b>(코스피 +2조3,227억) → 연속 순매도 0일.
+    어느 항목도 걸리지 않아 🟢입니다.</p>
+    <div class="intraday">✅ <b>어제와 달리 오늘의 🟢는 '건강한 초록불'입니다.</b> 어제는 종가만 플러스였을 뿐 장중 -5.3%까지 밀린 '착시 🟢'였지만, 오늘은 <b>개장 6분 만에 코스피 매수 사이드카</b>, 17분 만에 코스닥 매수 사이드카가 발동됐고 <b>장 초반 전 종목의 90% 이상이 상승</b>했습니다. 외국인·기관이 함께 샀습니다. 폭도, 수급도, 방향도 모두 '양(+)'인 하루였습니다.</div>
+    <div class="warnbox">⚠️ <b>다만 두 가지는 남겨둡니다.</b> ①<b>7/16(목) 한은 금통위</b> — 시장은 여전히 <b>금리 "인상"(2.50→2.75%)</b>을 유력하게 봅니다. 인상이 현실화되면 오늘 급반등한 코스닥·성장주에 찬물이 될 수 있습니다. ②<b>이틀 새 -5%→+6% 롤러코스터</b> 자체가 변동성이 크다는 증거입니다. 어제의 유가·금리 악재는 <b>미국 쪽(CPI)에서 크게 풀렸을 뿐</b>, 한국 금리라는 마지막 매듭은 내일 풀립니다.</div>
+  </div>
+
+  <div class="card">
+    <h1>🇰🇷 한국 주식시장 리포트</h1>
+    <div class="date">2026년 7월 15일(수) · 마감 브리핑 · 정규장 종료 기준 · '되돌림 — 하루 만에 6% 폭등, 매수 사이드카'</div>
+    <p style="margin-top:10px;font-size:13px"><b>한 줄 요약:</b> '적이 사라졌다 — 어제의 금리 공포를 미국 물가 지표가 한 방에 지웠다.' 코스피 <b>7,284.41(+427.58p, +6.24%)</b>, 코스닥 <b>829.43(+45.45p, +5.80%)</b>. 미국 6월 CPI가 예상을 크게 밑돌며 <b>7월 금리 인상 확률이 50%→10%로 급락</b>하자, 어제 급락의 원인이던 '금리 공포'가 하루 만에 소멸했습니다. 외국인·기관이 쌍끌이로 사들이며 <b>양대 시장에 매수 사이드카</b>가 발동됐습니다.</p>
+    <div class="intraday"><b>↗️ 장중 흐름:</b> 갭업 출발 → 코스피200 선물 6%+ 급등에 <b>개장 6분 만에 코스피 매수 사이드카</b> → 코스닥도 <b>17분 만에 매수 사이드카</b> → 장중 <b>7,400선</b>·SK하이닉스 <b>장중 +12%</b>까지 급등 → 7,284.41(+6.24%) 마감. 어제 코스닥 '매도' 사이드카를 맞았던 시장이 하루 만에 '매수' 사이드카로 뒤집혔습니다.</div>
+    <p class="small" style="margin-top:8px"><b>💡 오늘의 핵심 변화 — 어제 걸렸던 '엔진 경고등'이 하나 꺼졌습니다.</b> 어제 리포트에서 저는 지수는 🟢였지만 <b>유가 +9.4% → 금리 인상</b>이라는 새 위험을 별도 감시 대상으로 올렸습니다. 오늘 밤사이 나온 <b>미국 6월 CPI가 3.5%</b>(예상 3.8%, 5월 4.2%)로 <b>6년 만에 최저</b>를 기록하면서, 그 위험의 미국 쪽 절반이 크게 풀렸습니다. 남은 절반은 <b>내일(7/16) 한은 금통위</b>입니다.</p>
+  </div>
+
+  <!-- 주요 지수 -->
+  <div class="card">
+    <h2>📊 주요 지수 (7/15 수 마감 확정)</h2>
+    <table>
+      <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+      <tr><td>코스피</td><td>7,284.41</td><td class="up">+427.58 (+6.24%)</td></tr>
+      <tr><td>코스닥</td><td>829.43</td><td class="up">+45.45 (+5.80%)</td></tr>
+      <tr><td>원/달러 환율</td><td>1,484.70원</td><td class="up">-8.30원 (원화 강세)</td></tr>
+    </table>
+    <p class="small" style="margin-top:10px"><b>📊 시장 폭(상승/하락 종목 수):</b> 세부 종목 수 집계는 확보하지 못했으나, 증권가는 <b>"장 초반 전체 종목의 90% 이상이 상승했다"</b>(신한투자증권 강진혁)고 밝혔습니다. 어제(대부분 업종 하락)와 <b>정반대로, 시장 폭은 압도적인 양(+)</b>입니다. 특정 대형주가 만든 착시가 아니라 시장 전반에 온기가 퍼진 '전면 상승'이었습니다.</p>
+    <p class="small" style="margin-top:8px"><b>🔺 오른 종목(시총 상위 일제 상승):</b> SK스퀘어 +16.13%, 삼성전기 +12.14%, SK하이닉스 +8.83%(208만2,000원, 장중 +12%), 삼성생명 +6.47%, 삼성전자 +6.27%(27만9,500원), 삼성전자우 +5.38%, LG에너지솔루션 +4.04%, 현대차 +2.24%, 삼성바이오로직스 +1.10%, KB금융 +0.89%.<br>
+    <b>코스닥도 대부분 급등:</b> 원익IPS +12.27%, 에코프로 +9.23%, 주성엔지니어링 +8.77%, 이오테크닉스 +7.84%, 에코프로비엠 +7.37%, 레인보우로보틱스 +7.37%, 코오롱티슈진 +6.86%, 리노공업 +6.57%, 알테오젠 +3.22%.<br>
+    <span style="color:#888">※ 종목별 등락률은 거래소·이투데이/뉴스핌 집계 기준이며 매체별 소폭 차이가 있을 수 있습니다.</span></p>
+  </div>
+
+  <!-- 미국 주요 변동사항 -->
+  <div class="card">
+    <h2>🇺🇸 미국 주요 변동사항 (7/14 현지 — 있음, 오늘 상승의 원동력)</h2>
+    <ul>
+      <li><b>🎯 6월 CPI '깜짝 둔화' (오늘의 최대 사건):</b> 미국 6월 소비자물가가 <b>전년비 +3.5%</b>로 시장 예상(3.8%)과 5월(4.2%)을 크게 밑돌며 <b>6년 만에 최저</b>를 기록했습니다. <b>전월비는 -0.4%</b>(예상 -0.1%)로 6년 만에 최대 하락폭, <b>근원 전월비는 0%</b>(예상 0.2%)로 2021년 1월 이후 최저였습니다. 유가 하락 반영과 주거비 둔화가 주도했습니다.</li>
+      <li><b>📉 7월 금리 인상 확률 50%→10% 급반전:</b> 지표 발표 직후 전날 50%까지 치솟았던 7월 인상 확률이 <b>10% 수준으로 급락</b>했고, CME 페드워치 기준 <b>7월 동결 확률이 83.4%</b>로 올라섰습니다. 어제 시장을 짓눌렀던 '금리 인상 공포'가 하루 만에 소멸한 것이 오늘 한국 급반등의 직접적 원인입니다.</li>
+      <li><b>📈 뉴욕증시·반도체 반등:</b> 다우 52,508.27(<span class="up">+0.02%</span>), S&P500 7,543.59(<span class="up">+0.38%</span>), 나스닥 26,107.01(<span class="up">+0.90%</span>), <b>필라델피아 반도체지수(SOX) +2.54%</b>. 엔비디아 +4.06%, 마이크론 +4.92%, 샌디스크 +5.01%, 인텔 +4.50%, AMD +2.57%.</li>
+      <li><b>🚀 SK하이닉스 ADR +27.29% 폭등:</b> 미국 상장 SK하이닉스 ADR이 하루 만에 27% 넘게 급등했고, <b>SK하이닉스 레버리지 ETF의 미국 거래도 시작</b>되며 관심이 집중됐습니다. 이 흐름이 오늘 국내 반도체 대형주 급등으로 그대로 이어졌습니다.</li>
+      <li><b>😌 VIX 16.40(-4.43%)·美 국채금리·달러 동반 하락:</b> 물가 안도에 변동성지수가 진정되고, 어제 급등했던 국채금리(2년물)와 달러가 함께 내렸습니다. 위험선호가 빠르게 회복됐습니다.</li>
+      <li><b>🛢️ 국제유가 진정 + 트럼프 '호르무즈 통행료 20%' 철회:</b> WTI 8월물은 79.70달러(+0.45%)로 <b>어제 +9.4% 폭등 이후 안정</b>됐습니다. 트럼프 대통령이 논란이던 <b>호르무즈 해협 통행료 20% 부과 방침을 철회</b>했습니다(다만 대이란 해상봉쇄·공습은 지속). 어제 리포트가 지목한 '유가 위험'의 급성 국면이 한풀 꺾였습니다.</li>
+    </ul>
+    <div class="note">💡 <b>한국 시장에 주는 의미:</b> 어제 리포트가 '전제가 뒤집혔다(금리 인하→인상)'고 쓴 바로 그 전제가, <b>미국 쪽에서는 다시 원위치</b>로 돌아왔습니다. 물가 둔화 → 긴축 우려 완화 → 성장주(반도체·2차전지) 밸류에이션 압박 해소, 라는 반대 논리가 하루 만에 작동한 것입니다. 단, 이는 <b>미국 이야기</b>이고, 한국 금리는 내일 금통위가 별도로 결정합니다.</div>
+  </div>
+
+  <!-- 투자주체별 수급 -->
+  <div class="card">
+    <h2>💰 투자주체별 수급 (7/15 마감)</h2>
+    <p class="small" style="margin-bottom:6px">▸ <b>코스피</b> · 가장 큰 금액(개인 매도 2조4,680억)을 100으로 환산</p>
+    <div class="bar-row"><span class="bar-label">외국인</span><span class="bar-track"><div class="bar-buy" style="width:94.1%"></div></span><span class="bar-val">매수 약 2조3,227억</span></div>
+    <div class="bar-row"><span class="bar-label">기관</span><span class="bar-track"><div class="bar-buy" style="width:7.4%"></div></span><span class="bar-val">매수 약 1,827억</span></div>
+    <div class="bar-row"><span class="bar-label">개인</span><span class="bar-track"><div class="bar-sell" style="width:100%"></div></span><span class="bar-val">매도 약 2조4,680억</span></div>
+
+    <p class="small" style="margin:12px 0 6px">▸ <b>코스닥</b> · 가장 큰 금액(개인 매도 1,407억)을 100으로 환산</p>
+    <div class="bar-row"><span class="bar-label">외국인</span><span class="bar-track"><div class="bar-buy" style="width:16.4%"></div></span><span class="bar-val">매수 약 231억</span></div>
+    <div class="bar-row"><span class="bar-label">기관</span><span class="bar-track"><div class="bar-buy" style="width:77.1%"></div></span><span class="bar-val">매수 약 1,085억</span></div>
+    <div class="bar-row"><span class="bar-label">개인</span><span class="bar-track"><div class="bar-sell" style="width:100%"></div></span><span class="bar-val">매도 약 1,407억</span></div>
+
+    <p class="small" style="margin-top:10px">🔴 빨강=매수, 🔵 파랑=매도. <b>쉽게 말해:</b> <b>외국인·기관이 함께 사고, 개인이 팔았습니다.</b> 코스피에서 외국인이 <b>2.3조를 순매수</b>하며 상승을 이끌었고, 기관도 매수에 가세했습니다. 반면 개인은 코스피·코스닥 합쳐 <b>2.6조를 순매도</b>했습니다.</p>
+    <p class="small" style="margin-top:8px"><b>🧭 수급 구도 — 지난 이틀의 아이러니:</b> 그제·어제 개인이 급락장에서 대량 매수(어제만 3.9조)로 '물타기'에 나섰다가, 오늘 반등이 나오자 상당수가 <b>손절·차익실현으로 이탈</b>한 모습입니다. 외국인은 어제(순매수 전환)에 이어 오늘 <b>연속·대규모 순매수</b>로 방향을 굳혔습니다. <b>대형주(반도체) 중심의 외국인 주도 반등</b>이라는 점에서, 어제 '대형주는 사고 중소형주는 파는' 리스크 축소 수급과는 확연히 달라진 '위험선호 복귀' 수급입니다.</p>
+    <div class="note">※ 수급 수치는 한국거래소·뉴스핌 집계 기준이며, 집계 시점에 따라 매체 간 소폭 차이가 있을 수 있습니다. <b>방향과 구도(외국인·기관 매수, 개인 매도)는 일관</b>됩니다.</div>
+  </div>
+
+  <!-- 주도 섹터 -->
+  <div class="card">
+    <h2>🚀 주도 섹터: 반도체 — 강세 복귀, 재가격화 국면 마무리 국면</h2>
+    <table>
+      <tr><td>반도체(대형)</td><td colspan="2" class="up">급등 (SK하이닉스 +8.83%, 삼성전자 +6.27%)</td></tr>
+      <tr><td>반도체 소부장(코스닥)</td><td colspan="2" class="up">강세 (원익IPS +12.3%, 주성 +8.8%)</td></tr>
+      <tr><td>동반 반등</td><td colspan="2" class="up">2차전지·바이오·증권·보험</td></tr>
+      <tr><td>반도체 사이클</td><td colspan="2">2025년 말 시작 · 약 <b>42주차</b></td></tr>
+    </table>
+    <p class="small" style="margin-top:8px"><b>반도체 강도: 65/100</b> — 약강세 복귀(그제 20 → 어제 40 → 오늘 65). 이틀 전 투매를 딛고 어제 저가매수, 오늘 강한 반등으로 이어졌습니다. 다만 '이틀짜리 되돌림'인지 '추세 재개'인지는 실적으로 확인이 필요합니다.</p>
+    <div class="gauge"><div style="width:65%"></div></div>
+    <p class="small" style="color:#888">투매(0) — 재가격화(40) — <b>약강세(65) ◀ 현재</b> — 중강세(80) — 강세(100)</p>
+    <ul style="margin-top:10px">
+      <li><b>반등의 근거:</b> ①미국 CPI 둔화로 금리 인상 공포가 소멸했고, ②SK하이닉스 ADR +27% 급등으로 본주 저평가 매력이 부각됐으며(뉴스핌: 국내 목표주가 400만원 제시도 등장), ③최근 낙폭이 컸던 반도체·증권주에 저가매수가 몰렸습니다(미래에셋 김주연).</li>
+      <li><b>🌐 ASML 호실적 — 업황 신호 양호:</b> 오늘 발표된 ASML 2분기 실적은 <b>매출 93억 유로·순이익 29억 유로</b>, 연간 가이던스를 <b>430~450억 유로로 상향</b>했습니다. EUV 독점 기업의 견조한 수요는 AI 인프라 투자가 살아있음을 시사합니다.</li>
+      <li><b>🤝 삼성 '韓·日 반도체 동맹' 재료:</b> 삼성전기가 일본 스미토모화학 계열 동우화인켐과 유리기판 핵심소재 '글라스 코어' 합작사(글라셈)를 세운다는 소식이 부각되며 삼성전기가 +12% 급등했습니다. AI 반도체 첨단 패키징 공급망 선점 기대입니다.</li>
+      <li><b>⚠️ 아직 남은 숙제:</b> ①<b>7월 말 삼성전자·SK하이닉스 2분기 실적</b>이 최종 판정대 — 오늘 반등이 정당한지는 여기서 갈립니다. ②<b>내일 TSMC 실적</b>도 AI 수요의 실체를 보여줍니다. ③급락→급등의 큰 변동성 자체가 아직 시장이 '안정'이 아닌 '진폭 확대' 국면임을 시사합니다.</li>
+    </ul>
+  </div>
+
+  <!-- 다음 주도 섹터 후보 -->
+  <div class="card">
+    <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+    <ul>
+      <li><b>🔧 반도체 소부장 (1순위 — 오늘 최강):</b> 원익IPS +12.3%, 주성엔지니어링 +8.8%, 이오테크닉스 +7.8%, 리노공업 +6.6%. 대형주보다 탄력이 큽니다. ASML 가이던스 상향·AI 투자 지속이 장비·소재 수요를 뒷받침합니다. 반도체 강세장의 '고베타' 대표주자입니다.</li>
+      <li><b>🔋 2차전지 (되돌아온 후보):</b> 어제 '후보 제외'했으나 오늘 에코프로 +9.2%, 에코프로비엠 +7.4%로 급반등했습니다. <b>금리 인상 공포가 성장주 전반을 눌렀다가, 그 공포가 풀리자 가장 크게 튄</b> 자리입니다. 단, <b>내일 금통위가 인상하면 다시 압박</b>받을 수 있어 '금리 조건부' 후보입니다.</li>
+      <li><b>🏦 증권 (금리 완화 수혜):</b> 낙폭 과대 증권주에 매수세가 집중됐습니다. 거래대금 급증(사이드카 발동 수준의 거래)과 위험선호 회복은 증권사 실적에 직접 호재입니다.</li>
+      <li><b>🤖 로봇·AI (모멘텀 지속):</b> 레인보우로보틱스 +7.4%. AI·자동화 테마는 정책(AIDC)·업황 양쪽의 지지를 받습니다.</li>
+      <li><b>⚡ 전력·AIDC 인프라 (정책 지속):</b> AI 데이터센터 550조 투자 + 폭염 전력수요. 조정 시 매집 관점 유효라는 시각은 유지됩니다.</li>
+      <li><b>🛢️🚢 정유·조선 (우선순위 하향):</b> 어제 1순위였던 유가 수혜주는 <b>유가가 진정(+0.45%)되고 트럼프가 통행료 방침을 철회</b>하면서 급성 모멘텀이 약해졌습니다. 지정학 꼬리위험은 남아 '보험' 성격으로 관점 전환.</li>
+      <li><b>🔻 관전 포인트 — 금통위가 방향타:</b> 오늘 반등의 주역(반도체·2차전지·증권)은 모두 '금리 민감' 성장·경기주입니다. <b>내일 금통위 인상 여부가 이 흐름의 지속성을 결정</b>합니다.</li>
+    </ul>
+  </div>
+
+  <!-- 이번 주 일정 -->
+  <div class="card">
+    <h2>📅 이번 주 주요 일정</h2>
+    <div class="sched">
+      <div class="kv"><span>7/15(수) 21:30</span><span style="text-align:right">🇺🇸 <b>美 6월 PPI(생산자물가)</b> — CPI 둔화 확인 여부</span></div>
+      <div class="kv"><span>7/15(수·현지)</span><span style="text-align:right">🇳🇱 <b>ASML 실적 발표</b> — 매출 93억€·가이던스 상향(호실적 확인)</span></div>
+      <div class="kv"><span>7/16(목) 09:00</span><span style="text-align:right">🇰🇷 <b>한국은행 금통위 ★이번 주 최대 이벤트★</b> — 시장 <b>인상(2.50→2.75%) 전망 우세</b>. 기자간담회 11:10</span></div>
+      <div class="kv"><span>7/16(목)</span><span style="text-align:right">🇹🇼 <b>TSMC 실적</b> — AI 반도체 수요 실체 확인</span></div>
+      <div class="kv"><span>7/16(목·현지)</span><span style="text-align:right">🇺🇸 <b>넷플릭스 실적</b> — 빅테크 실적시즌 분수령</span></div>
+      <div class="kv"><span>7/17(금)</span><span style="text-align:right">🇰🇷 옵션만기 없음 · 국내 증권사 2분기 실적 발표 시작</span></div>
+      <div class="kv"><span>7/23(목)</span><span style="text-align:right">🇰🇷 대통령 주재 부동산 대토론회 — 세제 개편 구체화</span></div>
+      <div class="kv"><span>7/24(금·현지)</span><span style="text-align:right">🇺🇸 美 10% 보호관세(무역법 122조) 만료 시한</span></div>
+      <div class="kv"><span>7/28~29(현지)</span><span style="text-align:right">🇺🇸 <b>FOMC</b> — CPI 둔화로 시장은 <b>동결(83%)</b>로 회귀</span></div>
+      <div class="kv"><span>7월 말</span><span style="text-align:right">🇰🇷 <b>삼성전자·SK하이닉스 2분기 실적</b> — 반도체 사이클 최종 판정</span></div>
+    </div>
+    <div class="note">📌 <b>이번 주 순서:</b> 오늘 밤 <b>美 PPI + ASML</b>(둘 다 확인성 지표) → 내일 <b>금통위 + TSMC + 넷플릭스</b>가 겹칩니다. CPI로 미국발 금리 위험은 크게 풀렸으니, <b>이제 초점은 국내 금리(금통위)와 반도체 실적</b>입니다. 금통위가 인상하면 오늘 급등한 코스닥·성장주가 되돌림을 받을 수 있고, TSMC·삼성·하이닉스 실적이 강하면 반등에 정당성이 붙습니다.</div>
+  </div>
+
+  <!-- 리스크 지표 -->
+  <div class="card">
+    <h2>🛡️ 리스크 지표 점검 (7/15 마감 기준)</h2>
+    <div class="kv"><span>코스피 등락(종가)</span><span class="up">+6.24% (🟢 급락 트리거 해제·매수 사이드카)</span></div>
+    <div class="kv"><span>코스닥 등락</span><span class="up">+5.80% (매수 사이드카 발동)</span></div>
+    <div class="kv"><span>원/달러 환율</span><span class="up">1,484.70원 (🟢 1,500원 하회·2개월여 최저)</span></div>
+    <div class="kv"><span>VIX(미국 공포지수)</span><span class="up">16.40 (-4.43%, 🟢 22 미만·7/14 종가)</span></div>
+    <div class="kv"><span>외국인 연속 순매도</span><span class="up">0일 (연속·대규모 순매수 +2조3,227억)</span></div>
+    <div class="kv"><span>시장 폭</span><span class="up">장 초반 90%+ 종목 상승 (압도적 양(+))</span></div>
+    <div class="kv"><span>국제유가(WTI)</span><span>79.70달러 (+0.45%, 🟡→진정·통행료 철회)</span></div>
+    <div class="kv"><span>美 금리 인상 우려</span><span class="up">7월 인상확률 50%→10% (🟢 완화)</span></div>
+    <div class="kv"><span>7/16 금통위</span><span class="down">인상(2.50→2.75%) 전망 우세 🟡 <b>내일 관건</b></span></div>
+    <p class="small" style="margin-top:8px"><b>'경고등이 하나 꺼지고, 하나만 남았다.'</b> 어제 별도 감시 대상으로 올렸던 두 위험 중 <b>유가는 진정, 미국 금리 우려는 크게 완화</b>됐습니다. 정해진 4개 트리거도 모두 해제라 오늘은 🟢입니다. <b>남은 단 하나의 변수는 내일 한은 금통위의 금리 인상 여부</b>입니다. 인상이 나오면 국내 성장주에 국지적 부담이 생길 수 있으나, 이미 상당 부분 예고된 재료라는 점에서 '서프라이즈 인상'이 아니라면 충격은 제한적일 가능성이 있습니다.</p>
+  </div>
+
+  <!-- 정책 수혜 -->
+  <div class="card">
+    <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+    <ul>
+      <li><b>🤝 반도체 공급망·소재 국산화:</b> 오늘 부각된 삼성전기-스미토모(동우화인켐) '글라스 코어' 합작(글라셈)은 AI 반도체 첨단 패키징 국산 공급망 확보 사례입니다. 정부의 반도체·AI 집중 전략과 결이 맞습니다.</li>
+      <li><b>📈 저PBR 기업 명단 11월 첫 공개 + 코스닥 승강제:</b> 밸류업이 '권고'에서 '명단 공개'라는 압박으로 진화합니다. 오늘 <b>엔비티가 자사주 소각·첫 배당 등 밸류업 계획</b>을 발표하는 등 개별 기업 동참이 이어집니다. 저PBR 금융·지주 중장기 재평가 계기.</li>
+      <li><b>💰 '미래대응기금' 신설 + 내년 예산 첫 800조:</b> 반도체 호황 추가 세수를 AI 국가전략·3대 메가프로젝트에 투입.</li>
+      <li><b>🏠 부동산 정책 논쟁 가열:</b> 오늘 오세훈 서울시장이 '이재명 정부 부동산' 비판 영상을 공개(매매·전세·월세 '트리플 강세' 지적)하는 등 정책 공방이 격화됐습니다. 7/23 대통령 주재 대토론회에서 세제 개편이 구체화될 전망 — 건설·리츠 정책 변수.</li>
+      <li><b>⚡ AI 데이터센터 전력 인프라:</b> 550조 AIDC 투자 + 전용 요금제. 전력·냉각 밸류체인 정책 수혜 지속.</li>
+      <li><b>🛡️ 한국-NATO 조달기본협정:</b> 연 15조원 방산 조달시장. 중동 변수로 모멘텀 유지(단, 유가 진정으로 지정학 프리미엄은 다소 축소).</li>
+    </ul>
+  </div>
+
+  <!-- Claude의 생각 -->
+  <div class="card">
+    <h2>💭 Claude의 생각 (참고용)</h2>
+    <div class="opinion">
+      <p>어제 저는 이번 주를 <b>'답이 나오는 주'</b>라고 부르며, 반등이 진짜가 되려면 확인해야 할 신호 셋을 적었습니다. 그 첫 번째가 <b>"오늘 밤 CPI 3.9% 이하"</b>였습니다. 결과는 <b>3.5%</b> — 예상보다도, 제 기준선보다도 훨씬 낮게 나왔습니다. 그리고 시장은 그 한 방에 되돌아섰습니다.</p>
+
+      <p><b>먼저 어제와 무엇이 달랐는지 정직하게 짚겠습니다.</b> 어제의 +0.73%는 장중 -5.3%를 딛고 종가만 겨우 플러스였고, 오른 업종은 사실상 반도체 하나뿐인 '착시 상승'이었습니다. 오늘은 다릅니다. <b>개장 6분 만에 매수 사이드카, 전 종목의 90% 이상 상승, 외국인 2.3조 순매수.</b> 폭·수급·방향이 모두 같은 곳을 가리켰습니다. 이건 두 종목이 만든 지수가 아니라 <b>시장 전체가 함께 오른 하루</b>입니다. 오늘의 🟢는 어제의 🟢보다 훨씬 단단합니다.</p>
+
+      <p><b>왜 하루 만에 이렇게 뒤집혔나.</b> 어제 시장을 짓누른 건 '유가 급등 → 인플레 → 금리 인상'이라는 사슬이었습니다. 오늘 그 사슬의 첫 고리(인플레)가 미국 CPI로 끊어졌습니다. 물가가 예상보다 낮으니 금리를 올릴 이유가 줄고, 7월 인상 확률이 50%에서 10%로 내려앉았습니다. <b>어제 성장주를 눌렀던 힘이 그대로 반대로 작용</b>해, 가장 많이 눌렸던 반도체·2차전지가 가장 크게 튀었습니다. 어제 제가 "게임의 규칙이 바뀌었다"고 썼는데, 규칙이 <b>다시 한 번 바뀌어 원위치</b>로 돌아온 셈입니다.</p>
+
+      <p><b>다만 들뜨기 전에 세 가지를 냉정하게 봅니다.</b> ①<b>이건 미국 이야기입니다.</b> 미국 금리 공포는 풀렸지만, <b>내일 한은 금통위는 여전히 인상이 유력</b>합니다. 국내 물가 3.2%, 집값, 반도체 호황이라는 국내 사정은 그대로이기 때문입니다. 오늘 급등한 코스닥·성장주가 내일 금리 인상에 되돌림을 받을 수 있습니다. ②<b>이틀 새 -5%에서 +6%</b>입니다. 이건 안정이 아니라 진폭이 커진 시장의 특징입니다. 이런 국면은 위로도 아래로도 과격합니다. ③<b>개인은 최악의 타이밍을 밟았습니다.</b> 어제 급락에 3.9조를 사서 물렸다가, 오늘 반등에 2.4조를 팔아 상승을 놓쳤습니다. 반등의 과실은 외국인·기관이 가져갔습니다. 감정에 쫓긴 매매가 어떻게 손실을 굳히는지 보여주는 이틀이었습니다.</p>
+
+      <p><b>어제의 신호 셋을 오늘 점검하면:</b> (1) CPI 3.9% 이하 → <b>3.5%로 명확히 충족 ✅</b>, (2) 유가 되돌림(WTI 75달러 하회) → 79.7달러로 <b>진정됐으나 미충족(부분) ◔</b>, (3) 7/16 금통위 동결 → <b>내일 확인, 미정 ⏳</b>. 세 신호 중 가장 강력한 첫 번째가 크게 나오면서 오늘의 반등을 만들었습니다. 저는 이 반등을 어제보다 신뢰합니다. 다만 <b>'둘 이상 충족'이라는 제 기준은 아직 완성되지 않았습니다</b> — 마지막 열쇠는 내일 금통위입니다.</p>
+
+      <p style="margin-bottom:0"><b>그래서 지금 어떻게 보나.</b> 미국발 위험이 풀린 만큼 방향은 어제보다 우호적입니다. 그러나 <b>확인하고 행동해도 늦지 않다</b>는 원칙은 오늘도 유효합니다 — 내일 금통위와 이달 말 반도체 실적이라는 두 개의 '진짜 판정'이 아직 남아 있기 때문입니다. 오늘 하루의 6% 급등을 '추세 재개 확정'으로 읽기보다는, <b>'가장 큰 악재 하나가 풀린 강한 되돌림'</b>으로 보는 편이 안전하다고 생각합니다. 급하게 쫓기보다, 내일 금통위 결과를 확인한 뒤 흔들림 없는 자리를 고르는 것이 이번 주의 정답에 가깝다고 봅니다.</p>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    본 리포트는 공개된 뉴스·시장 데이터를 정리한 <b>경향성 참고용</b> 자료입니다. 특정 종목의 매수·매도를 권유하지 않으며,<br>
+    수치는 집계 시점에 따라 매체별 차이가 있을 수 있습니다. <b>투자 판단과 그 결과에 대한 책임은 전적으로 투자자 본인에게 있습니다.</b><br>
+    생성: 2026-07-15 · Claude
+  </div>
+
+</div>
+</body>
+</html>
