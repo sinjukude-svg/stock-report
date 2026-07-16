@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-07-16</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:118px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .opinion p{margin-bottom:9px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert-red{border:2px solid #d02b26;background:#fff4f3;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800}
+  .alert-title-red{color:#d02b26}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c;margin-top:8px}
+  .intraday{background:#fdeef0;border:1px solid #f4c4ca;border-radius:10px;padding:10px;font-size:12px;color:#a3283a;margin-top:8px}
+  .warnbox{background:#fff6e6;border:1px solid #f0d9a8;border-radius:10px;padding:10px;font-size:12px;color:#8a5a12;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 리스크 경고등 -->
+  <div class="card alert-red">
+    <div class="alert-head">
+      <span class="alert-light">🔴</span>
+      <span class="alert-title alert-title-red">리스크 경고등: 위험 (🔴 — 코스피 6% 급락·매도 사이드카)</span>
+    </div>
+    <p class="small"><b>판정 근거(7/16 목 마감 기준)</b> — 정해진 🔴 트리거 중 <b>'코스피 -3% 이상 급락'</b>이 발동했습니다.
+    ①<b>코스피 -6.37%</b> 폭락(6,820.60), <b>7,000선 반납</b> → 급락 트리거 발동, 개장 직후 <b>매도 사이드카</b>.
+    ②원/달러 1,480.4원(-4.3원)은 1,500원 아래로 <b>트리거 미달</b>(오히려 원화 강세).
+    ③VIX 16선(7/15 미국 종가)은 22 미만으로 미달.
+    ④외국인 연속 순매도는 1일(어제 순매수→오늘 순매도 전환)로 미달.
+    <b>세 지표는 멀쩡한데, 지수 급락 단 하나로 🔴</b>가 켜졌습니다.</p>
+    <div class="intraday">⚠️ <b>오늘의 🔴는 '전면적 위기'가 아니라 '반도체 한 업종의 지진'입니다.</b> 환율은 내렸고(원화 강세), 미국 VIX도 잠잠합니다. 무너진 건 <b>메모리 반도체</b> 하나였고, 그 한 종목군(삼성전자·SK하이닉스)이 지수의 큰 비중이라 지수 전체가 -6%로 찍힌 것입니다. 즉 <b>'시스템 위기'가 아니라 '주도주 쏠림의 대가'</b>에 가깝습니다.</div>
+    <div class="warnbox">🧭 <b>이틀 새 +6% → -6% 롤러코스터.</b> 어제(+6.24%)와 오늘(-6.37%)이 거의 정확히 상쇄됐습니다. 이 진폭 자체가 <b>시장이 '안정'이 아니라 '방향을 못 잡은 고변동 국면'</b>임을 말해줍니다. 다음 방향타는 오늘 밤 <b>TSMC 실적</b>과 이달 말 <b>삼성·SK하이닉스 실적</b>입니다.</div>
+  </div>
+
+  <div class="card">
+    <h1>🇰🇷 한국 주식시장 리포트</h1>
+    <div class="date">2026년 7월 16일(목) · 마감 브리핑 · 정규장 종료 기준 · '되돌림 2막 — 하루 만에 6% 반납, 매도 사이드카'</div>
+    <p style="margin-top:10px;font-size:13px"><b>한 줄 요약:</b> '새로운 적이 나타났다 — 이번엔 중국 메모리다.' 코스피 <b>6,820.60(-463.81p, -6.37%)</b>, 코스닥 <b>791.84(-37.59p, -4.53%)</b>. 중국 CXMT의 대형 IPO(메모리 증설 위협)와 데이터센터 투자 둔화 우려가 겹치며 <b>간밤 미국 메모리주가 급락</b>(마이크론 -8%, SK하이닉스 ADR -9%), 그 충격이 국내 반도체로 그대로 전이됐습니다. 어제 급등분을 <b>하루 만에 고스란히 반납</b>하며 양대 시장에 <b>매도 사이드카</b>가 발동됐습니다.</p>
+    <div class="intraday"><b>↘️ 장중 흐름:</b> 갭다운 출발 → 미니 코스피200 선물 -5.22%에 <b>오전 9시10분 코스피 매도 사이드카</b> → <b>오전 10시20분 코스닥도 매도 사이드카</b> → 7,000선 붕괴, SK하이닉스 장중 -10%대·삼성전자 -8%대 → 6,820.60(-6.37%) 마감. 어제 '매수' 사이드카를 맞았던 시장이 <b>하루 만에 '매도' 사이드카로 다시 뒤집혔습니다.</b></div>
+    <p class="small" style="margin-top:8px"><b>💡 오늘의 핵심 변화 — 어제 걱정했던 '내일의 금통위'는 무사히 지나갔고, 전혀 다른 곳에서 폭탄이 터졌습니다.</b> 어제 저는 남은 변수로 '한은 금리 인상'을 지목했는데, <b>한은은 예상대로 2.75%로 인상(예상 부합)</b>해 시장 영향은 제한적이었습니다. 정작 오늘 지수를 무너뜨린 건 아무도 크게 경계하지 않던 <b>'중국 메모리(CXMT) 공급 위협'</b>이었습니다.</p>
+  </div>
+
+  <!-- 주요 지수 -->
+  <div class="card">
+    <h2>📊 주요 지수 (7/16 목 마감 확정)</h2>
+    <table>
+      <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+      <tr><td>코스피</td><td>6,820.60</td><td class="down">-463.81 (-6.37%)</td></tr>
+      <tr><td>코스닥</td><td>791.84</td><td class="down">-37.59 (-4.53%)</td></tr>
+      <tr><td>원/달러 환율</td><td>1,480.40원</td><td class="up">-4.30원 (원화 강세)</td></tr>
+    </table>
+    <p class="small" style="margin-top:10px"><b>📊 시장 폭(상승/하락 종목 수):</b> 세부 종목 수 집계는 <b>데이터 미확보</b>이나, 양대 시장 모두 <b>매도 사이드카</b>가 발동됐고 시총 상위주가 대부분 급락한 점에서 <b>시장 폭은 압도적인 음(-)</b>으로 판단됩니다. 코스피 사이드카는 올해 37번째(매도 19번째), 코스닥은 22번째(매도 9번째)로, 반도체發 매도가 전방위로 확산됐습니다.</p>
+    <p class="small" style="margin-top:8px"><b>🔻 내린 종목(시총 상위 일제 급락):</b> SK스퀘어 -12.30%, SK하이닉스 -11.53%(180만원대), 삼성전자우 -10.42%, 삼성전기 -9.62%, 삼성전자 -8.77%(25만원대), 현대차 -2.07%, 삼성생명 -1.93%, LG에너지솔루션 -0.30%, KB금융 -0.28%. <b>단, 삼성바이오로직스 +0.94%</b>는 방어.<br>
+    <b>코스닥도 대부분 급락:</b> 코오롱티슈진 -20.28%, 주성엔지니어링 -10.31%, 레인보우로보틱스 -7.67%, 에코프로 -7.41%, 리노공업 -7.19%, 에코프로비엠 -7.03%, 피에스케이 -4.45%, 알테오젠 -4.16%, 원익IPS -1.40%. <b>단, HLB +1.73%</b>는 상승.<br>
+    <span style="color:#888">※ 종목별 등락률은 거래소·뉴스핌 집계 기준이며 매체별 소폭 차이가 있을 수 있습니다.</span></p>
+  </div>
+
+  <!-- 미국 주요 변동사항 -->
+  <div class="card">
+    <h2>🇺🇸 미국 주요 변동사항 (7/15 현지 — 있음, 오늘 급락의 도화선)</h2>
+    <ul>
+      <li><b>🧨 메모리 반도체 급락 (오늘의 최대 사건):</b> 지수는 올랐지만 <b>메모리주만 폭락</b>했습니다. <b>SK하이닉스 ADR -9.00%</b>(전날 +27% 전액 반납), <b>마이크론 -8.02%</b>, <b>샌디스크 -8.12%</b>, 마벨 -7.27%, 인텔 -4.43%, AMD -3.46%. 중국 CXMT의 대형 IPO와 '메모리 공급 확대·데이터센터 투자 둔화' 우려가 겹치며 메모리 투자심리가 급랭했고, 이 흐름이 오늘 국내 반도체 급락으로 직결됐습니다.</li>
+      <li><b>📉 6월 PPI도 둔화 — 금리 인상 우려 추가 완화:</b> 미국 6월 생산자물가(PPI)가 <b>전월비 -0.3%</b>(예상 보합 하회), 전년비 +5.5%. 전날 CPI에 이어 이틀 연속 물가 안도. <b>7월 FOMC 25bp 인상 확률은 10.2%</b>로 한 주 전 31%에서 급락했습니다(동결·연내 인하 여지).</li>
+      <li><b>📈 지수는 빅테크·은행이 견인, 이틀째 상승:</b> 다우 52,658.64(<span class="up">+0.29%</span>), S&P500 7,572.40(<span class="up">+0.38%</span>), 나스닥 26,269.23(<span class="up">+0.62%</span>). 아마존 +3.02%, 애플 +4.01%, 알파벳 +3.17%, 메타 +3.07%. 은행 호실적(블랙록 +6.61%)과 <b>페이팔 +17.20%</b>(인수 제안설)가 부각됐습니다. <b>즉 미국은 '반도체만 빼고' 좋았습니다.</b></li>
+      <li><b>🛢️ 호르무즈 지정학 재점화:</b> 미국과 이란이 호르무즈 해협 통제권을 놓고 <b>공습을 주고받으며</b> 긴장이 다시 올랐습니다(미 중부사령부 "이란 향하던 유조선 무력화", 트럼프 "마감시한 없다"). 유가 소폭 상승. 물가 재점화 꼬리위험이 남아 있습니다.</li>
+      <li><b>🗣️ 연준 내부 매파 발언:</b> 리사 쿡 이사는 "인플레이션이 조만간 둔화하지 않으면 행동할 준비가 돼 있다"고 밝혔습니다. 물가는 식었지만 지정학·관세 변수로 '완전한 비둘기 전환'은 아직입니다.</li>
+    </ul>
+    <div class="note">💡 <b>한국 시장에 주는 의미:</b> 미국發 재료는 <b>물가(호재)와 반도체(악재)가 정반대로 갈렸습니다.</b> 문제는 한국 지수의 뼈대가 <b>반도체</b>라는 점입니다. 미국 지수는 빅테크로 버텼지만, 반도체 비중이 절대적인 코스피는 메모리 악재를 <b>고스란히</b> 뒤집어썼습니다. 어제의 '반도체 강세 → 급등'이 오늘 '반도체 악재 → 급락'으로 정확히 대칭을 이뤘습니다.</div>
+  </div>
+
+  <!-- 투자주체별 수급 -->
+  <div class="card">
+    <h2>💰 투자주체별 수급 (7/16 마감)</h2>
+    <p class="small" style="margin-bottom:6px">▸ <b>코스피</b> · 가장 큰 금액(개인 매수 3조6,606억)을 100으로 환산</p>
+    <div class="bar-row"><span class="bar-label">외국인</span><span class="bar-track"><div class="bar-sell" style="width:37.6%"></div></span><span class="bar-val">매도 약 1조3,771억</span></div>
+    <div class="bar-row"><span class="bar-label">기관</span><span class="bar-track"><div class="bar-sell" style="width:64.7%"></div></span><span class="bar-val">매도 약 2조3,681억</span></div>
+    <div class="bar-row"><span class="bar-label">개인</span><span class="bar-track"><div class="bar-buy" style="width:100%"></div></span><span class="bar-val">매수 약 3조6,606억</span></div>
+
+    <p class="small" style="margin:12px 0 6px">▸ <b>코스닥</b> · 가장 큰 금액(개인 매수 4,466억)을 100으로 환산</p>
+    <div class="bar-row"><span class="bar-label">외국인</span><span class="bar-track"><div class="bar-sell" style="width:68.0%"></div></span><span class="bar-val">매도 약 3,036억</span></div>
+    <div class="bar-row"><span class="bar-label">기관</span><span class="bar-track"><div class="bar-sell" style="width:35.0%"></div></span><span class="bar-val">매도 약 1,562억</span></div>
+    <div class="bar-row"><span class="bar-label">개인</span><span class="bar-track"><div class="bar-buy" style="width:100%"></div></span><span class="bar-val">매수 약 4,466억</span></div>
+
+    <p class="small" style="margin-top:10px">🔴 빨강=매수, 🔵 파랑=매도. <b>쉽게 말해:</b> <b>외국인·기관이 함께 팔고, 개인이 받았습니다.</b> 코스피에서 외국인·기관이 합쳐 <b>3조7,000억</b>을 순매도했고, 개인이 <b>3조6,606억</b>을 홀로 사들였습니다. 정확히 어제(외국인·기관 매수, 개인 매도)의 <b>거울상</b>입니다.</p>
+    <p class="small" style="margin-top:8px"><b>🧭 수급 구도 — 개인의 '역방향 베팅' 3일째:</b> 그제 급락에 사고, 어제 반등에 팔고, 오늘 급락에 또 샀습니다. 개인은 <b>이번 주 내내 시장과 반대로</b> 움직이고 있습니다. 반면 외국인·기관은 <b>반도체 악재에 즉각·대량 이탈</b>했습니다. 어제 '위험선호 복귀'로 들어왔던 외국인 자금(+2.3조)이 하루 만에 절반 이상 되돌려 나간 셈(-1.4조)입니다.</p>
+    <div class="note">※ 수급 수치는 한국거래소·뉴스핌 집계 기준이며, 집계 시점에 따라 매체 간 소폭 차이가 있을 수 있습니다. <b>방향과 구도(외국인·기관 매도, 개인 매수)는 일관</b>됩니다.</div>
+  </div>
+
+  <!-- 주도 섹터 -->
+  <div class="card">
+    <h2>🚀 주도 섹터: 반도체 — 주도력 급랭, '공급 위협' 리스크 부상</h2>
+    <table>
+      <tr><td>반도체(대형)</td><td colspan="2" class="down">급락 (SK하이닉스 -11.53%, 삼성전자 -8.77%)</td></tr>
+      <tr><td>반도체 소부장(코스닥)</td><td colspan="2" class="down">약세 (주성 -10.31%, 리노공업 -7.19%)</td></tr>
+      <tr><td>방어 업종</td><td colspan="2" class="up">바이오·헬스케어(삼바 +0.94%, HLB +1.73%)</td></tr>
+      <tr><td>반도체 사이클</td><td colspan="2">2025년 말 시작 · 약 <b>42주차</b> (조정 진입)</td></tr>
+    </table>
+    <p class="small" style="margin-top:8px"><b>반도체 강도: 25/100</b> — 급랭(그제 20 → 어제 65 → 오늘 25). '이틀짜리 되돌림'이 소멸하고, <b>새로운 구조적 의심(중국 공급 확대)</b>이 얹혔습니다. 어제의 강세는 하루짜리 반등이었음이 확인됐습니다.</p>
+    <div class="gauge"><div style="width:25%"></div></div>
+    <p class="small" style="color:#888">투매(0) — <b>공급위협·재하락(25) ◀ 현재</b> — 재가격화(40) — 약강세(65) — 강세(100)</p>
+    <ul style="margin-top:10px">
+      <li><b>급락의 근거:</b> ①<b>중국 CXMT(창신메모리) IPO 흥행</b> — 상하이 과창판 공모가를 예상(4.4위안)의 2배인 8.66위안으로 확정, 약 <b>12조7,500억원(최대 14조7,000억원) 조달</b>. 텐센트 4.5조 계약설까지 겹치며 '중국發 메모리 증설·공급 확대' 공포가 부각됐습니다. ②<b>코어위브의 메모리 가격 헤지 검토</b>로 데이터센터 투자·메모리 수요 둔화 우려가 커졌습니다.</li>
+      <li><b>🔎 전문가 진단(이경민 대신증권):</b> "미국 증시에서 반도체 악재가 잇따르며 <b>메모리 공급 확대와 데이터센터 투자 둔화 가능성</b>이 부각됐고, <b>메모리 가격의 정점 통과·수요 둔화 우려</b>가 커지며 국내 반도체 업종에 부담으로 작용했다. <b>한은 금리 인상은 예상에 부합해 영향은 제한적</b>이었다."</li>
+      <li><b>🧊 월가는 상대적으로 '덤덤':</b> 일부 증권가는 CXMT의 기술 격차(DRAM 세대·수율)와 첨단 HBM 진입 장벽을 들어 '즉각적 위협은 제한적'이라는 반론도 냅니다. <b>단기 심리 충격</b>과 <b>중장기 실체</b>를 구분해서 볼 필요가 있습니다.</li>
+      <li><b>⚠️ 최종 판정대:</b> ①<b>오늘 밤 TSMC 2분기 실적</b>이 AI·데이터센터 수요의 실체를 보여줍니다. ②<b>이달 말 삼성전자·SK하이닉스 실적</b>이 국내 반도체 사이클의 방향을 확정합니다. 여기서 수요가 견조하면 오늘 급락은 '과매도', 둔화가 확인되면 '추세 전환'이 됩니다.</li>
+    </ul>
+  </div>
+
+  <!-- 다음 주도 섹터 후보 -->
+  <div class="card">
+    <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+    <ul>
+      <li><b>💊 바이오·헬스케어 (1순위 — 오늘 유일한 피난처):</b> 삼성바이오로직스 +0.94%, HLB +1.73%로 <b>급락장에서 홀로 상승</b>했습니다. 반도체 쏠림에 지친 자금이 <b>금리·경기와 무관한 방어주</b>로 이동하는 초기 신호일 수 있습니다. 알테오젠(-4.16%)은 눌렸지만 낙폭은 상대적으로 작았습니다.</li>
+      <li><b>🏦 은행·보험 (금리 인상 수혜):</b> 오늘 한은이 <b>기준금리를 2.75%로 인상</b>했고 추가 인상까지 예고했습니다. 예대마진 개선은 은행·보험의 구조적 호재입니다. KB금융(-0.28%)·삼성생명(-1.93%)은 급락장에서도 낙폭이 매우 작아 <b>상대적 방어력</b>을 보였습니다.</li>
+      <li><b>🛡️ 방산 (지정학 프리미엄 재부각):</b> 호르무즈 해협에서 미·이란이 다시 충돌하며 지정학 위험이 커졌습니다. 한-NATO 조달 등 구조적 성장에 <b>단기 모멘텀</b>이 얹힐 수 있습니다.</li>
+      <li><b>⚡ 전력·AIDC 인프라 (정책 지속·단 옥석 가리기):</b> AI 데이터센터 투자 둔화 우려가 부각된 만큼, 데이터센터 '수요' 테마는 단기 변동성이 커졌습니다. 반면 전력·전선 등 <b>인프라 실물</b> 쪽은 정책(요금제·증설) 지지가 유효합니다.</li>
+      <li><b>🔧 반도체 소부장 (관망):</b> 어제 최강이었다가 오늘 주성 -10.3%·리노공업 -7.2%로 급락. <b>고베타(고변동)</b> 특성상 반도체 방향이 잡히기 전까진 '추격 금지' 구간입니다.</li>
+      <li><b>🔻 관전 포인트 — 이번엔 '금리'가 아니라 '반도체 실적'이 방향타:</b> 금통위(금리)라는 국내 변수는 소화됐습니다. 이제 <b>TSMC·삼성·하이닉스 실적</b>이 전체 시장의 방향을 결정합니다.</li>
+    </ul>
+  </div>
+
+  <!-- 이번 주 일정 -->
+  <div class="card">
+    <h2>📅 이번 주(및 향후) 주요 일정</h2>
+    <div class="sched">
+      <div class="kv"><span>7/16(목) ✔완료</span><span style="text-align:right">🇰🇷 <b>한은 금통위 → 2.75% 인상</b>(예상 부합·전원 찬성) · 신현송 "긴축 기조 유지"</span></div>
+      <div class="kv"><span>7/16(목·현지)</span><span style="text-align:right">🇹🇼 <b>TSMC 2분기 실적 ★오늘밤 최대 이벤트★</b> — AI·데이터센터 수요 실체 확인</span></div>
+      <div class="kv"><span>7/16(목·현지)</span><span style="text-align:right">🇺🇸 <b>넷플릭스 실적</b> — 빅테크 실적시즌 분수령</span></div>
+      <div class="kv"><span>7/17(금)</span><span style="text-align:right">🇰🇷 국내 증권사 2분기 실적 발표 본격화 · TSMC 실적 소화</span></div>
+      <div class="kv"><span>7/23(목)</span><span style="text-align:right">🇰🇷 대통령 주재 부동산 대토론회 — 세제 개편 구체화</span></div>
+      <div class="kv"><span>7/24(금)</span><span style="text-align:right">🇰🇷 <b>SK하이닉스 2분기 실적(예정)</b> / 🇺🇸 美 10% 보호관세(무역법 122조) 만료 시한</span></div>
+      <div class="kv"><span>7/28~29(현지)</span><span style="text-align:right">🇺🇸 <b>FOMC</b> — 물가 둔화로 <b>동결 유력</b>(인상확률 10%)</span></div>
+      <div class="kv"><span>7/31 경</span><span style="text-align:right">🇰🇷 <b>삼성전자 2분기 확정 실적</b> — 반도체 사이클 최종 판정</span></div>
+      <div class="kv"><span>7월 말~8월 초</span><span style="text-align:right">🇺🇸 마이크론 등 글로벌 메모리 실적·가이던스 — 공급 위협 실체 점검</span></div>
+    </div>
+    <div class="note">📌 <b>이번 주 순서:</b> 금리(금통위)라는 매듭은 오늘 예상대로 풀렸습니다. 이제 초점은 <b>전적으로 '반도체 실적'</b>입니다. 오늘 밤 <b>TSMC</b>가 강하면 오늘 급락은 '과매도'로 재평가될 수 있고, 이달 말 <b>삼성·하이닉스 실적</b>과 가이던스가 'CXMT 공급 위협'이 과장인지 실체인지를 가릅니다.</div>
+  </div>
+
+  <!-- 리스크 지표 -->
+  <div class="card">
+    <h2>🛡️ 리스크 지표 점검 (7/16 마감 기준)</h2>
+    <div class="kv"><span>코스피 등락(종가)</span><span class="down">-6.37% (🔴 급락 트리거 발동·매도 사이드카)</span></div>
+    <div class="kv"><span>코스닥 등락</span><span class="down">-4.53% (매도 사이드카 발동)</span></div>
+    <div class="kv"><span>원/달러 환율</span><span class="up">1,480.40원 (🟢 1,500원 하회·원화 강세)</span></div>
+    <div class="kv"><span>VIX(미국 공포지수)</span><span class="up">16선 (🟢 22 미만·7/15 미국 종가)</span></div>
+    <div class="kv"><span>외국인 연속 순매도</span><span>1일 (어제 순매수→오늘 -1조3,771억 전환)</span></div>
+    <div class="kv"><span>시장 폭</span><span class="down">양대 시장 매도 사이드카 (압도적 음(-))</span></div>
+    <div class="kv"><span>한은 기준금리</span><span class="down">2.50→2.75% 인상 (예상 부합·영향 제한적)</span></div>
+    <div class="kv"><span>메모리 공급 위협(신규)</span><span class="down">中 CXMT IPO·데이터센터 둔화 우려 🔴 <b>핵심 변수</b></span></div>
+    <div class="kv"><span>지정학(호르무즈)</span><span>🟡 미·이란 공습 재개·유가 소폭 상승</span></div>
+    <p class="small" style="margin-top:8px"><b>'지표는 3개가 초록불인데, 지수 하나가 빨간불이다.'</b> 환율·VIX·외국인 연속매도는 모두 정상 범위입니다. 그러나 <b>코스피가 하루에 -6.37% 급락</b>했기에 규칙상 🔴입니다. 이는 위기의 <b>성격</b>을 말해줍니다 — 이번 하락은 <b>환율·자금이탈發 시스템 위기가 아니라, '반도체 한 업종의 악재'가 지수 비중을 타고 증폭된 것</b>입니다. 새로 부상한 <b>'중국 메모리 공급 위협'</b>이 일시적 심리인지 구조적 변화인지는 이달 말 실적에서 판가름 납니다.</p>
+  </div>
+
+  <!-- 정책 수혜 -->
+  <div class="card">
+    <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+    <ul>
+      <li><b>🚧 단일종목 레버리지 규제 강화(오늘 발표):</b> 금융당국이 <b>단일종목 레버리지 상품 신규 상장을 잠정 중단</b>하고 기본 예탁금을 <b>1,000만→3,000만원</b>으로 올렸습니다. 이틀 새 ±6% 급등락의 배경에 레버리지·개인 쏠림이 있다는 판단으로, 변동성 장세 대응·투자자 보호 성격입니다. 증시엔 단기 거래 위축 요인일 수 있습니다.</li>
+      <li><b>🤝 반도체 공급망·소재 국산화:</b> 삼성전기-스미토모 계열 동우화인켐의 '글라스 코어' 합작(글라셈, 평택·내년 하반기 공급)은 AI 반도체 첨단 패키징 국산 공급망 확보 사례입니다. <b>중국 메모리 위협이 커질수록 '국산 소부장·기술 초격차'의 정책 중요성</b>이 부각됩니다.</li>
+      <li><b>💰 금리 인상기 재정·정책 조합:</b> 한은이 긴축(금리 인상)으로 돌아선 만큼, 정부의 <b>미래대응기금·800조 예산</b> 등 재정 확장과의 정책 조합이 관건입니다. 금리 상승은 은행·보험엔 수혜, 성장주·부동산엔 부담입니다.</li>
+      <li><b>🏠 부동산 정책 논쟁 가열:</b> 오세훈 서울시장이 '이재명 정부 1년 매매+13.1%·전세+6.3%·월세+7.4% 트리플 강세'를 비판하는 보고서를 공개했습니다. 7/23 대통령 주재 대토론회에서 세제·공급 대책이 구체화될 전망 — 건설·리츠 정책 변수.</li>
+      <li><b>⚡ AI 데이터센터 전력 인프라:</b> 550조 AIDC 투자·전용 요금제는 유효하나, 오늘 <b>'데이터센터 투자 둔화' 우려</b>가 부각된 만큼 '수요 테마'와 '전력 실물 인프라'를 구분한 접근이 필요합니다.</li>
+      <li><b>🛡️ 한국-NATO 조달·방산:</b> 연 15조원 방산 조달시장. 호르무즈 긴장 재점화로 지정학 프리미엄이 다시 붙었습니다.</li>
+    </ul>
+  </div>
+
+  <!-- Claude의 생각 -->
+  <div class="card">
+    <h2>💭 Claude의 생각 (참고용)</h2>
+    <div class="opinion">
+      <p>어제 저는 오늘을 '남은 매듭(금통위)이 풀리는 날'로 봤습니다. 그런데 <b>매듭은 조용히 풀렸고, 전혀 다른 곳에서 새 폭탄이 터졌습니다.</b> 한은은 예상대로 금리를 2.75%로 올렸지만 시장 영향은 제한적이었고, 정작 코스피를 -6.37% 무너뜨린 건 <b>중국 메모리 업체 CXMT의 대형 IPO</b>였습니다. 어제 제가 "확인하고 행동해도 늦지 않다"고 쓴 이유가, 하루 만에 이렇게 증명될 줄은 저도 몰랐습니다.</p>
+
+      <p><b>먼저 오늘 하락의 '성격'을 정확히 짚겠습니다.</b> 이건 2025년 고환율 사태 같은 '시스템 위기'가 아닙니다. <b>환율은 오히려 내렸고(원화 강세), 미국 VIX도 잠잠</b>합니다. 미국 지수(다우·S&P·나스닥)는 오늘도 올랐습니다. 무너진 건 <b>메모리 반도체 딱 하나</b>였습니다. 문제는 그 하나가 <b>코스피의 뼈대</b>라는 점입니다. 삼성전자·SK하이닉스가 지수에서 차지하는 비중이 워낙 커서, 이 두 종목이 -9%·-12% 빠지자 지수 전체가 -6%로 찍힌 것입니다. <b>'전면적 붕괴'라기보다 '주도주 쏠림의 청구서'</b>에 가깝습니다.</p>
+
+      <p><b>그럼 CXMT 공포는 진짜인가.</b> 여기서 냉정해야 합니다. 시장이 놀란 건 <b>중국이 12조~14조원을 조달해 메모리 증설에 나선다</b>는 '공급 확대' 시나리오입니다. 만약 이게 현실이면 메모리 가격 하락 → 삼성·하이닉스 이익 감소로 이어집니다. 하지만 <b>월가 일각은 상대적으로 덤덤</b>합니다. CXMT의 기술은 아직 삼성·하이닉스보다 여러 세대 뒤처져 있고, AI의 핵심인 <b>HBM(고대역폭메모리) 진입 장벽</b>은 여전히 높기 때문입니다. 즉 <b>단기 심리 충격은 분명하지만, 중장기 실체는 아직 검증되지 않았습니다.</b></p>
+
+      <p><b>이번 주 이틀을 정리하면 이렇습니다.</b> 어제 +6.24%, 오늘 -6.37% — 거의 완벽한 대칭입니다. <b>이건 시장이 방향을 정한 게 아니라, 재료 하나하나에 과격하게 반응하는 '고변동 국면'</b>이라는 뜻입니다. 어제는 'CPI 둔화(호재)'에 반도체가 튀었고, 오늘은 'CXMT(악재)'에 반도체가 무너졌습니다. 같은 종목이 이틀 연속 지수를 6%씩 흔든 겁니다. 이런 장에서 <b>하루의 등락을 추세로 읽으면 반드시 다칩니다.</b></p>
+
+      <p><b>개인 투자자에 대해선 다시 한 번 짚겠습니다.</b> 개인은 그제 사고, 어제 팔고, 오늘 또 샀습니다. <b>이번 주 내내 시장과 정확히 반대로</b> 움직였습니다. 어제 반등을 외국인·기관에 내주고 판 뒤, 오늘 급락을 다시 받아냈습니다. 감정(공포·조급함)에 쫓긴 매매가 어떻게 손실을 굳히는지 보여주는 3일입니다. <b>지금 필요한 건 더 빠른 대응이 아니라, 대응을 멈추고 실적을 기다리는 인내</b>일 수 있습니다.</p>
+
+      <p style="margin-bottom:0"><b>그래서 지금 어떻게 보나.</b> 오늘의 🔴는 '팔고 도망가라'는 신호가 아니라 <b>'변동성이 극에 달했으니 확인 전까지 함부로 베팅하지 말라'</b>는 신호로 읽습니다. 진짜 판정은 숫자로 나옵니다 — <b>오늘 밤 TSMC, 이달 말 삼성·하이닉스 실적</b>입니다. AI 수요가 견조하다고 확인되면 오늘 급락은 좋은 자리가 되고, 수요 둔화가 사실로 드러나면 반도체 주도장은 잠시 쉬어갑니다. <b>지금은 그 답이 나오기 전의 '공백'</b>입니다. 이 공백을 성급한 매매로 채우기보다, 방어주(바이오·금융)의 상대 강세를 관찰하며 <b>실적이라는 팩트를 기다리는 것</b>이 이번 주의 정답에 가깝다고 봅니다.</p>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    본 리포트는 공개된 뉴스·시장 데이터를 정리한 <b>경향성 참고용</b> 자료입니다. 특정 종목의 매수·매도를 권유하지 않으며,<br>
+    수치는 집계 시점에 따라 매체별 차이가 있을 수 있습니다. <b>투자 판단과 그 결과에 대한 책임은 전적으로 투자자 본인에게 있습니다.</b><br>
+    생성: 2026-07-16 · Claude
+  </div>
+
+</div>
+</body>
+</html>
