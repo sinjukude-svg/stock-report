@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-07-18 (주말 휴장)</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:118px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .opinion p{margin-bottom:9px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert-red{border:2px solid #d02b26;background:#fff4f3;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800}
+  .alert-title-red{color:#d02b26}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c;margin-top:8px}
+  .intraday{background:#fdeef0;border:1px solid #f4c4ca;border-radius:10px;padding:10px;font-size:12px;color:#a3283a;margin-top:8px}
+  .warnbox{background:#fff6e6;border:1px solid #f0d9a8;border-radius:10px;padding:10px;font-size:12px;color:#8a5a12;margin-top:8px}
+  .holiday{background:#eef7f0;border:1px solid #c9e6d0;border-radius:10px;padding:10px;font-size:12px;color:#2c6b3f;margin-top:8px}
+  .us{background:#eef4ff;border:1px solid #cfe0ff;border-radius:10px;padding:10px;font-size:12px;color:#33518c;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 리스크 경고등 -->
+  <div class="card alert-red">
+    <div class="alert-head">
+      <span class="alert-light">🔴</span>
+      <span class="alert-title alert-title-red">리스크 경고등: 위험 (🔴 — 직전 거래일 급락 + 주말 美 반도체 베어마켓)</span>
+    </div>
+    <p class="small"><b>판정 근거(직전 거래일 7/16 목 마감 기준 · 주말 휴장 모드)</b> — 정해진 🔴 트리거 중 <b>'코스피 -3% 이상 급락'</b>이 발동한 상태가 유지됩니다.
+    ①<b>직전 거래일 코스피 -6.37%</b> 폭락(6,820.60) → 급락 트리거.
+    ②원/달러 1,480.4원은 1,500원 아래로 <b>트리거 미달</b>(원화 강세).
+    ③VIX 18.77(7/17 미국 종가)은 22 미만으로 미달.
+    ④외국인 연속 순매도는 1일로 미달.
+    <b>4개 지표 중 3개(환율·VIX·외국인)는 정상권인데, 지수 급락 하나로 🔴</b>가 유지됩니다.</p>
+    <div class="intraday">⚠️ <b>이 🔴는 '전면적 위기'가 아니라 '반도체 한 업종의 지진'입니다.</b> 환율은 오히려 내렸고(원화 강세), 미국 VIX(18.77)도 22 아래입니다. 무너진 건 <b>메모리 반도체</b> 하나였고, 그 종목군(삼성전자·SK하이닉스)이 지수의 큰 비중이라 지수 전체가 -6%로 찍힌 것입니다. <b>'시스템 위기'가 아니라 '주도주 쏠림의 대가'</b>에 가깝습니다.</div>
+    <div class="warnbox">🧭 <b>주말 사이 악재가 하나 더 얹혔습니다.</b> 휴장 중이던 금요일(7/17) 미국장에서 <b>필라델피아 반도체지수(SOX)가 고점 대비 -20%를 넘겨 '공식 베어마켓'에 진입</b>했습니다. 즉 국내 증시가 쉬는 사이 반도체 투자심리가 한 단계 더 식었고, <b>월요일(7/20) 삼성·하이닉스 시초부터 갭다운 압력</b>이 예상됩니다.</div>
+  </div>
+
+  <!-- 타이틀 / 주말 안내 -->
+  <div class="card">
+    <h1>🇰🇷 한국 주식시장 리포트 <span style="font-size:13px;color:#c97a13">· 주말 휴장 모드</span></h1>
+    <div class="date">2026년 7월 18일(토) · 주말 브리핑 · 한국 증시 휴장 · '제헌절 연휴 사흘 휴식, 그 사이 미 반도체는 베어마켓行'</div>
+    <div class="holiday">🏖️ <b>오늘·어제 한국 증시는 열리지 않았습니다.</b> 7월 17일(금)이 <b>제헌절</b>로 <b>18년 만에 공휴일로 재지정</b>되면서, 한국거래소는 코스피·코스닥·파생·일반상품(석유·금)·대체거래소(NXT)를 모두 <b>휴장</b>했습니다. 이번 <b>7/17(금)~19(일) 사흘 연휴</b> 뒤 <b>다음 거래일은 7월 20일(월)</b>입니다.</div>
+    <p style="margin-top:10px;font-size:13px"><b>한 줄 요약:</b> 국내 증시는 사흘을 쉬었지만 세계는 쉬지 않았습니다. <b>직전 거래일(7/16 목) 코스피는 -6.37% 폭락</b>(6,820.60)한 채 연휴에 들어갔고, 휴장 중이던 <b>금요일 미국장에서 반도체가 '베어마켓'에 진입</b>(SOX 고점比 -20%↓)했습니다. 방아쇠는 중국 문샷의 초대형 오픈모델 <b>'Kimi K3'</b> 공개 — "미국 AI 지출이 과했다"는 청산 심리입니다. 여기에 <b>넷플릭스 급락</b>과 <b>중동 확전發 유가 상승</b>($81)이 겹쳤습니다. <b>월요일 국내 반도체는 추가 하방 압력</b>이 우려됩니다.</p>
+  </div>
+
+  <!-- ① 직전 거래일 마감 요약 -->
+  <div class="card">
+    <h2>① 직전 거래일 마감 요약 (7/16 목 확정)</h2>
+    <table>
+      <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+      <tr><td>코스피</td><td>6,820.60</td><td class="down">-463.81 (-6.37%)</td></tr>
+      <tr><td>코스닥</td><td>791.84</td><td class="down">-37.59 (-4.53%)</td></tr>
+      <tr><td>원/달러 환율</td><td>1,480.40원</td><td class="up">-4.30원 (원화 강세)</td></tr>
+    </table>
+    <p class="small" style="margin-top:10px"><b>📊 시장 폭(상승/하락 종목 수):</b> 세부 종목 수 집계는 <b>데이터 미확보</b>이나, 7/16 당일 양대 시장 모두 <b>매도 사이드카</b>가 발동됐고 시총 상위주가 일제 급락한 점에서 <b>시장 폭은 압도적인 음(-)</b>이었습니다. 무너진 건 반도체였고, <b>삼성바이오로직스(+0.94%)·HLB(+1.73%) 등 바이오</b>만 방어했습니다.</p>
+    <p class="small" style="margin-top:8px"><b>무슨 일이 있었나:</b> 중국 메모리업체 <b>CXMT의 대형 IPO</b>(약 12조~14조원 조달)와 데이터센터 투자 둔화 우려가 겹쳐 밤사이 미국 메모리주가 급락했고, 그 충격이 국내 반도체로 전이됐습니다. SK하이닉스 -11.53%, 삼성전자 -8.77%. 하루 전(7/15) +6.24% 급등분을 <b>고스란히 반납</b>한 '되돌림'이었습니다. 같은 날 <b>한은은 기준금리를 2.75%로 인상</b>(예상 부합·영향 제한적)했습니다.</p>
+
+    <p class="small" style="margin:14px 0 6px">▸ <b>투자주체별 수급 (7/16 코스피)</b> · 가장 큰 금액(개인 매수 3.66조)을 100으로 환산</p>
+    <div class="bar-row"><span class="bar-label">외국인</span><span class="bar-track"><div class="bar-sell" style="width:37.6%"></div></span><span class="bar-val">매도 약 1조3,771억</span></div>
+    <div class="bar-row"><span class="bar-label">기관</span><span class="bar-track"><div class="bar-sell" style="width:64.7%"></div></span><span class="bar-val">매도 약 2조3,681억</span></div>
+    <div class="bar-row"><span class="bar-label">개인</span><span class="bar-track"><div class="bar-buy" style="width:100%"></div></span><span class="bar-val">매수 약 3조6,606억</span></div>
+
+    <p class="small" style="margin:12px 0 6px">▸ <b>투자주체별 수급 (7/16 코스닥)</b> · 가장 큰 금액(개인 매수 4,466억)을 100으로 환산</p>
+    <div class="bar-row"><span class="bar-label">외국인</span><span class="bar-track"><div class="bar-sell" style="width:68.0%"></div></span><span class="bar-val">매도 약 3,036억</span></div>
+    <div class="bar-row"><span class="bar-label">기관</span><span class="bar-track"><div class="bar-sell" style="width:35.0%"></div></span><span class="bar-val">매도 약 1,562억</span></div>
+    <div class="bar-row"><span class="bar-label">개인</span><span class="bar-track"><div class="bar-buy" style="width:100%"></div></span><span class="bar-val">매수 약 4,466억</span></div>
+    <p class="small" style="margin-top:10px">🔴 빨강=매수, 🔵 파랑=매도. <b>쉽게 말해:</b> 7/16엔 <b>외국인·기관이 함께 팔고(코스피 합산 약 3.7조 순매도), 개인이 홀로 받았습니다(3.66조).</b> 반도체 악재에 기관·외국인이 즉각 대량 이탈한 구도입니다.</p>
+    <div class="note">※ 지수·수급 수치는 한국거래소·뉴스핌 등 집계 기준이며, 매체별 소폭 차이가 있을 수 있습니다. 7/17~19은 <b>제헌절 연휴 휴장</b>으로 신규 거래 데이터가 없습니다.</div>
+  </div>
+
+  <!-- ② 미국 주요 변동사항 -->
+  <div class="card">
+    <h2>🇺🇸 미국 주요 변동사항 (7/17 금 현지 — 있음, 월요일 직격 우려)</h2>
+    <table>
+      <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+      <tr><td>S&amp;P500</td><td>7,457.69</td><td class="down">-1.01%</td></tr>
+      <tr><td>나스닥</td><td>25,520.24</td><td class="down">-1.40%</td></tr>
+      <tr><td>다우</td><td>52,146.42</td><td class="down">-0.77%</td></tr>
+      <tr><td>WTI 유가</td><td>약 $81</td><td class="up">+약3% (주간 +13%)</td></tr>
+      <tr><td>VIX(공포지수)</td><td>18.77</td><td class="up">+12.2%</td></tr>
+      <tr><td>10년물 금리</td><td>약 4.56%</td><td class="small">보합</td></tr>
+    </table>
+    <ul style="margin-top:10px">
+      <li><b>❄️ 반도체 '공식 베어마켓' 진입 (월요일 최대 악재):</b> 필라델피아 반도체지수(SOX)가 6월 고점 대비 <b>-20%</b>를 넘겨 하락. 방아쇠는 중국 문샷의 <b>2.8조 파라미터 오픈모델 'Kimi K3'</b> 공개 — "미국 AI 캐펙스가 과했다"는 청산 심리입니다. <b>마이크론·삼성전자·SK하이닉스가 나란히 고점比 -20%↑ 하락</b>해 메모리가 함께 베어마켓에 들어갔고, 미 상장 메모리주는 이날도 -14%대 급락했습니다. <b>SK하이닉스·삼성전자에 가장 직접적인 부정 재료.</b></li>
+      <li><b>🎬 넷플릭스 -8~10% 급락:</b> 실적(EPS·매출)은 무난했으나 <b>참여지표 공시를 연 2회→1회로 축소</b>한다고 밝혀 '투명성 후퇴' 우려가 부각됐습니다. 기술주 심리에 추가 부담.</li>
+      <li><b>🛢️ 중동 확전 지속 → 유가 상승:</b> 미군이 이란을 여러 차례 타격하고 <b>이란은 인접국 미군 기지를 보복 타격</b>. 미국은 <b>이란산 원유 판매 라이선스를 7/17부로 취소</b>. <b>WTI $81·브렌트 $86</b>(주간 +약13%). 정유·조선·해운·방산엔 우호적.</li>
+      <li><b>🟢 헬스케어·방어주 강세 (순환매):</b> <b>UNH가 호실적+가이던스 상향</b>으로 헬스케어 ETF(XLV) +2.2%, 이날 최강 섹터. 다우가 -0.77%로 가장 덜 빠진 이유. 반도체에서 빠진 돈이 실물·방어로 이동.</li>
+      <li><b>⚠️ 새 변수 — 美 '반도체 100% 관세' 위협 재점화 관측:</b> 삼성·SK하이닉스의 대규모 국내 투자 발표를 두고, 워싱턴이 "공장을 미국으로" 압박하며 관세 카드를 되살릴 수 있다는 관측. 실제화 시 한국 반도체에 추가 악재.</li>
+    </ul>
+    <div class="us">💡 <b>한국 시장에 주는 의미:</b> 미국發 재료는 <b>반도체(악재)와 유가·방어주(일부 우호)로 갈렸습니다.</b> 문제는 한국 지수의 뼈대가 <b>반도체</b>라는 점 — 미국 지수는 헬스케어·에너지로 버텼지만, 반도체 비중이 절대적인 코스피는 메모리 베어마켓을 <b>고스란히</b> 뒤집어쓸 위치입니다. <b>월요일 시초 삼성·하이닉스 갭다운 경계.</b></div>
+  </div>
+
+  <!-- 주도 섹터 -->
+  <div class="card">
+    <h2>🚀 주도 섹터: 반도체 — 주도력 상실 (베어마켓 진입)</h2>
+    <table>
+      <tr><td>반도체(메모리)</td><td colspan="2" class="down">베어마켓 (미 SOX 고점比 -20%↓, 메모리 함께 진입)</td></tr>
+      <tr><td>방어 업종</td><td colspan="2" class="up">헬스케어·바이오(美 XLV +2.2%, 韓 삼바·HLB 방어)</td></tr>
+      <tr><td>에너지·정유</td><td colspan="2" class="up">유가 상승 수혜(WTI $81·주간 +13%)</td></tr>
+      <tr><td>반도체 사이클</td><td colspan="2">2025년 말 시작 · 약 <b>42주차</b> (조정·베어마켓)</td></tr>
+    </table>
+    <p class="small" style="margin-top:8px"><b>반도체 강도: 25/100</b> — 직전 거래일(7/16) 국내 급락에 이어, 주말 미국장에서 <b>SOX가 공식 베어마켓에 진입</b>하며 주도력을 완전히 넘겨준 상태입니다. "좋은 뉴스(TSMC 사상최대 실적)에도 못 오르고 나쁜 뉴스(CXMT·Kimi K3)엔 급락"하는 전형적 사이클 후반부 신호.</p>
+    <div class="gauge"><div style="width:25%"></div></div>
+    <p class="small" style="color:#888">투매(0) — <b>베어마켓·재하락(25) ◀ 현재</b> — 재가격화(40) — 약강세(65) — 강세(100)</p>
+    <ul style="margin-top:10px">
+      <li><b>핵심 판단 — "수요 붕괴"가 아니라 "밸류에이션·과열 청산":</b> 반도체는 3월 저점 대비 +105% 폭등했던 만큼 작은 의심에도 차익실현이 몰릴 준비가 돼 있었습니다. 다만 CXMT(중국)의 기술 격차와 HBM 진입 장벽을 들어 '즉각적 위협은 제한적'이라는 반론도 상존합니다.</li>
+      <li><b>⚠️ 최종 판정대:</b> ①<b>7/22 알파벳·테슬라 실적(AI 캐펙스)</b>이 AI 투자 지속성의 실체를 보여줍니다. ②곧 나올 <b>SK하이닉스 2분기 실적</b>과 이달 말 <b>삼성전자 확정 실적</b>이 국내 반도체 사이클의 방향을 확정합니다. 수요가 견조하면 지금 급락은 '과매도', 둔화가 확인되면 '추세 전환'입니다.</li>
+    </ul>
+  </div>
+
+  <!-- ③ 다음 거래일(월요일) 관전 포인트 -->
+  <div class="card">
+    <h2>③ 다음 거래일(7/20 월) 관전 포인트</h2>
+    <ul>
+      <li><b>📉 반도체 갭다운 경계 (최우선):</b> 휴장 사흘 사이 미 반도체가 베어마켓에 들어갔습니다. <b>삼성전자·SK하이닉스가 시초부터 갭다운·추가 매도</b> 압력을 받을 가능성이 큽니다. 이미 코스피는 6월 고점 대비 -20% 안팎의 약세권이라, 단기 과매도 반등과 추가 하락이 팽팽히 맞설 구간입니다.</li>
+      <li><b>🕘 '조용하지만 위험한 시초가':</b> 월요일은 대형 예정지표가 없습니다. 그래서 오히려 <b>주말 중동 상황·유가</b>와 <b>밤사이 미 반도체·기술주 흐름</b>이 아시아·한국 시초가를 좌우합니다.</li>
+      <li><b>🛢️ 유가 수혜주 주목:</b> 중동 확전·이란산 원유 라이선스 취소로 유가가 주간 +13% 올랐습니다. <b>정유(S-Oil·SK이노베이션)·해운(HMM)·조선(탱커·LNG선)·방산</b>에 우호적 — 반도체 약세의 헤지 후보.</li>
+      <li><b>🏦 은행·보험 / 💊 바이오·방어주:</b> 한은 금리 인상(2.75%) 사이클은 <b>은행 순이자마진</b>에 우호적이고, 미국 헬스케어 강세(UNH)는 <b>국내 바이오·방어주</b> 심리에 간접 우호. 반도체에서 빠진 자금의 대체 종착지 후보들입니다.</li>
+      <li><b>🔑 방향타는 이번 주 후반:</b> 월요일 자체보다, <b>7/22 알파벳·테슬라(AI 캐펙스)</b>와 <b>임박한 SK하이닉스 실적</b>이 반도체 베어마켓의 지속 여부를 가릅니다. <b>추격보다 확인·분할</b>이 유효한 국면입니다.</li>
+    </ul>
+  </div>
+
+  <!-- 이번 주 일정 -->
+  <div class="card">
+    <h2>📅 이번 주 주요 일정 (7/20~)</h2>
+    <div class="sched">
+      <div class="kv"><span>7/20(월)</span><span style="text-align:right">🇰🇷 <b>연휴 후 재개장</b> — 대형 지표 없음 · 반도체 <b>갭다운 경계</b> · 주말 중동·유가가 시초가 좌우</span></div>
+      <div class="kv"><span>7/22(수·현지)</span><span style="text-align:right">🇺🇸 <b>알파벳·테슬라 실적 ★최대 분수령★</b> — AI 캐펙스 확인, 반도체 베어마켓 지속 여부 판가름</span></div>
+      <div class="kv"><span>7/23(목)</span><span style="text-align:right">🇺🇸 신규 실업수당·방산 실적 / 🇰🇷 대통령 주재 <b>부동산 대토론회</b>(세제 개편)</span></div>
+      <div class="kv"><span>7/24(금)</span><span style="text-align:right">🇺🇸 7월 제조·서비스 PMI(속보) · 美 10% 보호관세 만료 시한 / 🇰🇷 <b>SK하이닉스 2분기 실적(예정)</b></span></div>
+      <div class="kv"><span>7/28~29(현지)</span><span style="text-align:right">🇺🇸 <b>FOMC</b> — 물가 둔화 vs 유가 급등 상충, <b>동결 우세</b>(단 연말 인상 관측 부상)</span></div>
+      <div class="kv"><span>7/31 경</span><span style="text-align:right">🇰🇷 <b>삼성전자 2분기 확정 실적</b> — 반도체 사이클 최종 판정</span></div>
+    </div>
+    <div class="note">📌 <b>이번 주 순서:</b> 월요일 재개장은 '밤사이 미국 반도체 충격'을 소화하는 날입니다. 진짜 방향은 <b>7/22 빅테크(AI 캐펙스)</b>와 <b>주 후반 SK하이닉스 실적</b>에서 나옵니다. 여기서 AI 수요가 견조하면 이번 급락은 '과매도', 둔화가 확인되면 '추세 전환'으로 갈립니다.</div>
+  </div>
+
+  <!-- 리스크 지표 -->
+  <div class="card">
+    <h2>🛡️ 리스크 지표 점검 (직전 거래일 7/16 + 주말 美 7/17 기준)</h2>
+    <div class="kv"><span>코스피 등락(직전 거래일)</span><span class="down">-6.37% (🔴 급락 트리거·매도 사이드카)</span></div>
+    <div class="kv"><span>코스닥 등락(직전 거래일)</span><span class="down">-4.53% (매도 사이드카)</span></div>
+    <div class="kv"><span>원/달러 환율</span><span class="up">1,480.40원 (🟢 1,500원 하회·원화 강세)</span></div>
+    <div class="kv"><span>VIX(미국 공포지수)</span><span class="up">18.77 (🟢 22 미만·단 전일 +12%)</span></div>
+    <div class="kv"><span>외국인 연속 순매도</span><span>1일 (7/16 -1조3,771억)</span></div>
+    <div class="kv"><span>미 반도체(SOX)</span><span class="down">❄️ 베어마켓 진입 (고점比 -20%↓) 🔴 <b>핵심 변수</b></span></div>
+    <div class="kv"><span>국제 유가(WTI)</span><span class="up">약 $81 (🟡 주간 +13%·중동 확전)</span></div>
+    <div class="kv"><span>메모리 공급 위협</span><span class="down">中 CXMT IPO·Kimi K3 쇼크 (심리 악재 지속)</span></div>
+    <p class="small" style="margin-top:8px"><b>'지표 3개(환율·VIX·외국인)는 초록불인데, 지수 하나가 빨간불이다.'</b> 이번 🔴는 환율·자금이탈發 <b>시스템 위기가 아니라, '반도체 한 업종의 악재'가 지수 비중을 타고 증폭된 것</b>입니다. 다만 주말 사이 미 반도체가 베어마켓에 진입해 <b>월요일 하방 압력</b>이 커졌다는 점은 분명한 경계 요인입니다.</p>
+  </div>
+
+  <!-- 정책 수혜 -->
+  <div class="card">
+    <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+    <ul>
+      <li><b>⚡ 에너지 안보·유가 수혜:</b> 중동 확전·이란산 원유 라이선스 취소로 유가가 뛰며 정유·조선·해운·방산이 시장·정책 양쪽에서 부각됩니다. 지정학 프리미엄이 다시 붙는 국면.</li>
+      <li><b>🤝 반도체 공급망·기술 초격차:</b> 중국 메모리(CXMT) 위협과 미국의 '반도체 100% 관세' 관측이 커질수록 <b>국산 소부장·첨단 패키징 초격차</b>의 정책 중요성이 부각됩니다.</li>
+      <li><b>🏦 금리 인상기 조합:</b> 한은이 2.75%로 인상한 만큼 <b>은행·보험(예대마진)</b>엔 수혜, <b>성장주·부동산</b>엔 부담. 7/23 부동산 대토론회에서 세제·공급 대책이 구체화될 전망.</li>
+      <li><b>🛡️ 한국-NATO 조달·방산:</b> 연 15조원 조달시장 + 호르무즈 긴장 재점화로 지정학 프리미엄이 재부각.</li>
+    </ul>
+  </div>
+
+  <!-- Claude의 생각 -->
+  <div class="card">
+    <h2>💭 Claude의 생각 (참고용)</h2>
+    <div class="opinion">
+      <p>이번 주말은 <b>'한국은 쉬는데 세계는 쉬지 않은'</b> 사흘입니다. 국내 증시는 <b>제헌절 연휴(7/17~19)</b>로 문을 닫았지만, 그 사이 미국에서 <b>반도체가 '베어마켓'이라는 이름표</b>를 달았습니다. 그래서 이 리포트의 무게중심은 '지난 데이터 정리'보다 <b>'월요일에 무엇을 볼까'</b>에 있습니다.</p>
+
+      <p><b>먼저 🔴의 성격을 정확히 짚겠습니다.</b> 규칙상 직전 거래일(7/16) 코스피 -6.37% 급락이 살아 있어 경고등은 🔴입니다. 그러나 <b>환율(1,480)·VIX(18.77)·외국인 연속매도(1일)는 모두 정상권</b>입니다. 이건 2025년 고환율 사태 같은 '시스템 위기'가 아니라, <b>메모리 반도체 한 업종의 악재가 지수 비중을 타고 증폭된 것</b>에 가깝습니다. 무너진 건 시장 전체가 아니라 삼성·하이닉스였습니다.</p>
+
+      <p><b>주말 사이 바뀐 것 — 반도체가 '베어마켓'에 들어갔습니다.</b> 방아쇠는 중국 문샷의 오픈모델 <b>Kimi K3</b>였습니다. "미국이 수천억 달러를 AI에 쏟는데, 중국이 값싼 대안을 내놓으면 그 투자가 회수될까?"라는 오래된 의심을 다시 건드린 겁니다. 다만 저는 이걸 <b>'수요가 꺾였다'가 아니라 '너무 앞서간 가격을 되돌리는 중'</b>으로 봅니다. 진짜 심판은 숫자로 나옵니다 — <b>7/22 알파벳·테슬라의 AI 투자 계획</b>과 <b>임박한 SK하이닉스 실적</b>입니다.</p>
+
+      <p><b>중요한 균형추 — 미국은 '반도체만' 빠졌습니다.</b> 금요일 미국장은 나스닥이 -1.4%였지만 <b>11개 섹터 중 8개가 올랐고, 헬스케어(UNH)는 급등</b>했습니다. 돈이 시장을 떠난 게 아니라 <b>과열된 반도체에서 실적 탄탄한 헬스케어·에너지·금융으로 갈아탄 '순환매'</b>입니다. 한국도 같은 논리라면, 월요일 반도체가 눌리는 대신 <b>정유·조선·방산(유가)·은행(금리)·바이오(방어)</b>가 상대적 방어처가 될 수 있습니다.</p>
+
+      <p style="margin-bottom:0"><b>그래서 월요일을 어떻게 맞을까.</b> 삼성·하이닉스의 <b>갭다운 가능성은 열어두되, 겁먹은 투매는 경계</b>합니다. 이건 펀더멘털(수요)이 아니라 밸류에이션·심리의 문제이고, 한은조차 최근 'AI 반도체 수출 붐'을 금리 인상 근거로 들 만큼 실물은 살아 있습니다. <b>지금 필요한 건 더 빠른 대응이 아니라, 7/22 빅테크 실적이라는 팩트를 기다리는 인내</b>입니다. 확인 신호 셋: ①7/22 AI 캐펙스 ②유가 $80 안정 여부 ③VIX 22 하회 유지. 이 셋이 우호적이면 경고등은 내려가고, 유가·중동 악화나 반도체 약세의 지수 전반 확산 시엔 위험이 커집니다.</p>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    본 리포트는 공개된 뉴스·시장 데이터를 정리한 <b>경향성 참고용</b> 자료입니다. 특정 종목의 매수·매도를 권유하지 않으며,<br>
+    수치는 집계 시점에 따라 매체별 차이가 있을 수 있습니다. <b>투자 판단과 그 결과에 대한 책임은 전적으로 투자자 본인에게 있습니다.</b><br>
+    생성: 2026-07-18 (토, 주말 휴장 모드) · Claude
+  </div>
+
+</div>
+</body>
+</html>
