@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-07-20</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:118px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .opinion p{margin-bottom:9px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert-red{border:2px solid #d02b26;background:#fff4f3;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800}
+  .alert-title-red{color:#d02b26}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c;margin-top:8px}
+  .intraday{background:#fdeef0;border:1px solid #f4c4ca;border-radius:10px;padding:10px;font-size:12px;color:#a3283a;margin-top:8px}
+  .warnbox{background:#fff6e6;border:1px solid #f0d9a8;border-radius:10px;padding:10px;font-size:12px;color:#8a5a12;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 리스크 경고등 -->
+  <div class="card alert-red">
+    <div class="alert-head">
+      <span class="alert-light">🔴</span>
+      <span class="alert-title alert-title-red">리스크 경고등: 위험 (🔴 — 코스피 -4.46% 급락·매도 사이드카)</span>
+    </div>
+    <p class="small"><b>판정 근거(7/20 월 마감 기준)</b> — 정해진 🔴 트리거 중 <b>'코스피 -3% 이상 급락'</b>이 발동했습니다.
+    ①<b>코스피 -4.46%</b>(6,516.27), <b>코스닥 -5.33%</b>(749.64)로 양대 시장 급락 → 급락 트리거 발동, 오전에 <b>매도 사이드카</b>(코스닥 10:52·코스피 11:21).
+    ②원/달러 1,478.4원은 1,500원 아래로 <b>트리거 미달</b>(오히려 강보합).
+    ③VIX 18.77(7/17 미국 종가)은 22 미만으로 미달.
+    ④외국인 연속 순매도는 <b>해당 없음</b> — 오늘 외국인은 코스피를 <b>5,161억 순매수</b>(저가매수)했습니다.
+    <b>네 지표 중 셋은 멀쩡한데, 지수 급락 단 하나로 🔴</b>가 켜졌습니다.</p>
+    <div class="intraday">⚠️ <b>오늘의 🔴는 '전면적 위기'가 아니라 '반도체·AI 한 축의 지진'입니다.</b> 환율은 강보합(원화 안정), VIX도 잠잠하고, 외국인은 오히려 저가매수에 나섰습니다. 무너진 건 <b>반도체·AI</b>였고, 삼성전자·SK하이닉스가 지수의 큰 비중이라 지수 전체가 -4%대로 찍힌 것입니다. 즉 <b>'시스템 위기'가 아니라 '주도주 쏠림의 대가'</b>에 가깝습니다.</div>
+    <div class="warnbox">🧭 <b>지난주 CXMT(중국 메모리)에 이어, 이번엔 '문샷 쇼크'(중국 AI).</b> 중국이 <b>일주일 새 두 번</b> 국내 반도체를 흔들었습니다. 다음 방향타는 <b>7/22 알파벳·테슬라 실적(AI 캐펙스)</b>과 이번 주 <b>SK하이닉스 실적</b>, 그리고 <b>주말 미·이란 전쟁·유가($88)</b>입니다.</div>
+  </div>
+
+  <div class="card">
+    <h1>🇰🇷 한국 주식시장 리포트</h1>
+    <div class="date">2026년 7월 20일(월) · 마감 브리핑 · 정규장 종료 기준 · '문샷 쇼크 2막 — 이틀 연속 매도 사이드카'</div>
+    <p style="margin-top:10px;font-size:13px"><b>한 줄 요약:</b> '중국이 또 흔들었다 — 이번엔 값싼 AI다.' 코스피 <b>6,516.27(-304.33p, -4.46%)</b>, 코스닥 <b>749.64(-42.20p, -5.33%)</b>. 중국 문샷AI가 공개한 초대형 AI 모델 <b>'키미 K3'</b>가 '고성능 AI를 훨씬 싸게' 구현할 수 있다는 인식을 퍼뜨리며 <b>빅테크의 AI 투자 축소 우려</b>가 커졌고, 이 <b>'문샷 쇼크'</b>가 간밤 미국 반도체지수(SOX) 베어마켓과 겹쳐 국내 반도체로 전이됐습니다. 주말 <b>미·이란 전쟁 격화·유가 급등</b>까지 얹히며 양대 시장에 <b>이틀 연속 매도 사이드카</b>가 발동됐습니다.</p>
+    <div class="intraday"><b>↘️ 장중 흐름:</b> 갭다운 출발(코스피 -2.60%, 6,643) → 낙폭 확대 → <b>오전 10시52분 코스닥 매도 사이드카</b> → <b>오전 11시21분 코스피도 매도 사이드카</b>(올해 20번째 매도) → 장중 6,472.80까지 저점 → 6,516.27(-4.46%) 마감. 코스닥은 <b>종가 기준 750선이 13개월 만에 붕괴</b>됐습니다.</div>
+    <p class="small" style="margin-top:8px"><b>💡 오늘의 핵심 변화 — 악재의 '국적'은 지난주와 같은 중국, 그러나 '품목'이 메모리에서 AI로 바뀌었습니다.</b> 지난주(7/16)는 중국 <b>CXMT(메모리 증설)</b> 공포였는데, 이번엔 중국 <b>문샷AI(값싼 고성능 AI)</b>입니다. 공통점은 <b>"중국이 한국 반도체의 이익 구조를 위협한다"</b>는 서사이고, 차이는 이번엔 <b>메모리 수요(AI 투자)의 지속성 자체</b>를 건드렸다는 점입니다.</p>
+  </div>
+
+  <!-- 주요 지수 -->
+  <div class="card">
+    <h2>📊 주요 지수 (7/20 월 마감 확정)</h2>
+    <table>
+      <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+      <tr><td>코스피</td><td>6,516.27</td><td class="down">-304.33 (-4.46%)</td></tr>
+      <tr><td>코스닥</td><td>749.64</td><td class="down">-42.20 (-5.33%)</td></tr>
+      <tr><td>원/달러 환율</td><td>1,478.40원</td><td class="up">-0.10원 (강보합·원화 안정)</td></tr>
+    </table>
+    <p class="small" style="margin-top:10px"><b>📊 시장 폭(상승/하락 종목 수·코스피):</b> <b>상승 97개</b>(상한가 3) vs <b>하락 799개</b>(하한가 4), 보합 18개로 <b>하락이 상승을 8:1로 압도</b>했습니다. 양대 시장 모두 <b>매도 사이드카</b>가 발동됐고 시총 상위 반도체주가 일제히 급락한, <b>압도적인 음(-)의 시장 폭</b>입니다.</p>
+    <p class="small" style="margin-top:8px"><b>🔻 내린 종목(반도체·AI 중심 급락):</b> 삼성전자·SK하이닉스가 <b>장 초반 -5%대</b> 급락(프리마켓 -5%↑), 삼성전자 <b>24만원대</b>·SK하이닉스 <b>180만원대</b>로 밀렸습니다. AI·반도체 소부장, 2차전지 등 성장주 전반이 약세였고, 레버리지 ETF가 특히 크게 흔들렸습니다.<br>
+    <b>상대적 방어:</b> 주말 전쟁·유가 급등 수혜가 기대되는 <b>방산·조선·정유</b>가 급락장에서 낙폭이 작거나 일부 강세를 보였습니다.<br>
+    <span style="color:#888">※ 종목별 등락률·종가는 거래소·매체 집계 기준이며 집계 시점에 따라 소폭 차이가 있을 수 있습니다.</span></p>
+  </div>
+
+  <!-- 미국 주요 변동사항 -->
+  <div class="card">
+    <h2>🇺🇸 미국 주요 변동사항 (7/17 현지 + 주말 — 있음, 오늘 급락의 배경)</h2>
+    <ul>
+      <li><b>🧨 '문샷 쇼크' — 반도체 베어마켓 (오늘의 핵심):</b> 중국 문샷AI가 <b>2조8,000억 파라미터의 초대형 개방형 모델 '키미 K3'</b>를 공개했습니다. <b>GPT-5.5·클로드(Opus 4.8)급 성능을 비용 40~70% 저렴하게</b> 낸다고 주장하면서, '값싼 AI'가 <b>빅테크(메타·MS 등)의 AI 투자(캐펙스)를 줄일 수 있다</b>는 우려가 확산됐습니다. 필라델피아 반도체지수(SOX)는 <b>6월 고점 대비 약 -20% 하락한 베어마켓</b>(7/16 -4.3%, 7/17 -1.6%). 이 흐름이 오늘 국내 반도체 급락으로 직결됐습니다.</li>
+      <li><b>⚔️ 주말 美-이란 '긴장→전쟁' 격화:</b> 이란 공격으로 <b>미군 3명이 전사</b>(3월 이후 첫 인명 피해)했고, 미국은 <b>8일 연속 이란 본토를 타격</b> 중입니다. 이란은 <b>세계 원유의 약 20%가 지나는 호르무즈 해협 봉쇄</b>를 선언했습니다. → 위험자산엔 부담, 정유·방산·조선엔 우호.</li>
+      <li><b>🛢️ 유가 급등:</b> 금요일 브렌트 <b>$88.10(+4.6%)</b>·WTI <b>$82.49(+4.5%)</b>, 주간 <b>+약14%</b>. 월요일 아시아장이 이 높은 유가를 안고 출발했습니다. 원유 순수입국 한국엔 <b>물가·무역수지·원화 부담</b>.</li>
+      <li><b>📉 금요일 미국 지수 동반 하락:</b> S&P500 7,457.69(<span class="down">-1.01%</span>), 나스닥 25,520.24(<span class="down">-1.40%</span>), 다우 52,146.42(<span class="down">-0.77%</span>). <b>정보기술 -2.65%(최약)</b>, <b>에너지 +1.82%(유일 강세)</b>로 '성장주→에너지·방어주' 순환매. VIX 18.77(금 종가·<b>주말 전쟁 미반영</b>).</li>
+      <li><b>🏛️ 연준 인하 명분 약화:</b> 6월 물가는 둔화됐지만 <b>유가 급등이 다음 물가를 자극</b>할 수 있어 인하 기대가 후퇴. 이번 주 <b>워시 의장 첫 의회 증언</b>과 7/29 FOMC 톤이 관건입니다.</li>
+    </ul>
+    <div class="note">💡 <b>한국 시장에 주는 의미:</b> 미국發 재료가 <b>이중으로 악재</b>였습니다. ①'문샷 쇼크'는 한국 지수의 뼈대인 <b>반도체·AI</b>를 정면으로 때렸고, ②주말 전쟁·유가는 <b>원유 순수입국 한국 전체엔 부담</b>입니다. 다만 <b>정유·방산·조선</b>엔 우호라는 갈림이 있고, 외국인이 오늘 저가매수에 나선 점은 '수요 붕괴'로 단정하지 않는 시각도 살아있음을 보여줍니다.</div>
+  </div>
+
+  <!-- 투자주체별 수급 -->
+  <div class="card">
+    <h2>💰 투자주체별 수급 (7/20 마감)</h2>
+    <p class="small" style="margin-bottom:6px">▸ <b>코스피</b> · 가장 큰 금액(기관 매도 9,218억)을 100으로 환산</p>
+    <div class="bar-row"><span class="bar-label">외국인</span><span class="bar-track"><div class="bar-buy" style="width:56.0%"></div></span><span class="bar-val">매수 약 5,161억</span></div>
+    <div class="bar-row"><span class="bar-label">기관</span><span class="bar-track"><div class="bar-sell" style="width:100%"></div></span><span class="bar-val">매도 약 9,218억</span></div>
+    <div class="bar-row"><span class="bar-label">개인</span><span class="bar-track"><div class="bar-buy" style="width:38.1%"></div></span><span class="bar-val">매수 약 3,510억</span></div>
+
+    <p class="small" style="margin:12px 0 6px">▸ <b>코스닥</b> · 가장 큰 금액(개인 매수 1,907억)을 100으로 환산</p>
+    <div class="bar-row"><span class="bar-label">외국인</span><span class="bar-track"><div class="bar-sell" style="width:32.5%"></div></span><span class="bar-val">매도 약 619억</span></div>
+    <div class="bar-row"><span class="bar-label">기관</span><span class="bar-track"><div class="bar-sell" style="width:70.7%"></div></span><span class="bar-val">매도 약 1,348억</span></div>
+    <div class="bar-row"><span class="bar-label">개인</span><span class="bar-track"><div class="bar-buy" style="width:100%"></div></span><span class="bar-val">매수 약 1,907억</span></div>
+
+    <p class="small" style="margin-top:10px">🔴 빨강=매수, 🔵 파랑=매도. <b>쉽게 말해:</b> 코스피에선 <b>기관이 홀로 9,218억을 던졌고</b>(오늘 급락의 주범), <b>외국인(+5,161억)과 개인(+3,510억)이 받았습니다.</b> 코스닥에선 <b>외국인·기관이 함께 팔고 개인이 홀로 받았습니다.</b></p>
+    <p class="small" style="margin-top:8px"><b>🧭 수급 구도 — '외국인이 대형주를 저가매수'가 핵심:</b> 지수를 무너뜨린 건 <b>기관의 대량 매도</b>였지만, 정작 <b>외국인은 코스피 대형주(반도체 포함)를 순매수</b>했습니다. 이는 오늘 급락을 '외국인 자금 이탈發 시스템 위기'로 보기 어렵게 하는 신호입니다. 반면 <b>코스닥(중소형·성장주)에선 외국인·기관이 동반 이탈</b>해, 위험자산 회피는 <b>중소형주에 더 집중</b>됐습니다.</p>
+    <div class="note">※ 수급 수치는 한국거래소·매체 집계 기준이며, 집계 시점에 따라 매체 간 소폭 차이가 있을 수 있습니다. <b>방향과 구도(코스피: 기관 매도·외국인 매수 / 코스닥: 외국인·기관 매도·개인 매수)는 일관</b>됩니다.</div>
+  </div>
+
+  <!-- 주도 섹터 -->
+  <div class="card">
+    <h2>🚀 주도 섹터: 반도체·AI — 주도력 상실, 'AI 캐펙스 지속성' 리스크 부상</h2>
+    <table>
+      <tr><td>반도체(대형)</td><td colspan="2" class="down">급락 (삼성·SK하이닉스 장초반 -5%대)</td></tr>
+      <tr><td>AI·반도체 소부장</td><td colspan="2" class="down">약세 (레버리지 ETF 급락)</td></tr>
+      <tr><td>상대 방어</td><td colspan="2" class="up">방산·조선·정유(전쟁·유가 수혜)</td></tr>
+      <tr><td>반도체·AI 사이클</td><td colspan="2">2025년 말~2026년 초 시작 · 조정 국면 진입</td></tr>
+    </table>
+    <p class="small" style="margin-top:8px"><b>반도체·AI 강도: 25/100</b> — 급랭. '문샷 쇼크'로 <b>AI 투자 지속성이라는 사이클의 뿌리 자체</b>가 의심받기 시작했습니다. "좋은 뉴스엔 못 오르고 나쁜 뉴스엔 급락"하는 <b>사이클 후반부·과열 청산</b> 신호입니다.</p>
+    <div class="gauge"><div style="width:25%"></div></div>
+    <p class="small" style="color:#888">투매(0) — <b>AI 캐펙스 의심·재하락(25) ◀ 현재</b> — 재가격화(40) — 약강세(65) — 강세(100)</p>
+    <ul style="margin-top:10px">
+      <li><b>급락의 근거(문샷 쇼크):</b> 문샷AI '키미 K3'가 <b>세계 최대 규모(2.8조 파라미터) 개방형 모델</b>을 <b>훨씬 싼 비용</b>으로 냈다고 주장하면서, '고성능 AI = 막대한 반도체 투자'라는 등식이 흔들렸습니다. 빅테크가 캐펙스를 줄이면 HBM·GPU·메모리 수요가 둔화된다는 논리입니다.</li>
+      <li><b>🧊 반론도 만만치 않습니다:</b> 일부 전문가는 <b>"AI 반도체 투자 위축은 착각"</b>이라고 반박합니다. 값싼 AI가 퍼질수록 <b>추론(inference) 수요는 오히려 폭증</b>하고(제번스의 역설), 첨단 <b>HBM 진입 장벽</b>은 여전히 높다는 것입니다. 지난주 CXMT 때와 마찬가지로 <b>단기 심리 충격</b>과 <b>중장기 실체</b>는 구분해야 합니다.</li>
+      <li><b>⚠️ 최종 판정대:</b> ①<b>7/22 알파벳·테슬라 실적</b>에서 <b>AI 자본지출(캐펙스)</b>이 유지되는지가 1차 분수령입니다. 투자를 안 줄였다고 확인되면 오늘 급락은 '과매도', 삭감되면 '추세 전환'입니다. ②<b>이번 주 SK하이닉스 2분기 실적</b>이 국내 반도체 사이클의 방향을 확정합니다.</li>
+    </ul>
+  </div>
+
+  <!-- 다음 주도 섹터 후보 -->
+  <div class="card">
+    <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+    <ul>
+      <li><b>🚢 조선·방산·원전 '조방원' (1순위 — 정책+구조 주도 후보):</b> 증권가에서 <b>"반도체 랠리 끝?…다음 주도주는 조방원"</b>이라는 관측이 나옵니다. <b>지정학 리스크 고착(전쟁)·AI 데이터센터 전력수요 폭증·탄소중립</b> 3중 모멘텀이 겹쳐 세 섹터 모두 구조적 성장 사이클에 진입했다는 시각입니다. 이재명 정부 정책(국방예산 +8.2%·원전·LNG)과도 정면으로 맞물립니다.</li>
+      <li><b>🛢️ 정유·에너지 (전쟁·유가 직접 수혜):</b> 브렌트 $88·호르무즈 봉쇄로 정제마진·유가 강세 수혜. <b>단, 유가 급등은 지수 전체엔 물가·소비 부담</b>이라는 양날의 칼이며, 중동 진정 시 되돌림 위험이 큰 고변동 섹터입니다.</li>
+      <li><b>🛡️ 방어주(금융·바이오·유틸리티) (리스크오프 피난처):</b> 반도체·AI 쏠림에 지친 자금이 <b>금리·경기와 무관한 방어주</b>로 이동하는 초기 신호. 급락장에서 상대적으로 덜 빠지는 종목군을 관찰할 구간입니다.</li>
+      <li><b>🔧 반도체 소부장 (관망):</b> <b>고베타(고변동)</b> 특성상 반도체 본진 방향이 잡히기 전까진 '추격 금지' 구간입니다. 문샷 쇼크의 실체(7/22·SK하이닉스 실적) 확인이 먼저입니다.</li>
+      <li><b>🔻 관전 포인트 — 이번엔 'AI 투자의 지속성'이 방향타:</b> 금리(금통위)는 지난주 소화됐습니다. 이제 <b>7/22 빅테크 실적과 SK하이닉스 실적</b>이 'AI 캐펙스가 살아있는가'를 숫자로 답합니다. 그 답이 나오기 전까진 <b>조방원·에너지 같은 비(非)반도체 축</b>이 자금의 대체 종착지가 될 수 있습니다.</li>
+    </ul>
+  </div>
+
+  <!-- 이번 주 일정 -->
+  <div class="card">
+    <h2>📅 이번 주(및 향후) 주요 일정</h2>
+    <div class="sched">
+      <div class="kv"><span>7/20(월) ✔완료</span><span style="text-align:right">🇰🇷 코스피 -4.46%·코스닥 -5.33% 급락, <b>이틀 연속 매도 사이드카</b>(문샷 쇼크)</span></div>
+      <div class="kv"><span>7/21(화)</span><span style="text-align:right">🇺🇸 <b>GM·노스럽그러먼(방산)</b> 실적 — 전쟁 국면 방산 수주 코멘트 주목</span></div>
+      <div class="kv"><span>7/22(수·현지)</span><span style="text-align:right">🇺🇸 <b>알파벳·테슬라 실적 ★최대 분수령★</b>(장 마감 후) — AI 캐펙스 확인 · IBM·TXN 동반</span></div>
+      <div class="kv"><span>7/23(목·현지)</span><span style="text-align:right">🇺🇸 <b>인텔·록히드·RTX</b> 실적+신규 실업수당 / 🇰🇷 <b>SK하이닉스 2분기 실적(잠정)</b></span></div>
+      <div class="kv"><span>7/24(금)</span><span style="text-align:right">🇺🇸 <b>S&P글로벌 7월 PMI 속보치</b> — 관세·유가 급등의 첫 실측치</span></div>
+      <div class="kv"><span>이번 주 중</span><span style="text-align:right">🇺🇸 <b>워시 연준의장 첫 의회 증언</b> — 유가 급등 국면 인하 톤 확인</span></div>
+      <div class="kv"><span>7/29(수·현지)</span><span style="text-align:right">🇺🇸 <b>FOMC</b>(다음 주) — 동결 우세, <b>유가·전쟁이 최대 변수</b></span></div>
+      <div class="kv"><span>7/31 경</span><span style="text-align:right">🇰🇷 <b>삼성전자 2분기 확정 실적</b> — 반도체 사이클 최종 판정</span></div>
+    </div>
+    <div class="note">📌 <b>이번 주 순서:</b> 국내 변수(금통위·만기)는 이번 주 없습니다. 초점은 <b>전적으로 'AI 투자의 지속성'</b>입니다. <b>7/22 알파벳·테슬라</b>가 캐펙스를 유지했다고 확인되면 오늘 급락은 '과매도'로 재평가될 수 있고, <b>SK하이닉스 실적·가이던스</b>가 '문샷 쇼크가 과장인지 실체인지'를 가릅니다. 여기에 <b>주말 전쟁·유가</b>가 상시 변수로 깔려 있습니다.</div>
+  </div>
+
+  <!-- 리스크 지표 -->
+  <div class="card">
+    <h2>🛡️ 리스크 지표 점검 (7/20 마감 기준)</h2>
+    <div class="kv"><span>코스피 등락(종가)</span><span class="down">-4.46% (🔴 급락 트리거 발동·매도 사이드카)</span></div>
+    <div class="kv"><span>코스닥 등락</span><span class="down">-5.33% (매도 사이드카·750선 13개월만 붕괴)</span></div>
+    <div class="kv"><span>원/달러 환율</span><span class="up">1,478.40원 (🟢 1,500원 하회·강보합)</span></div>
+    <div class="kv"><span>VIX(미국 공포지수)</span><span class="up">18.77 (🟢 22 미만·7/17 미국 종가)</span></div>
+    <div class="kv"><span>외국인 연속 순매도</span><span class="up">0일 (오늘 코스피 +5,161억 순매수·저가매수)</span></div>
+    <div class="kv"><span>시장 폭</span><span class="down">코스피 상승 97 / 하락 799 (압도적 음(-))</span></div>
+    <div class="kv"><span>AI 캐펙스 우려(문샷 쇼크)</span><span class="down">中 '키미 K3' → 반도체 SOX 베어마켓 🔴 <b>핵심 변수</b></span></div>
+    <div class="kv"><span>지정학·유가(호르무즈)</span><span class="down">🔴 미·이란 전쟁 격화·브렌트 $88·봉쇄 선언</span></div>
+    <p class="small" style="margin-top:8px"><b>'지표는 셋이 초록불인데, 지수 하나가 빨간불이다.'</b> 환율·VIX는 정상 범위이고, 외국인은 오히려 대형주를 <b>저가매수</b>했습니다. 그럼에도 <b>코스피가 -4.46% 급락</b>했기에 규칙상 🔴입니다. 이는 위기의 <b>성격</b>을 말해줍니다 — 이번 하락은 <b>환율·자금이탈發 시스템 위기가 아니라, '반도체·AI 한 축의 악재(문샷 쇼크)'가 지수 비중을 타고 증폭된 것</b>입니다. 그 악재가 일시적 심리인지 구조적 변화인지는 <b>7/22 빅테크 실적과 SK하이닉스 실적</b>에서 판가름 납니다. 단, <b>주말 전쟁·유가</b>는 별개의 상방 리스크로 상존합니다.</p>
+  </div>
+
+  <!-- 정책 수혜 -->
+  <div class="card">
+    <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+    <ul>
+      <li><b>🚢 '조방원'(조선·방산·원전) — 정책 핵심 축:</b> 이재명 정부의 <b>국방예산 +8.2%(66.3조)·AI 무기체계·원전·LNG</b> 정책이 조선·방산·원전을 구조적 수혜로 만듭니다. 오늘처럼 반도체가 흔들릴 때 <b>정책이 받쳐주는 대체 주도 후보</b>로 부각됩니다.</li>
+      <li><b>🤖 'AI 3대 강국' 전략:</b> 정부는 2026년 예산에 <b>AI 인프라 10.1조</b>를 배정하며 'AI는 핵심 생존전략'이라 강조했습니다. 역설적으로 <b>문샷 쇼크</b>는 '값싼 AI 시대'에 대비한 <b>국산 AI·데이터센터·전력망</b>의 정책 중요성을 더 키웁니다.</li>
+      <li><b>⚡ AI 데이터센터 전력 인프라:</b> 데이터센터 급증 → <b>LNG운반선·전력망·원전</b> 수요 동반 확대. '값싼 AI'라도 <b>추론 수요가 늘면 전력·인프라 수요는 오히려 증가</b>한다는 반론과 맞닿아 있습니다.</li>
+      <li><b>🛢️ 에너지 안보(유가 급등 국면):</b> 호르무즈 봉쇄·유가 $88로 <b>정유·LNG·에너지 안보</b> 명분이 최고조입니다. 원유 순수입국 한국엔 물가 부담이지만, 정유·에너지 섹터엔 직접 수혜입니다.</li>
+      <li><b>🚧 변동성 장세 투자자 보호:</b> 지난주 도입된 <b>단일종목 레버리지 규제 강화</b>(신규 상장 중단·예탁금 상향)에 이어, 오늘도 레버리지 ETF가 크게 흔들려 <b>고레버리지·개인 쏠림</b>에 대한 경계가 유효합니다.</li>
+    </ul>
+  </div>
+
+  <!-- Claude의 생각 -->
+  <div class="card">
+    <h2>💭 Claude의 생각 (참고용)</h2>
+    <div class="opinion">
+      <p>지난주 저는 코스피를 무너뜨린 범인으로 중국 <b>CXMT(메모리 증설)</b>를 지목했습니다. 그런데 <b>일주일도 안 돼 같은 중국이 또, 이번엔 다른 무기로</b> 시장을 흔들었습니다. 바로 <b>문샷AI의 '키미 K3'</b> — '고성능 AI를 훨씬 싸게'라는 한 방입니다. 지난주가 '메모리 공급 위협'이었다면, 이번엔 <b>'AI 투자 자체가 줄어들 수 있다'</b>는, 사이클의 뿌리를 건드리는 더 근본적인 공포입니다.</p>
+
+      <p><b>먼저 오늘 하락의 '성격'을 정확히 짚겠습니다.</b> 이건 시스템 위기가 아닙니다. <b>환율은 강보합(원화 안정), 미국 VIX도 잠잠</b>하고, 무엇보다 <b>외국인이 코스피 대형주를 5,161억이나 순매수</b>했습니다. 지수를 -4.46% 끌어내린 건 <b>기관의 대량 매도(9,218억)</b>였는데, 그 물량을 외국인과 개인이 받았습니다. 즉 '외국인이 한국을 버리고 도망친' 그림이 아니라, <b>'기관은 팔고 외국인은 싸게 담은'</b> 엇갈린 그림입니다. 무너진 건 반도체·AI 한 축이었고, 그 축이 코스피의 뼈대라 지수 전체가 급락으로 찍혔습니다.</p>
+
+      <p><b>그럼 문샷 쇼크는 진짜인가.</b> 여기서 냉정해야 합니다. 시장이 놀란 논리는 <b>'AI가 싸지면 빅테크가 반도체를 덜 산다'</b>입니다. 맞다면 삼성·하이닉스 이익에 직격탄입니다. 하지만 <b>정반대 논리</b>도 강합니다. AI가 싸지고 흔해질수록 <b>이용량(추론 수요)은 폭발적으로 늘어</b>(제번스의 역설), 데이터센터·전력·메모리 수요는 오히려 커진다는 것입니다. 게다가 AI의 핵심인 <b>HBM 진입 장벽</b>은 여전히 높습니다. 실제로 일부 전문가는 <b>"AI 반도체 투자 위축은 착각"</b>이라고 반박합니다. <b>단기 심리 충격은 분명하지만, 중장기 실체는 아직 검증되지 않았습니다.</b> 이 구도는 지난주 CXMT 때와 판박이입니다.</p>
+
+      <p><b>개인 투자자에 대해 짚겠습니다.</b> 오늘도 개인은 급락을 받아냈습니다(코스피 +3,510억, 코스닥 +1,907억). 저가매수 자체가 나쁜 건 아니지만, <b>레버리지 ETF에 쏠린 매매</b>는 이런 고변동 장에서 손실을 키우기 쉽습니다. 정부가 레버리지 규제를 강화한 이유이기도 합니다. <b>지금 필요한 건 더 빠른 베팅이 아니라, 방향이 확인될 때까지의 인내</b>일 수 있습니다.</p>
+
+      <p style="margin-bottom:0"><b>그래서 지금 어떻게 보나.</b> 오늘의 🔴는 '팔고 도망가라'가 아니라 <b>'변동성이 극에 달했으니 확인 전까지 함부로 베팅하지 말라'</b>는 신호로 읽습니다. 진짜 답은 숫자로 나옵니다 — <b>7/22 알파벳·테슬라의 AI 캐펙스</b>와 <b>이번 주 SK하이닉스 실적</b>입니다. 빅테크가 투자를 안 줄였다고 확인되면 오늘 급락은 좋은 자리가 되고, 정말 줄였다면 반도체 주도장은 쉬어갑니다. 그 <b>공백</b> 동안 자금은 <b>조방원(조선·방산·원전)·에너지</b> 같은 정책·실물 축으로 옮겨갈 수 있습니다. 여기에 <b>주말 전쟁·유가</b>라는 별개의 변수가 깔려 있으니, 이번 주는 <b>'확인과 분할, 그리고 유가 주시'</b>가 정답에 가깝다고 봅니다.</p>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    본 리포트는 공개된 뉴스·시장 데이터를 정리한 <b>경향성 참고용</b> 자료입니다. 특정 종목의 매수·매도를 권유하지 않으며,<br>
+    수치는 집계 시점에 따라 매체별 차이가 있을 수 있습니다. <b>투자 판단과 그 결과에 대한 책임은 전적으로 투자자 본인에게 있습니다.</b><br>
+    생성: 2026-07-20 · Claude
+  </div>
+
+</div>
+</body>
+</html>
