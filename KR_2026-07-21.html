@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국장 리포트 2026-07-21</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:#f2f4f8;color:#222;line-height:1.55;padding:12px}
+  .wrap{max-width:480px;margin:0 auto}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+  h1{font-size:19px;margin-bottom:4px}
+  h2{font-size:15px;margin-bottom:10px;padding-left:8px;border-left:4px solid #f5a23b}
+  .date{font-size:12px;color:#888}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 4px;text-align:right;border-bottom:1px solid #f0f0f0}
+  th{color:#777;font-weight:600}
+  td:first-child,th:first-child{text-align:left}
+  .up{color:#e0342f;font-weight:700}.down{color:#1763e6;font-weight:700}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;font-weight:700}
+  .tag-red{background:#ffe5e3;color:#d02b26}.tag-orange{background:#fff0dd;color:#c97a13}.tag-green{background:#e3f6e6;color:#1f8a36}.tag-gray{background:#eee;color:#555}
+  .gauge{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin:6px 0 2px}
+  .gauge>div{height:100%;background:linear-gradient(90deg,#ffd36c,#f5a23b)}
+  .bar-row{display:flex;align-items:center;font-size:12px;margin:6px 0}
+  .bar-label{width:46px;color:#555;font-weight:600}
+  .bar-track{flex:1;height:14px;background:#f0f0f0;border-radius:7px;overflow:hidden;margin:0 6px}
+  .bar-buy{height:100%;background:#e0342f;border-radius:7px}
+  .bar-sell{height:100%;background:#1763e6;border-radius:7px}
+  .bar-val{width:118px;font-size:11px;text-align:right;color:#444}
+  .small{font-size:12px;color:#666}
+  ul{padding-left:18px;font-size:13px}
+  li{margin-bottom:6px}
+  .opinion{background:#fff8e8;border:1px solid #f3e2b3;border-radius:10px;padding:12px;font-size:13px}
+  .opinion p{margin-bottom:9px}
+  .disclaimer{font-size:11px;color:#999;text-align:center;padding:4px 8px 16px}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #eee}
+  .alert-green{border:2px solid #1f8a36;background:#f2fbf4;border-radius:14px}
+  .alert-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .alert-light{font-size:28px}
+  .alert-title{font-size:16px;font-weight:800}
+  .alert-title-green{color:#1f8a36}
+  .sched{font-size:13px}
+  .sched .kv span:first-child{font-weight:700;color:#333}
+  .note{background:#eef3ff;border:1px solid #d4e0fb;border-radius:10px;padding:10px;font-size:12px;color:#33518c;margin-top:8px}
+  .goodbox{background:#eefaf0;border:1px solid #bfe6c8;border-radius:10px;padding:10px;font-size:12px;color:#1f6b38;margin-top:8px}
+  .warnbox{background:#fff6e6;border:1px solid #f0d9a8;border-radius:10px;padding:10px;font-size:12px;color:#8a5a12;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 리스크 경고등 -->
+  <div class="card alert-green">
+    <div class="alert-head">
+      <span class="alert-light">🟢</span>
+      <span class="alert-title alert-title-green">리스크 경고등: 정상 (🟢 — 지수 급반등·환율/VIX 안정·외국인 매수전환)</span>
+    </div>
+    <p class="small"><b>판정 근거(7/21 화 마감 기준)</b> — 정해진 🔴·🟡 트리거가 <b>모두 미발동</b>입니다.
+    ①코스피 <b>+3.56%</b>(6,747.95)·코스닥 <b>+0.49%</b>(753.34)로 급락(-3%) 트리거와 무관.
+    ②원/달러 <b>1,473.4원</b>은 1,500원 아래(🟢).
+    ③VIX <b>18.65</b>(7/20 미국 종가)는 22 미만(🟢).
+    ④외국인은 오늘 코스피를 <b>2,950억 순매수</b>하며 <b>연속 순매도를 끊고 매수로 전환</b>(🟡 트리거인 '10거래일+ 연속 순매도' 해소).
+    <b>네 지표 모두 정상권 → 🟢</b>입니다.</p>
+    <div class="goodbox">✅ <b>어제(🔴 급락)의 하루 만에 오늘(🟢 급반등).</b> 규칙상 경고등은 초록불로 내려왔지만, <b>'하루 걸러 매도·매수 사이드카'</b>가 반복되는 <b>극단적 변동성</b> 그 자체는 유지되고 있습니다. 초록불은 '안심'이 아니라 <b>'급락 위기는 일단 진정'</b>으로 읽는 게 안전합니다.</div>
+    <div class="warnbox">🧭 <b>반등의 진짜 시험대는 지금부터입니다.</b> ①<b>7/22 알파벳·테슬라 실적</b>(AI 캐펙스 첫 실측), ②<b>7/24 SK하이닉스 2분기 실적</b>이 '키미 쇼크가 과장인지 실체인지'를 숫자로 가릅니다. 그 전까진 <b>확인·분할</b>이 정답에 가깝습니다.</div>
+  </div>
+
+  <div class="card">
+    <h1>🇰🇷 한국 주식시장 리포트</h1>
+    <div class="date">2026년 7월 21일(화) · 마감 브리핑 · 정규장 종료 기준 · 'V자 반등 — 키미 쇼크 딛고 반도체·원전 질주'</div>
+    <p style="margin-top:10px;font-size:13px"><b>한 줄 요약:</b> '하루 만에 되돌렸다.' 코스피 <b>6,747.95(+231.68p, +3.56%)</b>, 코스닥 <b>753.34(+3.70p, +0.49%)</b>. 간밤 미국 <b>반도체지수(SOX)가 +1.9% 반등</b>하고 <b>반도체 수출 호조</b>가 확인되자, 어제 급락했던 <b>삼성전자(+6.15%)·SK하이닉스(+4.08%)</b>에 저가매수가 몰리며 지수가 급반등했습니다. 낮 <b>12시41분 올해 19번째 '매수' 사이드카</b>가 발동됐습니다. 다만 <b>코스닥은 강보합(+0.49%)</b>에 그쳐, 오늘 반등은 <b>대형주(반도체·원전) 주도의 다소 좁은 반등</b>이었습니다.</p>
+    <div class="goodbox"><b>↗️ 장중 흐름:</b> 약보합 출발(장 초반 6,500 공방) → 반도체 매수세 유입 → <b>오전 반발매수로 상승 전환</b> → 오후 낙폭 확대되던 어제와 정반대로 <b>낮 12시41분 매수 사이드카</b>(코스피200 선물 급등, 프로그램 매수 5분 정지) → 장중 6,800선 터치 → 6,747.95(+3.56%) 마감. <b>4거래일 만의 반등</b>입니다.</div>
+    <p class="small" style="margin-top:8px"><b>💡 오늘의 핵심 변화 — '악재의 근원(중국 키미)'은 그대로인데, 시장은 하루 만에 '과매도'로 재해석했습니다.</b> 어제(7/20)는 매도 사이드카, 오늘(7/21)은 매수 사이드카 — <b>'하루 걸러' 극단적 변동성</b>이 이어지는 국면입니다. 특히 어제 리포트에서 '대체 주도 후보'로 지목한 <b>조방원(조선·방산·원전)</b>이 오늘 실제로 강세를 보인 점(<b>원전 한전기술 +15.29%</b>)이 눈에 띕니다.</p>
+  </div>
+
+  <!-- 주요 지수 -->
+  <div class="card">
+    <h2>📊 주요 지수 (7/21 화 마감 확정)</h2>
+    <table>
+      <tr><th>지수</th><th>종가</th><th>등락</th></tr>
+      <tr><td>코스피</td><td>6,747.95</td><td class="up">+231.68 (+3.56%)</td></tr>
+      <tr><td>코스닥</td><td>753.34</td><td class="up">+3.70 (+0.49%)</td></tr>
+      <tr><td>원/달러 환율</td><td>1,473.40원</td><td class="up">-5.0원 (원화 강세)</td></tr>
+    </table>
+    <p class="small" style="margin-top:10px"><b>📊 시장 폭(상승/하락 종목 수):</b> <b>정확한 종목 수는 데이터 미확보</b>입니다. 다만 업종별로는 <b>대부분이 상승</b>했습니다 — 유통(+5.15%)·전기전자(+4.76%)·제조(+3.92%)·보험(+3.33%)·금융(+2.48%) 등 광범위 강세, 하락은 오락문화(-1.67%)·비금속(-1.12%)·종이목재(-0.87%) 등 소수였습니다. 단 <b>코스닥이 +0.49% 강보합</b>에 그친 것은, 상승 에너지가 <b>대형주(반도체·원전)에 집중</b>되고 중소형주까지 고르게 퍼지진 못했다는 뜻입니다.</p>
+    <p class="small" style="margin-top:8px"><b>🔺 오른 종목(반도체·원전·방산 주도):</b> 삼성전자 <b>+6.15%</b>·SK하이닉스 <b>+4.08%</b>·SK스퀘어 <b>+6.46%</b>로 반도체가 지수를 견인했고, 원전(한전기술 +15.29%·한전KPS +7.69%·두산에너빌리티 +7.14%), 방산(LIG넥스원 +4.10%·한화에어로 +2.21%), 전력(LS일렉트릭 +3.57%)이 동반 강세였습니다.<br>
+    <span style="color:#888">※ 종목별 등락률·종가는 거래소·매체 집계 기준이며 집계 시점에 따라 소폭 차이가 있을 수 있습니다.</span></p>
+  </div>
+
+  <!-- 미국 주요 변동사항 -->
+  <div class="card">
+    <h2>🇺🇸 미국 주요 변동사항 (7/20 현지 — 있음, 오늘 반등의 배경)</h2>
+    <ul>
+      <li><b>💾 반도체 반등 (오늘의 핵심 호재):</b> 간밤 <b>필라델피아 반도체지수(SOX)가 +약1.9% 반등</b>하고 마이크론 등 메모리주가 올랐습니다. '문샷(키미) 쇼크'가 <b>과매도</b>였다는 인식과 <b>AI 캐펙스 기대 재점화</b> 조짐이 겹쳤습니다. 이 흐름이 오늘 국내 반도체 급반등으로 직결됐습니다.</li>
+      <li><b>📉 지수는 혼조 — 중동 우려가 상단 제한:</b> S&P500 7,443.28(<span class="down">-0.2%</span>), 나스닥 25,508.07(<span class="down">-0.05%</span>), 다우 51,839.26(<span class="down">-0.6%</span>). 기술주는 강했지만(<b>MS +2.21%·알파벳 +1.36%</b>) 이란發 중동 리스크가 지수 전체를 눌렀습니다. <b>셰브런 +1.24%</b> 등 에너지도 견조.</li>
+      <li><b>🟢 VIX 안정:</b> 18.65(-0.64%)로 <b>22 아래</b> 유지. 주말 전쟁 격화에도 공포지수는 진정 국면입니다.</li>
+      <li><b>⏳ 빅테크 실적 '대기 모드':</b> 시장은 <b>7/22 알파벳·테슬라·IBM 실적(장 마감 후)</b>을 앞두고 관망했습니다. 이번 어닝시즌 <b>AI 자본지출(캐펙스)의 첫 실측</b>이라 반도체 사이클의 방향을 가릅니다.</li>
+    </ul>
+    <div class="note">💡 <b>한국 시장에 주는 의미:</b> 어제는 미국發 재료가 '이중 악재'였다면, 오늘은 <b>반도체 한 축이 호재로 돌아섰습니다.</b> 미국 반도체가 반등하며 '키미 쇼크=과매도'라는 해석에 힘이 실렸고, 지수의 뼈대인 삼성·하이닉스가 즉각 반응했습니다. 다만 지수 전반의 방향은 여전히 <b>7/22 빅테크 실적</b>에 인질로 잡혀 있고, 중동·유가는 상시 변수로 남아 있습니다.</div>
+  </div>
+
+  <!-- 투자주체별 수급 -->
+  <div class="card">
+    <h2>💰 투자주체별 수급 (7/21 마감)</h2>
+    <p class="small" style="margin-bottom:6px">▸ <b>코스피</b> · 가장 큰 금액(개인 매도 1조6,574억)을 100으로 환산</p>
+    <div class="bar-row"><span class="bar-label">외국인</span><span class="bar-track"><div class="bar-buy" style="width:17.8%"></div></span><span class="bar-val">매수 약 2,950억</span></div>
+    <div class="bar-row"><span class="bar-label">기관</span><span class="bar-track"><div class="bar-buy" style="width:83.9%"></div></span><span class="bar-val">매수 약 1조3,901억</span></div>
+    <div class="bar-row"><span class="bar-label">개인</span><span class="bar-track"><div class="bar-sell" style="width:100%"></div></span><span class="bar-val">매도 약 1조6,574억</span></div>
+
+    <p class="small" style="margin:12px 0 6px">▸ <b>코스닥</b> · 가장 큰 금액(개인 매수 1,793억)을 100으로 환산</p>
+    <div class="bar-row"><span class="bar-label">외국인</span><span class="bar-track"><div class="bar-sell" style="width:85.6%"></div></span><span class="bar-val">매도 약 1,534억</span></div>
+    <div class="bar-row"><span class="bar-label">기관</span><span class="bar-track"><div class="bar-sell" style="width:15.7%"></div></span><span class="bar-val">매도 약 281억</span></div>
+    <div class="bar-row"><span class="bar-label">개인</span><span class="bar-track"><div class="bar-buy" style="width:100%"></div></span><span class="bar-val">매수 약 1,793억</span></div>
+
+    <p class="small" style="margin-top:10px">🔴 빨강=매수, 🔵 파랑=매도. <b>쉽게 말해:</b> 코스피에선 <b>기관(+1조3,901억)과 외국인(+2,950억)이 함께 사서 지수를 끌어올렸고</b>, <b>개인은 1조6,574억을 팔았습니다.</b> 코스닥에선 반대로 <b>외국인·기관이 팔고 개인이 홀로 받았습니다.</b></p>
+    <p class="small" style="margin-top:8px"><b>🧭 수급 구도 — '어제와 정확히 뒤집혔습니다':</b> 어제는 <b>기관이 팔고 개인이 저가매수</b>였는데, 오늘은 <b>기관·외국인이 사고 개인이 반등에 차익실현</b>했습니다. 특히 <b>외국인이 순매수로 전환</b>한 게 핵심 — 최근 이어지던 외국인 '팔자'가 멈췄다는 신호입니다. 반면 <b>코스닥(중소형주)에선 외국인·기관이 여전히 매도</b>해, 안심은 아직 대형주에 국한됩니다.</p>
+    <div class="note">※ 수급 수치는 한국거래소·매체 집계 기준이며, 집계 시점에 따라 매체 간 소폭 차이가 있을 수 있습니다. <b>방향과 구도(코스피: 기관·외국인 매수·개인 매도 / 코스닥: 외국인·기관 매도·개인 매수)는 일관</b>됩니다.</div>
+  </div>
+
+  <!-- 주도 섹터 -->
+  <div class="card">
+    <h2>🚀 주도 섹터: 반도체·AI — 주도력 회복 시도, '원전·방산' 동반 부상</h2>
+    <table>
+      <tr><td>반도체(대형)</td><td colspan="2" class="up">급반등 (삼성 +6.15%·SK하이닉스 +4.08%)</td></tr>
+      <tr><td>원전·전력</td><td colspan="2" class="up">강세 주도 (한전기술 +15.29%·두산에너빌 +7.14%)</td></tr>
+      <tr><td>방산·조선</td><td colspan="2" class="up">동반 강세 (LIG넥스원 +4.10%)</td></tr>
+      <tr><td>반도체·AI 사이클</td><td colspan="2">2025년 말~2026년 초 시작 · 조정 후 재반등 시도</td></tr>
+    </table>
+    <p class="small" style="margin-top:8px"><b>반도체·AI 강도: 50/100</b> — 급락(어제 25)에서 <b>절반 회복</b>. '키미 쇼크=과매도' 인식과 미국 반도체 반등에 힘입어 되돌림이 나왔지만, 방향을 확정한 게 아니라 <b>실적 확인 전 반발매수</b> 성격이 강합니다.</p>
+    <div class="gauge"><div style="width:50%"></div></div>
+    <p class="small" style="color:#888">투매(0) — AI캐펙스 의심(25) — <b>반등·재가격화(50) ◀ 현재</b> — 약강세(65) — 강세(100)</p>
+    <ul style="margin-top:10px">
+      <li><b>반등의 근거:</b> ①간밤 <b>미국 반도체(SOX +1.9%) 반등</b>, ②<b>반도체 수출 호조</b>(7월 1~20일 잠정), ③어제 -5%대 급락에 따른 <b>기술적 과매도</b>가 겹치며 대형 반도체에 매수가 집중됐습니다.</li>
+      <li><b>🏭 오늘의 진짜 주인공은 '원전·방산'일 수도:</b> 반도체가 지수 점수를 올렸다면, 상승률로는 <b>원전(한전기술 +15%·두산에너빌 +7%)</b>이 압도했습니다. 어제 '조방원'을 대체 주도 후보로 지목했는데, <b>전력수요·정책·지정학</b> 3중 모멘텀이 실제 매수로 확인되기 시작한 흐름입니다.</li>
+      <li><b>⚠️ 최종 판정대:</b> ①<b>7/22 알파벳·테슬라 실적</b>의 AI 캐펙스가 유지되는지가 1차 분수령, ②<b>7/24 SK하이닉스 2분기 실적</b>이 국내 반도체 사이클의 방향을 확정합니다. 그 전까지 오늘 반등은 '반발매수'로 봐야 안전합니다.</li>
+    </ul>
+  </div>
+
+  <!-- 다음 주도 섹터 후보 -->
+  <div class="card">
+    <h2>🔄 다음 주도 섹터 후보 (1~3개월, 거래량 점증)</h2>
+    <ul>
+      <li><b>🚢 조선·방산·원전 '조방원' (1순위 — 오늘 실제 반응 시작):</b> 어제 '대체 주도 후보'로 지목했는데, <b>오늘 원전·방산이 급등</b>하며 자금이 실제로 유입됐습니다. <b>AI 데이터센터 전력수요 폭증·지정학 고착·정책(원전·국방예산)</b> 3중 모멘텀이 겹쳐, 반도체가 실적을 기다리는 <b>공백기의 대체 주도축</b>으로 부상하고 있습니다.</li>
+      <li><b>⚡ 전력·전력기기 (AI 전력 인프라):</b> 데이터센터 급증 → 변압기·전력망·전선 수요. LS일렉트릭·HD현대일렉트릭·효성중공업 등이 오늘 동반 강세. 원전·전력은 '값싼 AI라도 추론 수요가 늘면 전력은 더 필요하다'는 논리의 직접 수혜입니다.</li>
+      <li><b>💾 반도체 소부장 (실적 확인 후):</b> 대형 반도체가 되돌림에 성공했지만, <b>고베타 소부장은 7/22·7/24 실적</b>으로 방향이 확정된 뒤 추격이 안전합니다. '반발매수'와 '추세복귀'는 다릅니다.</li>
+      <li><b>🛢️ 정유·에너지 (유가 되돌림 주시):</b> 중동 리스크가 진정되면 유가가 되돌려질 수 있어, 어제까지의 에너지 강세는 <b>변동성 확대</b>로 봐야 합니다. 고변동 구간입니다.</li>
+      <li><b>🔻 관전 포인트 — 이번 주는 '실적이 곧 방향타':</b> 국내 금통위·만기는 이번 주 없습니다. <b>7/22 빅테크 → 7/23 韓 2분기 GDP → 7/24 SK하이닉스</b>로 이어지는 3연속 이벤트가 반등의 지속 여부를 결정합니다.</li>
+    </ul>
+  </div>
+
+  <!-- 이번 주 일정 -->
+  <div class="card">
+    <h2>📅 이번 주(및 향후) 주요 일정</h2>
+    <div class="sched">
+      <div class="kv"><span>7/21(화) ✔완료</span><span style="text-align:right">🇰🇷 코스피 +3.56%·코스닥 +0.49% <b>V자 반등</b>, 올해 19번째 <b>매수 사이드카</b></span></div>
+      <div class="kv"><span>7/22(수)</span><span style="text-align:right">🇰🇷 6월 PPI(오전) / 🇺🇸 <b>알파벳·테슬라·IBM 실적 ★최대 분수령★</b>(장 마감 후) — AI 캐펙스 확인</span></div>
+      <div class="kv"><span>7/23(목)</span><span style="text-align:right">🇰🇷 <b>2분기 GDP 속보치</b> / 🇺🇸 인텔·노스럽·블랙스톤 실적+신규 실업수당 / 🇪🇺 ECB 회의</span></div>
+      <div class="kv"><span>7/24(금)</span><span style="text-align:right">🇰🇷 <b>SK하이닉스 2분기 실적 ★국내 반도체 분수령★</b> / 🇺🇸 S&P글로벌 7월 PMI 속보</span></div>
+      <div class="kv"><span>이번 주 중</span><span style="text-align:right">🇺🇸 <b>워시 연준의장 의회 증언</b> — 유가 급등 국면 인하 톤 확인</span></div>
+      <div class="kv"><span>7/29(수·현지)</span><span style="text-align:right">🇺🇸 <b>FOMC</b>(한국시간 7/30 새벽) — 동결 우세 / MS·메타 실적</span></div>
+      <div class="kv"><span>7/30~31</span><span style="text-align:right">🇺🇸 아마존 실적 / 🇰🇷 <b>삼성전자 2분기 확정 실적</b> — 반도체 사이클 최종 판정</span></div>
+    </div>
+    <div class="note">📌 <b>이번 주 순서:</b> 초점은 <b>전적으로 '실적'</b>입니다. <b>7/22 알파벳·테슬라</b>가 AI 캐펙스를 유지했다고 확인되면 오늘 반등이 '추세'로 이어질 수 있고, <b>7/24 SK하이닉스 실적·가이던스</b>가 '키미 쇼크가 과장인지 실체인지'를 최종 판정합니다. 그 사이 <b>7/23 韓 2분기 GDP</b>가 경기 체력을 점검합니다.</div>
+  </div>
+
+  <!-- 리스크 지표 -->
+  <div class="card">
+    <h2>🛡️ 리스크 지표 점검 (7/21 마감 기준)</h2>
+    <div class="kv"><span>코스피 등락(종가)</span><span class="up">+3.56% (🟢 급락 트리거 무관·매수 사이드카)</span></div>
+    <div class="kv"><span>코스닥 등락</span><span class="up">+0.49% (🟢 강보합·대형주 대비 부진)</span></div>
+    <div class="kv"><span>원/달러 환율</span><span class="up">1,473.40원 (🟢 1,500원 하회·원화 강세)</span></div>
+    <div class="kv"><span>VIX(미국 공포지수)</span><span class="up">18.65 (🟢 22 미만·7/20 미국 종가)</span></div>
+    <div class="kv"><span>외국인 연속 순매도</span><span class="up">0일 (🟢 오늘 +2,950억 순매수·매수 전환)</span></div>
+    <div class="kv"><span>시장 폭</span><span>데이터 미확보 (업종 대부분 상승·대형주 집중)</span></div>
+    <div class="kv"><span>변동성(사이드카)</span><span class="down">🟡 '하루 걸러' 매도·매수 사이드카 반복 — 여전히 극심</span></div>
+    <div class="kv"><span>지정학·유가(중동)</span><span class="down">🟡 이란發 리스크 상존(미국 지수 상단 제한)</span></div>
+    <p class="small" style="margin-top:8px"><b>'네 개 핵심 지표가 모두 초록불로 돌아왔다.'</b> 지수는 급반등, 환율은 원화 강세, VIX는 안정, 외국인은 매수 전환 — 규칙상 <b>🟢 정상</b>입니다. 다만 이 초록불은 <b>'추세 안착'이 아니라 '급락 위기의 일시 진정'</b>으로 읽어야 합니다. <b>어제와 정반대의 사이드카</b>가 하루 만에 나온 것 자체가 변동성이 얼마나 극심한지를 보여줍니다. 진짜 방향은 <b>7/22 빅테크·7/24 SK하이닉스 실적</b>에서 나옵니다. 중동·유가는 별개의 상방 리스크로 상존합니다.</p>
+  </div>
+
+  <!-- 정책 수혜 -->
+  <div class="card">
+    <h2>🏛️ 정책(공약) 수혜 포인트</h2>
+    <ul>
+      <li><b>🚢 '조방원'(조선·방산·원전) — 오늘 정책 테마가 실제로 움직였습니다:</b> 이재명 정부의 <b>국방예산 +8.2%·원전·LNG</b> 정책이 조선·방산·원전을 구조적 수혜로 만드는데, 오늘 <b>원전(한전기술 +15%)·방산(LIG넥스원 +4%)</b>이 급등하며 '정책이 받쳐주는 대체 주도축'이 실체를 보였습니다.</li>
+      <li><b>⚡ AI 데이터센터 전력 인프라:</b> 정부의 <b>AI 인프라 10.1조</b> 배정과 맞물려, 데이터센터 급증 → <b>전력망·변압기·원전</b> 수요가 동반 확대. 오늘 전력기기(LS일렉트릭·HD현대일렉트릭)가 함께 오른 배경입니다.</li>
+      <li><b>🤖 'AI 3대 강국' 전략:</b> '값싼 AI(키미) 시대'는 역설적으로 <b>국산 AI·데이터센터·전력망</b>의 정책 중요성을 키웁니다. 추론 수요 폭증 → 인프라 수요 증가라는 논리와 정면으로 맞닿습니다.</li>
+      <li><b>🛢️ 에너지 안보(유가 변동 국면):</b> 중동 리스크 상존으로 <b>정유·LNG·에너지 안보</b> 명분은 유효하나, 유가 되돌림 시 변동성이 큰 양날의 칼입니다.</li>
+      <li><b>🚧 변동성 장세 투자자 보호:</b> '하루 걸러 사이드카'가 반복되는 만큼, 지난주 강화된 <b>단일종목 레버리지 규제</b>의 취지(고레버리지·개인 쏠림 경계)가 오늘도 유효합니다.</li>
+    </ul>
+  </div>
+
+  <!-- Claude의 생각 -->
+  <div class="card">
+    <h2>💭 Claude의 생각 (참고용)</h2>
+    <div class="opinion">
+      <p>어제 저는 🔴 경고등을 켜며 '팔고 도망가라'가 아니라 <b>'변동성이 극에 달했으니 확인 전까지 함부로 베팅하지 말라'</b>는 신호라고 적었습니다. 그리고 하루 만에 코스피는 <b>+3.56%</b> 급반등하며 매수 사이드카를 띄웠습니다. <b>어제의 매도 사이드카, 오늘의 매수 사이드카</b> — 이 '하루 걸러' 극단이야말로 지금 시장의 본질입니다.</p>
+
+      <p><b>먼저 오늘 반등의 '성격'을 정확히 짚겠습니다.</b> 이건 악재(중국 키미)가 해소돼서가 아닙니다. 키미 K3는 그대로 있습니다. 바뀐 건 <b>해석</b>입니다 — 간밤 미국 반도체(SOX)가 +1.9% 반등하며 '키미 쇼크는 과매도였다'는 쪽에 힘이 실렸고, 어제 -5%대로 급락한 삼성·하이닉스가 기술적으로 <b>반발매수</b>를 부른 것입니다. 그래서 오늘 반등은 <b>'문제 해결'이 아니라 '과매도 되돌림'</b>으로 보는 게 정확합니다.</p>
+
+      <p><b>수급이 어제와 정확히 뒤집힌 점</b>이 흥미롭습니다. 어제는 기관이 팔고 개인이 저가매수했는데, 오늘은 <b>기관·외국인이 사고 개인이 1조6,574억을 팔았습니다.</b> 어제 급락에 물량을 받은 개인이 오늘 반등에 차익실현한 그림입니다. 무엇보다 <b>외국인이 순매수로 전환</b>한 게 중요합니다. 최근 이어지던 외국인 '팔자'가 멈췄다는 건 긍정 신호지만, <b>단 하루로 추세를 단정할 수는 없습니다.</b></p>
+
+      <p><b>오늘 제 눈을 사로잡은 건 사실 반도체가 아니라 원전입니다.</b> 어제 저는 반도체가 흔들리는 공백 동안 자금이 <b>조방원(조선·방산·원전)</b>으로 옮겨갈 수 있다고 적었는데, 오늘 <b>한전기술이 +15%, 두산에너빌리티가 +7%</b> 급등했습니다. 반도체가 지수 '점수'를 올렸다면, 상승'률'의 주인공은 원전·전력이었습니다. AI 데이터센터 전력수요·정책·지정학이 겹친 이 테마는, 반도체 실적이 확인되기 전까지 <b>대체 주도축</b>으로 계속 관찰할 가치가 있다고 봅니다.</p>
+
+      <p style="margin-bottom:0"><b>그래서 지금 어떻게 보나.</b> 오늘의 🟢는 '이제 안심'이 아니라 <b>'급락 위기는 일단 진정, 그러나 방향은 아직 미정'</b>입니다. 진짜 답은 이번 주 숫자로 나옵니다 — <b>7/22 알파벳·테슬라의 AI 캐펙스</b>와 <b>7/24 SK하이닉스 실적</b>입니다. 빅테크가 투자를 유지했다면 오늘 반등은 '추세의 시작'이 되고, 정말 줄였다면 오늘은 '반발매수의 함정'이 됩니다. 하루 걸러 4% 넘게 출렁이는 장에서 개인이 이길 방법은 빠른 베팅이 아니라 <b>확인과 분할</b>이라고, 어제에 이어 오늘도 같은 말씀을 드립니다.</p>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    본 리포트는 공개된 뉴스·시장 데이터를 정리한 <b>경향성 참고용</b> 자료입니다. 특정 종목의 매수·매도를 권유하지 않으며,<br>
+    수치는 집계 시점에 따라 매체별 차이가 있을 수 있습니다. <b>투자 판단과 그 결과에 대한 책임은 전적으로 투자자 본인에게 있습니다.</b><br>
+    생성: 2026-07-21 · Claude
+  </div>
+
+</div>
+</body>
+</html>
